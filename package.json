@@ -4,7 +4,7 @@
   "private": true,
   "description": "Wood Lounge Furniture - Fast Demo Version",
   "scripts": {
-    "build:css": "tailwindcss -i src/input.css -o assets/styles.css --minify && node scripts/version-assets.mjs",
+    "build:css": "node node_modules/tailwindcss/lib/cli.js -i src/input.css -o assets/styles.css --minify && node scripts/version-assets.mjs",
     "check-links": "node scripts/check-links.mjs"
   },
   "devDependencies": {
