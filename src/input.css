@@ -1,8 +1,10 @@
+@import './fonts.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Repeated custom utilities from Stitch templates */
+/* Shared custom utilities from Stitch templates */
 .shadow-cinematic {
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7), 0 0 20px rgba(0, 0, 0, 0.4);
 }
