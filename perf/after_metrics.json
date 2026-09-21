@@ -1,0 +1,224 @@
+[
+  {
+    "route": "/404.html",
+    "slug": "404.html",
+    "requestCount": 8,
+    "totalBytes": "274 KB"
+  },
+  {
+    "route": "/admin/custom-requests/",
+    "slug": "admin_custom-requests",
+    "requestCount": 10,
+    "totalBytes": "4230 KB"
+  },
+  {
+    "route": "/admin/customers/",
+    "slug": "admin_customers",
+    "requestCount": 10,
+    "totalBytes": "4221 KB"
+  },
+  {
+    "route": "/admin/",
+    "slug": "admin",
+    "requestCount": 11,
+    "totalBytes": "4247 KB"
+  },
+  {
+    "route": "/admin/inspections/",
+    "slug": "admin_inspections",
+    "requestCount": 10,
+    "totalBytes": "4281 KB"
+  },
+  {
+    "route": "/admin/orders/",
+    "slug": "admin_orders",
+    "requestCount": 12,
+    "totalBytes": "4256 KB"
+  },
+  {
+    "route": "/admin/payments/",
+    "slug": "admin_payments",
+    "requestCount": 11,
+    "totalBytes": "4259 KB"
+  },
+  {
+    "route": "/admin/products/",
+    "slug": "admin_products",
+    "requestCount": 19,
+    "totalBytes": "4389 KB"
+  },
+  {
+    "route": "/book-visit/",
+    "slug": "book-visit",
+    "requestCount": 14,
+    "totalBytes": "4369 KB"
+  },
+  {
+    "route": "/cart/",
+    "slug": "cart",
+    "requestCount": 14,
+    "totalBytes": "4335 KB"
+  },
+  {
+    "route": "/checkout/",
+    "slug": "checkout",
+    "requestCount": 14,
+    "totalBytes": "4342 KB"
+  },
+  {
+    "route": "/custom-order/",
+    "slug": "custom-order",
+    "requestCount": 12,
+    "totalBytes": "4302 KB"
+  },
+  {
+    "route": "/",
+    "slug": "home",
+    "requestCount": 23,
+    "totalBytes": "758 KB"
+  },
+  {
+    "route": "/m/admin/custom-requests/",
+    "slug": "m_admin_custom-requests",
+    "requestCount": 15,
+    "totalBytes": "4230 KB"
+  },
+  {
+    "route": "/m/admin/customers/",
+    "slug": "m_admin_customers",
+    "requestCount": 15,
+    "totalBytes": "4221 KB"
+  },
+  {
+    "route": "/m/admin/",
+    "slug": "m_admin",
+    "requestCount": 17,
+    "totalBytes": "4247 KB"
+  },
+  {
+    "route": "/m/admin/inspections/",
+    "slug": "m_admin_inspections",
+    "requestCount": 17,
+    "totalBytes": "4281 KB"
+  },
+  {
+    "route": "/m/admin/orders/",
+    "slug": "m_admin_orders",
+    "requestCount": 17,
+    "totalBytes": "4256 KB"
+  },
+  {
+    "route": "/m/admin/payments/",
+    "slug": "m_admin_payments",
+    "requestCount": 17,
+    "totalBytes": "4259 KB"
+  },
+  {
+    "route": "/m/admin/products/",
+    "slug": "m_admin_products",
+    "requestCount": 26,
+    "totalBytes": "4389 KB"
+  },
+  {
+    "route": "/m/book-visit/",
+    "slug": "m_book-visit",
+    "requestCount": 20,
+    "totalBytes": "4369 KB"
+  },
+  {
+    "route": "/m/cart/",
+    "slug": "m_cart",
+    "requestCount": 21,
+    "totalBytes": "4335 KB"
+  },
+  {
+    "route": "/m/checkout/",
+    "slug": "m_checkout",
+    "requestCount": 21,
+    "totalBytes": "4342 KB"
+  },
+  {
+    "route": "/m/custom-order/",
+    "slug": "m_custom-order",
+    "requestCount": 19,
+    "totalBytes": "4302 KB"
+  },
+  {
+    "route": "/m/",
+    "slug": "m",
+    "requestCount": 31,
+    "totalBytes": "758 KB"
+  },
+  {
+    "route": "/m/my-requests/",
+    "slug": "m_my-requests",
+    "requestCount": 21,
+    "totalBytes": "4318 KB"
+  },
+  {
+    "route": "/m/order-confirmation/",
+    "slug": "m_order-confirmation",
+    "requestCount": 24,
+    "totalBytes": "4414 KB"
+  },
+  {
+    "route": "/m/product/",
+    "slug": "m_product",
+    "requestCount": 25,
+    "totalBytes": "793 KB"
+  },
+  {
+    "route": "/m/shop/",
+    "slug": "m_shop",
+    "requestCount": 24,
+    "totalBytes": "642 KB"
+  },
+  {
+    "route": "/m/sign-in/",
+    "slug": "m_sign-in",
+    "requestCount": 14,
+    "totalBytes": "4209 KB"
+  },
+  {
+    "route": "/m/track-order/",
+    "slug": "m_track-order",
+    "requestCount": 25,
+    "totalBytes": "4425 KB"
+  },
+  {
+    "route": "/my-requests/",
+    "slug": "my-requests",
+    "requestCount": 14,
+    "totalBytes": "4318 KB"
+  },
+  {
+    "route": "/order-confirmation/",
+    "slug": "order-confirmation",
+    "requestCount": 17,
+    "totalBytes": "4414 KB"
+  },
+  {
+    "route": "/product/",
+    "slug": "product",
+    "requestCount": 18,
+    "totalBytes": "793 KB"
+  },
+  {
+    "route": "/shop/",
+    "slug": "shop",
+    "requestCount": 17,
+    "totalBytes": "642 KB"
+  },
+  {
+    "route": "/sign-in/",
+    "slug": "sign-in",
+    "requestCount": 9,
+    "totalBytes": "4209 KB"
+  },
+  {
+    "route": "/track-order/",
+    "slug": "track-order",
+    "requestCount": 19,
+    "totalBytes": "4425 KB"
+  }
+]
