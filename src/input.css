@@ -4,6 +4,10 @@
 @tailwind components;
 @tailwind utilities;
 
+@view-transition {
+  navigation: auto;
+}
+
 /* Shared custom utilities from Stitch templates */
 .shadow-cinematic {
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7), 0 0 20px rgba(0, 0, 0, 0.4);

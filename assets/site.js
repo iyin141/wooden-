@@ -14,7 +14,28 @@ document.addEventListener('DOMContentLoaded', () => {
         img.className = v.className;
         img.alt = 'Hero Showcase Poster';
         v.parentNode.replaceChild(img, v);
-      }
+  // Prefetch Fallback for browsers without Speculation Rules (Safari/Firefox)
+  if (!HTMLScriptElement.supports || !HTMLScriptElement.supports('speculationrules')) {
+    const prefetched = new Set();
+    const prefetch = (href) => {
+      if (!href || prefetched.has(href)) return;
+      try {
+        const url = new URL(href, window.location.origin);
+        if (url.origin === window.location.origin && url.pathname !== window.location.pathname) {
+          prefetched.add(href);
+          const link = document.createElement('link');
+          link.rel = 'prefetch';
+          link.href = href;
+          document.head.appendChild(link);
+        }
+      } catch (e) {}
+    };
+
+    ['pointerover', 'focusin', 'touchstart'].forEach(evt => {
+      document.addEventListener(evt, (e) => {
+        const anchor = e.target.closest('a[href]');
+        if (anchor) prefetch(anchor.getAttribute('href'));
+      }, { passive: true });
     });
   }
 
