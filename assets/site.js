@@ -1,5 +1,24 @@
 document.addEventListener('DOMContentLoaded', () => {
-  // Mobile / Desktop Redirects
+  // Hero Video: Remove video and leave poster on slow connections or reduced motion preference
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const conn = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
+  const isSlowConnection = conn && (conn.saveData || conn.effectiveType === 'slow-2g' || conn.effectiveType === '2g');
+
+  if (prefersReducedMotion || isSlowConnection) {
+    const heroVideos = document.querySelectorAll('video');
+    heroVideos.forEach(v => {
+      if (v.getAttribute('poster')) {
+        v.pause();
+        const img = document.createElement('img');
+        img.src = v.getAttribute('poster');
+        img.className = v.className;
+        img.alt = 'Hero Showcase Poster';
+        v.parentNode.replaceChild(img, v);
+      }
+    });
+  }
+
+  // Mobile / Desktop Redirects (Instant check in head takes priority)
   const isMobile = window.innerWidth < 768;
   const isMobilePath = window.location.pathname.startsWith('/m/');
   const hasDesktopParam = new URLSearchParams(window.location.search).has('desktop');
@@ -7,10 +26,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (isMobile && !isMobilePath && (!hasDesktopParam || !isDesktopParamValue1)) {
     if (window.location.pathname !== '/404.html') {
-      window.location.href = '/m' + window.location.pathname + window.location.search;
+      window.location.replace('/m' + window.location.pathname + window.location.search);
     }
   } else if (!isMobile && isMobilePath) {
-    window.location.href = window.location.pathname.replace(/^\/m/, '') + window.location.search;
+    window.location.replace(window.location.pathname.replace(/^\/m/, '') + window.location.search);
   }
 
   // --- Mock Behaviors ---
