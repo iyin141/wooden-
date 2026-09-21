@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#fff8f4;}body{overscroll-behavior:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-error-container": "#93000a", "background": "#fff8f4", "primary": "#000000", "surface-variant": "#e7e1de", "on-error": "#ffffff", "surface-dim": "#dfd9d5", "surface": "#fff8f4", "on-tertiary-fixed-variant": "#584329", "on-tertiary": "#ffffff", "inverse-on-surface": "#f6efec", "surface-container-highest": "#e7e1de", "on-surface-variant": "#4b4640", "surface-container-high": "#ede7e3", "on-primary-container": "#868381", "inverse-primary": "#cac6c3", "primary-fixed-dim": "#cac6c3", "primary-container": "#1d1b1a", "secondary-fixed-dim": "#ffb694", "on-primary": "#ffffff", "on-primary-fixed": "#1d1b1a", "secondary-container": "#fea277", "on-primary-fixed-variant": "#484645", "tertiary-container": "#281803", "outline": "#7c766f", "error": "#ba1a1a", "on-secondary": "#ffffff", "on-tertiary-container": "#997f61", "surface-container-lowest": "#ffffff", "tertiary-fixed": "#fdddb9", "surface-container": "#f3ede9", "tertiary": "#000000", "on-background": "#1d1b19", "error-container": "#ffdad6", "surface-bright": "#fff8f4", "on-secondary-container": "#773614", "surface-container-low": "#f9f2ee", "on-tertiary-fixed": "#281803", "on-secondary-fixed-variant": "#743412", "on-surface": "#1d1b19", "secondary": "#924b27", "primary-fixed": "#e6e1df", "on-secondary-fixed": "#351000", "tertiary-fixed-dim": "#e0c29f", "surface-tint": "#605e5c", "outline-variant": "#cdc5bd", "inverse-surface": "#32302e", "secondary-fixed": "#ffdbcc" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-xs": "0.25rem", "margin": "3.5rem", "space-sm": "0.5rem", "space-xl": "2.5rem", "gutter": "1.5rem", "margin-mobile": "1.25rem", "gutter-mobile": "1rem", "space-lg": "1.5rem", "space-md": "1rem" }, fontFamily: { "label-caps-md": ["Plus Jakarta Sans"], "headline-lg": ["Playfair Display"], "headline-md": ["Playfair Display"], "data-mono": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "label-caps-sm": ["Plus Jakarta Sans"], "display-lg": ["Playfair Display"], "headline-lg-mobile": ["Playfair Display"], "display-lg-mobile": ["Playfair Display"], "body-sm": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"], "headline-sm": ["Playfair Display"] }, fontSize: { "label-caps-md": ["11px", { "lineHeight": "16px", "letterSpacing": "0.14em", "fontWeight": "700" }], "headline-lg": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "500" }], "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "500" }], "data-mono": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" }], "body-md": ["15px", { "lineHeight": "24px", "fontWeight": "400" }], "label-caps-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.16em", "fontWeight": "700" }], "display-lg": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "headline-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "500" }], "display-lg-mobile": ["38px", { "lineHeight": "44px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "body-sm": ["13px", { "lineHeight": "20px", "fontWeight": "400" }], "body-lg": ["17px", { "lineHeight": "28px", "fontWeight": "400" }], "title-md": ["16px", { "lineHeight": "24px", "letterSpacing": "0.01em", "fontWeight": "600" }], "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }] } } } };</script></head><body class="bg-surface text-on-surface flex flex-col min-h-screen w-full antialiased font-body-md" data-page="admin-dashboard">
+<!-- PAGE: Atelier Operations & Dispatch --><header class="fixed top-0 w-full z-50 pt-safe bg-primary text-on-primary shadow-[0_2px_12px_rgba(0,0,0,0.18)]"><div class="h-20 px-margin-mobile flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm"><button aria-label="Workshop Location Switcher" class="w-11 h-11 flex items-center justify-center text-primary-fixed hover:text-on-primary transition-colors"><span class="material-symbols-outlined text-[24px]">menu_open</span></button><div class="flex flex-col justify-center"><div class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-secondary-container animate-pulse"></span><span class="font-label-caps-sm text-label-caps-sm uppercase tracking-wider text-primary-fixed-dim">14:32 WAT • ATELIER SYNC</span></div><span class="font-headline-sm text-headline-sm tracking-tight text-on-primary font-medium truncate max-w-[170px]">Admin Dashboard</span></div></div><div class="flex items-center gap-space-xs"><button aria-label="Notifications" class="relative w-11 h-11 flex items-center justify-center text-primary-fixed hover:text-on-primary transition-colors"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-2 right-2 min-w-[16px] h-4 px-1 rounded-full bg-secondary text-on-secondary font-data-mono text-[10px] flex items-center justify-center leading-none">4</span></button><div class="flex items-center gap-1.5 pl-1"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-20 pb-24 px-margin-mobile bg-surface"><div class="flex flex-col w-full space-y-space-lg">
+<!-- Editorial Section Banner -->
+<section class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-caps-sm text-label-caps-sm uppercase tracking-widest text-on-surface-variant">REAL-TIME ATELIER LEDGER • SECTION 10</span>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface tracking-tight">Atelier Operations &amp; Dispatch</h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+      Live overview of bespoke commissions, showroom visits, and workshop throughput in Enugu &amp; Abuja.
+    </p>
+</section>
+<!-- Quick Actions Touch Deck -->
+<section class="grid grid-cols-3 gap-space-xs">
+<button class="flex flex-col items-center justify-center p-space-sm bg-primary text-on-primary shadow-sm active:scale-[0.98] transition-transform text-center rounded" type="button">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[18px] text-secondary-container">mark_chat_unread</span>
+<span class="font-data-mono text-data-mono font-bold text-secondary-container">5</span>
+</div>
+<span class="font-label-caps-sm text-label-caps-sm uppercase tracking-wider mt-1">Unanswered</span>
+</button>
+<button class="flex flex-col items-center justify-center p-space-sm bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors text-center rounded shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px] text-on-surface">post_add</span>
+<span class="font-label-caps-sm text-label-caps-sm uppercase tracking-wider mt-1">Manual Order</span>
+</button>
+<button class="flex flex-col items-center justify-center p-space-sm bg-secondary text-on-secondary hover:bg-on-secondary-container transition-colors text-center rounded shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">add_circle</span>
+<span class="font-label-caps-sm text-label-caps-sm uppercase tracking-wider mt-1">+ Product</span>
+</button>
+</section>
+<!-- Key Metrics 2x2 Bento Grid -->
+<section class="grid grid-cols-2 gap-space-sm">
+<!-- Stat 1 -->
+<div class="flex flex-col p-space-md bg-surface-container-lowest rounded shadow-sm justify-between gap-space-sm">
+<div class="flex items-start justify-between gap-1">
+<span class="font-label-caps-sm text-label-caps-sm uppercase text-on-surface-variant tracking-wider leading-tight">Site Inspections</span>
+<span class="px-1.5 py-0.5 rounded-full bg-error-container text-on-error-container font-label-caps-sm text-[9px] uppercase font-bold">Action</span>
+</div>
+<div>
+<div class="font-headline-md text-headline-md text-on-surface font-semibold">6</div>
+<p class="font-data-mono text-data-mono text-secondary font-medium mt-0.5">+2 since yesterday</p>
+</div>
+<div class="pt-space-xs font-data-mono text-[11px] text-on-surface-variant flex items-center justify-between">
+<span>4 Enugu</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span>2 Abuja</span>
+</div>
+</div>
+<!-- Stat 2 -->
+<div class="flex flex-col p-space-md bg-surface-container-lowest rounded shadow-sm justify-between gap-space-sm">
+<div class="flex items-start justify-between gap-1">
+<span class="font-label-caps-sm text-label-caps-sm uppercase text-on-surface-variant tracking-wider leading-tight">Custom Requests</span>
+<span class="px-1.5 py-0.5 rounded-full bg-surface-container-high text-on-surface font-label-caps-sm text-[9px] uppercase font-bold">Review</span>
+</div>
+<div>
+<div class="font-headline-md text-headline-md text-on-surface font-semibold">4</div>
+<p class="font-data-mono text-data-mono text-on-surface-variant font-medium mt-0.5">Est. Pipeline</p>
+</div>
+<div class="pt-space-xs font-data-mono text-[11px] text-secondary font-semibold truncate">
+        ₦4,800,000
+      </div>
+</div>
+<!-- Stat 3 -->
+<div class="flex flex-col p-space-md bg-surface-container-lowest rounded shadow-sm justify-between gap-space-sm">
+<div class="flex items-start justify-between gap-1">
+<span class="font-label-caps-sm text-label-caps-sm uppercase text-on-surface-variant tracking-wider leading-tight">Awaiting Update</span>
+<span class="px-1.5 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-caps-sm text-[9px] uppercase font-bold">Log Due</span>
+</div>
+<div>
+<div class="font-headline-md text-headline-md text-on-surface font-semibold">9</div>
+<p class="font-data-mono text-data-mono text-on-surface-variant font-medium mt-0.5">Orders in queue</p>
+</div>
+<div class="pt-space-xs font-data-mono text-[11px] text-on-surface-variant flex items-center justify-between">
+<span>5 Kiln</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span>4 Assembly</span>
+</div>
+</div>
+<!-- Stat 4 -->
+<div class="flex flex-col p-space-md bg-surface-container-lowest rounded shadow-sm justify-between gap-space-sm">
+<div class="flex items-start justify-between gap-1">
+<span class="font-label-caps-sm text-label-caps-sm uppercase text-on-surface-variant tracking-wider leading-tight">Settlements</span>
+<span class="px-1.5 py-0.5 rounded-full bg-surface-container-high text-on-surface font-label-caps-sm text-[9px] uppercase font-bold">Paystack</span>
+</div>
+<div>
+<div class="font-title-md text-title-md text-on-surface font-bold truncate">₦3,840,000</div>
+<p class="font-data-mono text-data-mono text-secondary font-medium mt-0.5">This week</p>
+</div>
+<div class="pt-space-xs font-data-mono text-[11px] text-on-surface-variant flex items-center justify-between">
+<span>8 Settled</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span>78% Deps</span>
+</div>
+</div>
+</section>
+<!-- Kiln Climate Telemetry Card -->
+<section class="flex flex-col p-space-md bg-surface-container-lowest rounded shadow-sm relative overflow-hidden">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-secondary">thermostat</span>
+<span class="font-label-caps-sm text-label-caps-sm uppercase text-on-surface font-bold tracking-wider">Kiln Curing Batch #042</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface font-label-caps-sm text-[9px] uppercase font-semibold">Joinery Floor A: Primed</span>
+</div>
+<div class="mt-space-sm flex items-baseline justify-between">
+<div>
+<div class="flex items-baseline gap-1">
+<span class="font-headline-md text-headline-md text-on-surface font-semibold">10.8%</span>
+<span class="font-data-mono text-data-mono text-on-surface-variant">RH</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+          Obeche &amp; Smoked Walnut moisture equilibrium stabilized
+        </p>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-label-caps-sm text-label-caps-sm uppercase text-secondary font-bold">Equilibrium</span>
+<span class="font-data-mono text-[10px] text-on-surface-variant">7-Day Curve</span>
+</div>
+</div>
+<!-- Hydrometry Curve Sparkline (Inline lightweight SVG) -->
+<div class="w-full mt-space-md pt-space-xs">
+<svg class="w-full h-12 overflow-visible" fill="none" preserveaspectratio="none" viewbox="0 0 300 48">
+<path class="text-secondary" d="M0,38 Q40,32 75,34 T150,22 T225,18 T300,14" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2.2"></path>
+<path class="text-secondary-fixed/40" d="M0,38 Q40,32 75,34 T150,22 T225,18 T300,14 L300,48 L0,48 Z" fill="currentColor"></path>
+<!-- Data points -->
+<circle class="fill-surface-container-lowest stroke-secondary" cx="75" cy="34" r="3" stroke-width="2"></circle>
+<circle class="fill-surface-container-lowest stroke-secondary" cx="150" cy="22" r="3" stroke-width="2"></circle>
+<circle class="fill-surface-container-lowest stroke-secondary" cx="225" cy="18" r="3" stroke-width="2"></circle>
+<circle class="fill-secondary stroke-surface-container-lowest" cx="300" cy="14" r="3.5" stroke-width="2"></circle>
+</svg>
+<div class="flex justify-between items-center mt-1 text-on-surface-variant font-data-mono text-[10px]">
+<span>Day 1 (14.2%)</span>
+<span>Day 4 (12.1%)</span>
+<span class="text-secondary font-bold">Target 10.5% - 11.0%</span>
+</div>
+</div>
+</section>
+<!-- Interactive Workflow Hub (Site Inspections, Custom Requests, Settlements) -->
+<section class="flex flex-col space-y-space-sm" id="workflowHub">
+<!-- Segmented Filter Controller -->
+<div class="flex items-center justify-between p-1 bg-surface-container rounded gap-1">
+<button class="flex-1 py-1.5 px-2 text-center rounded bg-primary text-on-primary font-label-caps-sm text-label-caps-sm uppercase tracking-wider transition-colors" id="tabBtn-inspections" onclick="switchTab('inspections')" type="button">
+        Inspections (4)
+      </button>
+<button class="flex-1 py-1.5 px-2 text-center rounded text-on-surface-variant hover:text-on-surface font-label-caps-sm text-label-caps-sm uppercase tracking-wider transition-colors" id="tabBtn-customRequests" onclick="switchTab('customRequests')" type="button">
+        Custom (3)
+      </button>
+<button class="flex-1 py-1.5 px-2 text-center rounded text-on-surface-variant hover:text-on-surface font-label-caps-sm text-label-caps-sm uppercase tracking-wider transition-colors" id="tabBtn-settlements" onclick="switchTab('settlements')" type="button">
+        Settled
+      </button>
+</div>
+<!-- Panel 1: Site Inspections -->
+<div class="flex flex-col space-y-space-sm" id="panel-inspections">
+<!-- Inspection 1 -->
+<div class="flex flex-col p-space-md bg-surface-container-lowest rounded shadow-sm gap-space-sm">
+<div class="flex items-start justify-between gap-space-sm">
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-title-md text-title-md text-on-surface font-semibold">Chidiebere Okonkwo</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-caps-sm text-[9px] uppercase font-bold">New Request</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5 flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-secondary">location_on</span>
+              Plot 14, Independence Layout, Enugu
+            </p>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex items-center gap-1 text-on-surface-variant font-data-mono text-data-mono">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+<span>Thu, Oct 24 • 02:00 PM</span>
+</div>
+<button class="px-space-md py-1.5 bg-primary text-on-primary rounded font-label-caps-sm text-label-caps-sm uppercase tracking-wider hover:bg-on-surface-variant transition-colors" type="button">
+            Review →
+          </button>
+</div>
+</div>
+<!-- Inspection 2 -->
+<div class="flex flex-col p-space-md bg-surface-container-lowest rounded shadow-sm gap-space-sm">
+<div class="flex items-start justify-between gap-space-sm">
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-title-md text-title-md text-on-surface font-semibold">Barr. Ngozi Adeleke</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface font-label-caps-sm text-[9px] uppercase font-bold">Pending Confirmation</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5 flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-secondary">location_on</span>
+              Guzape District, Abuja
+            </p>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex items-center gap-1 text-on-surface-variant font-data-mono text-data-mono">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+<span>Fri, Oct 25 • 11:00 AM</span>
+</div>
+<button class="px-space-md py-1.5 bg-secondary text-on-secondary rounded font-label-caps-sm text-label-caps-sm uppercase tracking-wider hover:bg-on-secondary-container transition-colors" type="button">
+            Confirm →
+          </button>
+</div>
+</div>
+<!-- Inspection 3 -->
+<div class="flex flex-col p-space-md bg-surface-container-lowest rounded shadow-sm gap-space-sm">
+<div class="flex items-start justify-between gap-space-sm">
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-title-md text-title-md text-on-surface font-semibold">Arc. Farouk Danjuma</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-caps-sm text-[9px] uppercase font-bold">Confirmed</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5 flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-secondary">location_on</span>
+              Maitama, Abuja
+            </p>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex items-center gap-1 text-on-surface-variant font-data-mono text-data-mono">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+<span>Sat, Oct 26 • 03:30 PM</span>
+</div>
+<button class="px-space-md py-1.5 bg-surface-container-high text-on-surface rounded font-label-caps-sm text-label-caps-sm uppercase tracking-wider hover:bg-surface-variant transition-colors" type="button">
+            Route →
+          </button>
+</div>
+</div>
+</div>
+<!-- Panel 2: Custom Requests -->
+<div class="hidden flex flex-col space-y-space-sm" id="panel-customRequests">
+<!-- Item 1 -->
+<div class="flex flex-col p-space-md bg-surface-container-lowest rounded shadow-sm gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-data-mono text-data-mono text-secondary font-bold">#WL-C-0001</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface font-label-caps-sm text-[9px] uppercase font-bold">Quoted (Deposit Due)</span>
+</div>
+<div>
+<h3 class="font-title-md text-title-md text-on-surface font-semibold">Bespoke Executive Wall Credenza</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Smoked Walnut + Fluted Brass Pulls</p>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<div>
+<span class="font-label-caps-sm text-label-caps-sm uppercase text-on-surface-variant">Client</span>
+<p class="font-title-md text-title-md text-on-surface font-medium">Chidiebere Okonkwo</p>
+</div>
+<div class="text-right">
+<span class="font-label-caps-sm text-label-caps-sm uppercase text-on-surface-variant">Range</span>
+<p class="font-data-mono text-data-mono text-secondary font-bold">₦1,200,000 - 1.5M</p>
+</div>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="flex flex-col p-space-md bg-surface-container-lowest rounded shadow-sm gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-data-mono text-data-mono text-secondary font-bold">#WL-C-0004</span>
+<span class="px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-label-caps-sm text-[9px] uppercase font-bold">More Info Needed</span>
+</div>
+<div>
+<h3 class="font-title-md text-title-md text-on-surface font-semibold">Fluted Dining Table 10-Seater</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Aged Iroko Solid Core Joinery</p>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<div>
+<span class="font-label-caps-sm text-label-caps-sm uppercase text-on-surface-variant">Client</span>
+<p class="font-title-md text-title-md text-on-surface font-medium">Arc. Chiemeze Okafor</p>
+</div>
+<div class="text-right">
+<span class="font-label-caps-sm text-label-caps-sm uppercase text-on-surface-variant">Estimate</span>
+<p class="font-data-mono text-data-mono text-secondary font-bold">₦1,800,000</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Panel 3: Settlements -->
+<div class="hidden flex flex-col space-y-space-sm" id="panel-settlements">
+<div class="flex flex-col p-space-md bg-surface-container-lowest rounded shadow-sm gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-data-mono text-data-mono text-on-surface-variant font-bold">#PSTK-99201482</span>
+<span class="font-data-mono text-data-mono text-on-surface-variant">12:20 WAT</span>
+</div>
+<div class="flex items-center justify-between mt-1">
+<div>
+<p class="font-title-md text-title-md text-on-surface font-semibold">Chidiebere Okonkwo</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Full &amp; Deposit Mix</p>
+</div>
+<div class="font-title-md text-title-md text-secondary font-bold">
+            ₦458,000
+          </div>
+</div>
+</div>
+<div class="flex flex-col p-space-md bg-surface-container-lowest rounded shadow-sm gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-data-mono text-data-mono text-on-surface-variant font-bold">#PSTK-99182301</span>
+<span class="font-data-mono text-data-mono text-on-surface-variant">09:44 WAT</span>
+</div>
+<div class="flex items-center justify-between mt-1">
+<div>
+<p class="font-title-md text-title-md text-on-surface font-semibold">Somtochukwu U.</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Nsukka Lounge Sofa Deposit</p>
+</div>
+<div class="font-title-md text-title-md text-secondary font-bold">
+            ₦229,000
+          </div>
+</div>
+</div>
+</div>
+</section>
+<!-- Active Atelier Work Orders (Floor Dispatch Status) -->
+<section class="flex flex-col space-y-space-sm pt-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[20px] text-on-surface">precision_manufacturing</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Floor Dispatch Status</h2>
+</div>
+<span class="font-label-caps-sm text-label-caps-sm uppercase tracking-wider text-secondary font-bold">2 Live Lines</span>
+</div>
+<!-- Card 1 -->
+<div class="flex flex-col p-space-md bg-surface-container-lowest rounded shadow-sm gap-space-sm">
+<div class="flex items-start justify-between">
+<div>
+<span class="font-data-mono text-data-mono text-secondary font-bold">#WL-1042</span>
+<h3 class="font-title-md text-title-md text-on-surface font-semibold">Nsukka Fluted Credenza</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Nigerian Teak • Client: Obinna Eze (Enugu)</p>
+</div>
+<div class="w-12 h-12 rounded bg-surface-container overflow-hidden flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="Close up architectural detail of fluted Nigerian teak wood sideboard credenza crafted with bespoke precision joinery, warm daylight in contemporary luxury atelier" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpVKbceyhmDpX1su6cmR0CZuWoLIAu3ZuuzLTaox4m64cFSOJW8xwH2mKZ5mxtSHa4nFzGqZIdGGqWHmq8UOOuD4I3dgiB9G9zFEIjx4DIZCdezIXV4huJa14BgNtp7B03k6cZfZh2Cn-aEz9fGVZN6iVMPLqHedsWq7-gWH4sNl5PtlKDc50d3odcYJUG3aXCjHl20ERiRr_R_zHoQbEpFVw2YhY8LLzwTysWQjZlcDxUFTymwVgO"/>
+</div>
+</div>
+<!-- Finish Progress Bar -->
+<div class="flex flex-col gap-1.5 pt-space-xs">
+<div class="flex items-center justify-between font-label-caps-sm text-label-caps-sm uppercase">
+<span class="text-on-surface font-semibold">Finishing &amp; Wax Polish</span>
+<span class="text-secondary font-bold">85%</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 85%;"></div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs text-on-surface-variant font-data-mono text-[11px]">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-secondary">local_shipping</span>
+          Dispatch: Oct 26
+        </span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-label-caps-sm text-[9px] uppercase font-bold">Enugu Atelier</span>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="flex flex-col p-space-md bg-surface-container-lowest rounded shadow-sm gap-space-sm">
+<div class="flex items-start justify-between">
+<div>
+<span class="font-data-mono text-data-mono text-secondary font-bold">#WL-1043</span>
+<h3 class="font-title-md text-title-md text-on-surface font-semibold">Aso Rock Monolithic Coffee Slab</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Live Edge Iroko • Client: Musa Haruna (Abuja)</p>
+</div>
+<div class="w-12 h-12 rounded bg-surface-container overflow-hidden flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="Monolithic solid live edge seasoned Iroko coffee table slab being hand planed and assembled in Nigerian luxury woodwork studio showroom" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCau3--Zkn3h_H8k-_BvIa_k5eSskPSdNGc2PoeUKMTJhj9WcTLrxK4jxpn7323OTPSzqvdvqa1LoU3Q-iqYKKRHy51QrfU302YJk0CHJ3CSsKvfxcKg1fuT11uQNY5DcQx1Y49pqa9KpgyACEhnfwW_ecrI_n_u4LfDUrPDJSaDn-vchE8SUTqHf2-o_N0LeHeZlhfEcA6crXwzAEGXKU5E_q-qqPv7Ca9inNym5gPnh08ZVHMCNDL"/>
+</div>
+</div>
+<!-- Jointing Progress Bar -->
+<div class="flex flex-col gap-1.5 pt-space-xs">
+<div class="flex items-center justify-between font-label-caps-sm text-label-caps-sm uppercase">
+<span class="text-on-surface font-semibold">Dowel &amp; Mortise Jointing</span>
+<span class="text-secondary font-bold">45%</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-primary rounded-full" style="width: 45%;"></div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs text-on-surface-variant font-data-mono text-[11px]">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-secondary">local_shipping</span>
+          Dispatch: Nov 02
+        </span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-label-caps-sm text-[9px] uppercase font-bold">Abuja Studio</span>
+</div>
+</div>
+</section>
+</div>
+<script>
+  function switchTab(tabId) {
+    const tabs = ['inspections', 'customRequests', 'settlements'];
+    tabs.forEach(t => {
+      const panel = document.getElementById('panel-' + t);
+      const btn = document.getElementById('tabBtn-' + t);
+      if (t === tabId) {
+        panel.classList.remove('hidden');
+        btn.className = 'flex-1 py-1.5 px-2 text-center rounded bg-primary text-on-primary font-label-caps-sm text-label-caps-sm uppercase tracking-wider transition-colors';
+      } else {
+        panel.classList.add('hidden');
+        btn.className = 'flex-1 py-1.5 px-2 text-center rounded text-on-surface-variant hover:text-on-surface font-label-caps-sm text-label-caps-sm uppercase tracking-wider transition-colors';
+      }
+    });
+  }
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_-2px_16px_rgba(29,27,25,0.06)]" data-active-classes="text-secondary font-semibold"><div class="flex items-center justify-around h-16 px-space-xs"><a aria-current="page" class="flex flex-col items-center justify-center min-w-[56px] h-12 gap-0.5 transition-colors text-secondary font-semibold" data-path="admin-dashboard" href="/m/admin/"><span class="material-symbols-outlined text-[22px]">dashboard</span><span class="font-label-caps-sm text-label-caps-sm uppercase">Atelier</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 gap-0.5 text-on-surface-variant hover:text-on-surface transition-colors" data-path="joinery-inspections" href="/m/admin/"><span class="material-symbols-outlined text-[22px]">verified</span><span class="font-label-caps-sm text-label-caps-sm uppercase">Inspect</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 gap-0.5 text-on-surface-variant hover:text-on-surface transition-colors" data-path="commission-requests" href="/m/admin/"><span class="material-symbols-outlined text-[22px]">architecture</span><span class="font-label-caps-sm text-label-caps-sm uppercase">Requests</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 gap-0.5 text-on-surface-variant hover:text-on-surface transition-colors" data-path="furniture-orders" href="/m/admin/orders/"><span class="material-symbols-outlined text-[22px]">carpenter</span><span class="font-label-caps-sm text-label-caps-sm uppercase">Orders</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 gap-0.5 text-on-surface-variant hover:text-on-surface transition-colors" data-path="workshop-more" href="/m/admin/"><span class="material-symbols-outlined text-[22px]">tune</span><span class="font-label-caps-sm text-label-caps-sm uppercase">More</span></a></div></nav><script src="/assets/site.js"></script>
+</body></html>

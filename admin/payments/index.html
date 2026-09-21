@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"secondary-container":"#fea277","on-tertiary-container":"#997f61","on-secondary-fixed-variant":"#743412","primary-container":"#1d1b1a","tertiary-fixed":"#fdddb9","on-secondary":"#ffffff","surface-dim":"#dfd9d5","on-tertiary-fixed":"#281803","inverse-surface":"#32302e","on-background":"#1d1b19","error-container":"#ffdad6","on-error-container":"#93000a","surface":"#fff8f4","outline":"#7c766f","tertiary":"#000000","on-primary-fixed":"#1d1b1a","secondary-fixed-dim":"#ffb694","on-secondary-container":"#773614","primary-fixed-dim":"#cac6c3","inverse-primary":"#cac6c3","tertiary-fixed-dim":"#e0c29f","primary-fixed":"#e6e1df","surface-bright":"#fff8f4","secondary-fixed":"#ffdbcc","on-primary":"#ffffff","error":"#ba1a1a","on-secondary-fixed":"#351000","outline-variant":"#cdc5bd","on-primary-container":"#868381","surface-container-highest":"#e7e1de","on-tertiary-fixed-variant":"#584329","surface-tint":"#605e5c","secondary":"#924b27","on-primary-fixed-variant":"#484645","on-surface":"#1d1b19","on-surface-variant":"#4b4640","on-tertiary":"#ffffff","surface-container-low":"#f9f2ee","on-error":"#ffffff","surface-container":"#f3ede9","background":"#fff8f4","primary":"#000000","inverse-on-surface":"#f6efec","surface-variant":"#e7e1de","surface-container-lowest":"#ffffff","surface-container-high":"#ede7e3","tertiary-container":"#281803"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-xl":"2.5rem","gutter-mobile":"1rem","margin":"3.5rem","space-xs":"0.25rem","space-md":"1rem","gutter":"1.5rem","margin-mobile":"1.25rem","space-lg":"1.5rem","space-sm":"0.5rem"},"fontFamily":{"body-sm":["Plus Jakarta Sans"],"headline-lg":["Playfair Display"],"body-lg":["Plus Jakarta Sans"],"label-caps-sm":["Plus Jakarta Sans"],"display-lg":["Playfair Display"],"headline-sm":["Playfair Display"],"title-md":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"data-mono":["Plus Jakarta Sans"],"headline-lg-mobile":["Playfair Display"],"headline-md":["Playfair Display"],"label-caps-md":["Plus Jakarta Sans"],"display-lg-mobile":["Playfair Display"]},"fontSize":{"body-sm":["13px",{"lineHeight":"20px","fontWeight":"400"}],"headline-lg":["36px",{"lineHeight":"44px","letterSpacing":"-0.01em","fontWeight":"500"}],"body-lg":["17px",{"lineHeight":"28px","fontWeight":"400"}],"label-caps-sm":["10px",{"lineHeight":"14px","letterSpacing":"0.16em","fontWeight":"700"}],"display-lg":["56px",{"lineHeight":"64px","letterSpacing":"-0.02em","fontWeight":"600"}],"headline-sm":["20px",{"lineHeight":"28px","fontWeight":"600"}],"title-md":["16px",{"lineHeight":"24px","letterSpacing":"0.01em","fontWeight":"600"}],"body-md":["15px",{"lineHeight":"24px","fontWeight":"400"}],"data-mono":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"500"}],"headline-lg-mobile":["28px",{"lineHeight":"36px","letterSpacing":"-0.01em","fontWeight":"500"}],"headline-md":["24px",{"lineHeight":"32px","fontWeight":"500"}],"label-caps-md":["11px",{"lineHeight":"16px","letterSpacing":"0.14em","fontWeight":"700"}],"display-lg-mobile":["38px",{"lineHeight":"44px","letterSpacing":"-0.015em","fontWeight":"600"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface antialiased" data-page="admin-payments">
+<!-- PAGE: Payments & Paystack Escrow Ledger --><aside class="fixed left-0 top-0 h-full w-72 bg-[#0D0C0B] z-50 flex flex-col justify-between select-none"><div class="flex flex-col"><div class="px-space-lg pt-space-lg pb-space-md"><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded bg-secondary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">chair</span></div><div><span class="font-headline-sm text-headline-sm uppercase tracking-widest text-[#F9F8F5] block">WOODEN LOUNGE</span><span class="font-label-caps-sm text-label-caps-sm uppercase tracking-widest text-on-tertiary-container block mt-0.5">Atelier Joinery Admin</span></div></div><div class="mt-space-md pt-space-xs pb-space-xs px-space-sm bg-[#161413] rounded flex items-center gap-space-xs"><span class="w-1.5 h-1.5 rounded-full bg-secondary-container"></span><span class="font-label-caps-sm text-label-caps-sm text-on-primary-container tracking-wider uppercase">Workshop Admin • Enugu &amp; Abuja</span></div></div><nav class="flex flex-col gap-1 px-space-sm mt-space-sm" data-active-classes="bg-[#1D1B1A] text-[#F9F8F5] font-title-md"><a class="flex items-center gap-space-sm px-space-md py-space-sm text-on-primary-container hover:bg-[#1D1B1A] hover:text-[#F9F8F5] transition-colors rounded" data-path="dashboard" href="/admin/"><span class="material-symbols-outlined text-[20px]">dashboard</span><span class="font-body-sm text-body-sm uppercase tracking-wider">Dashboard</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm text-on-primary-container hover:bg-[#1D1B1A] hover:text-[#F9F8F5] transition-colors rounded" data-path="site-inspections" href="/admin/inspections/"><span class="material-symbols-outlined text-[20px]">square_foot</span><span class="font-body-sm text-body-sm uppercase tracking-wider">Site Inspections</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm text-on-primary-container hover:bg-[#1D1B1A] hover:text-[#F9F8F5] transition-colors rounded" data-path="custom-requests" href="/admin/custom-requests/"><span class="material-symbols-outlined text-[20px]">architecture</span><span class="font-body-sm text-body-sm uppercase tracking-wider">Custom Requests</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm text-on-primary-container hover:bg-[#1D1B1A] hover:text-[#F9F8F5] transition-colors rounded" data-path="orders" href="/admin/orders/"><span class="material-symbols-outlined text-[20px]">inventory_2</span><span class="font-body-sm text-body-sm uppercase tracking-wider">Orders</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm text-on-primary-container hover:bg-[#1D1B1A] hover:text-[#F9F8F5] transition-colors rounded" data-path="payments" href="/admin/payments/"><span class="material-symbols-outlined text-[20px]">payments</span><span class="font-body-sm text-body-sm uppercase tracking-wider">Payments</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm text-on-primary-container hover:bg-[#1D1B1A] hover:text-[#F9F8F5] transition-colors rounded" data-path="products" href="/admin/products/"><span class="material-symbols-outlined text-[20px]">chair_alt</span><span class="font-body-sm text-body-sm uppercase tracking-wider">Products</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm text-on-primary-container hover:bg-[#1D1B1A] hover:text-[#F9F8F5] transition-colors rounded" data-path="customers" href="/admin/customers/"><span class="material-symbols-outlined text-[20px]">group</span><span class="font-body-sm text-body-sm uppercase tracking-wider">Customers</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm text-on-primary-container hover:bg-[#1D1B1A] hover:text-[#F9F8F5] transition-colors rounded" data-path="settings" href="#"><span class="material-symbols-outlined text-[20px]">settings</span><span class="font-body-sm text-body-sm uppercase tracking-wider">Settings</span></a></nav></div><div class="p-space-md m-space-sm bg-[#161413] rounded"><div class="flex items-start justify-between"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded-full bg-secondary flex items-center justify-center text-on-secondary font-title-md text-title-md">EN</div><div class="overflow-hidden"><span class="font-title-md text-title-md text-[#F9F8F5] block truncate leading-tight">Emeka Nwachukwu</span><span class="font-body-sm text-body-sm text-on-primary-container block truncate text-xs">Head Joiner &amp; Admin</span></div></div><a class="text-on-primary-container hover:text-[#F9F8F5] transition-colors p-1" data-path="logout" href="/admin/" title="Sign out"><span class="material-symbols-outlined text-[20px]">logout</span></a></div><div class="mt-space-sm pt-space-xs flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-emerald-500"></span><span class="font-label-caps-sm text-label-caps-sm text-emerald-400 tracking-wider uppercase">Enugu Workshop Active</span></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40"><div class="h-16 w-full max-w-[1440px] mx-auto px-space-lg flex items-center justify-between gap-space-md"><div class="flex items-center flex-1 max-w-lg"><div class="w-full flex items-center gap-space-sm bg-surface-container-lowest px-space-md py-1.5 rounded shadow-[0_1px_3px_rgba(13,12,11,0.04)]"><span class="material-symbols-outlined text-on-surface-variant text-[18px]">search</span><input class="w-full bg-transparent font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none" placeholder="Search orders, customers, CAD refs..." type="text"/></div></div><div class="flex items-center gap-space-lg"><div class="hidden md:flex items-center gap-space-xs text-on-surface-variant"><span class="material-symbols-outlined text-[18px]">schedule</span><span class="font-data-mono text-data-mono uppercase tracking-wider">14:32 WAT • Atelier Sync</span></div><div class="flex items-center gap-space-sm"><button class="w-9 h-9 rounded flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" title="WhatsApp Support &amp; Workshop Line" type="button"><span class="material-symbols-outlined text-[20px]">support_agent</span></button><button class="relative w-9 h-9 rounded flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" title="Production Alerts" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1 right-1 w-4 h-4 rounded-full bg-secondary text-on-secondary font-label-caps-sm text-[9px] flex items-center justify-center font-bold">4</span></button></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="relative pt-16 bg-surface"><div class="flex flex-col w-full">
+<div class="w-full max-w-[1440px] mx-auto px-space-lg py-space-lg flex flex-col gap-space-lg">
+<!-- Screen Header & Atelier Context -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md pb-space-xs">
+<div class="flex flex-col gap-space-xs max-w-3xl">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-caps-sm text-label-caps-sm uppercase tracking-widest text-secondary">CBN Fiscal Regulatory Rails</span>
+<span class="text-outline-variant font-data-mono text-data-mono">/</span>
+<span class="font-label-caps-sm text-label-caps-sm uppercase tracking-wider text-on-surface-variant">Tier-1 Merchant Subaccount #4092</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Payments &amp; Paystack Escrow Ledger</h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">
+          Audited transaction records, installment deposits, and settlement reconciliation with Central Bank of Nigeria compliant rails.
+        </p>
+</div>
+<!-- Quick Action Group -->
+<div class="flex items-center gap-space-sm self-start md:self-auto">
+<div class="bg-surface-container-low px-space-md py-space-xs rounded flex items-center gap-space-sm shadow-sm">
+<div class="w-2 h-2 rounded-full bg-secondary-container"></div>
+<span class="font-data-mono text-data-mono text-on-surface">Auto-Settlement: T+1 (06:00 WAT)</span>
+</div>
+<button class="bg-primary text-on-primary font-label-caps-md text-label-caps-md tracking-wider uppercase px-space-md py-space-sm rounded hover:bg-surface-variant hover:text-on-surface-variant transition-colors flex items-center gap-space-xs shadow-sm" type="button">
+<span class="material-symbols-outlined text-[16px]">file_download</span>
+<span>Export Settlement CSV</span>
+</button>
+</div>
+</div>
+<!-- 5 Metric Cards Row -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-space-md">
+<!-- Metric 1: Inflow -->
+<div class="bg-surface-container-lowest p-space-md rounded flex flex-col justify-between shadow-sm relative overflow-hidden group">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-caps-sm text-label-caps-sm uppercase tracking-wider">Total Inflow (Oct)</span>
+<span class="material-symbols-outlined text-[18px] text-secondary">payments</span>
+</div>
+<div class="my-space-sm">
+<div class="font-headline-sm text-headline-sm text-on-surface">₦14,850,000</div>
+<div class="flex items-center gap-1.5 mt-0.5">
+<span class="font-data-mono text-data-mono text-secondary font-bold">+18.4%</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">vs Sept close</span>
+</div>
+</div>
+<!-- Sparkline visualization -->
+<div class="w-full h-7 mt-1">
+<svg class="w-full h-full text-secondary" preserveaspectratio="none" viewbox="0 0 100 24">
+<path d="M0,20 Q15,18 25,12 T50,14 T75,6 T100,2" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+<path d="M0,20 Q15,18 25,12 T50,14 T75,6 T100,2 L100,24 L0,24 Z" fill="currentColor" opacity="0.1"></path>
+</svg>
+</div>
+</div>
+<!-- Metric 2: Initial Deposits -->
+<div class="bg-surface-container-lowest p-space-md rounded flex flex-col justify-between shadow-sm">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-caps-sm text-label-caps-sm uppercase tracking-wider">Initial Deposits</span>
+<span class="material-symbols-outlined text-[18px]">architecture</span>
+</div>
+<div class="my-space-sm">
+<div class="font-headline-sm text-headline-sm text-on-surface">₦6,400,000</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">14 bespoke commissions active</div>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 55%"></div>
+</div>
+</div>
+<!-- Metric 3: Balance Settlements -->
+<div class="bg-surface-container-lowest p-space-md rounded flex flex-col justify-between shadow-sm">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-caps-sm text-label-caps-sm uppercase tracking-wider">Balance Settlements</span>
+<span class="material-symbols-outlined text-[18px]">done_all</span>
+</div>
+<div class="my-space-sm">
+<div class="font-headline-sm text-headline-sm text-on-surface">₦7,820,000</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">11 completions cleared</div>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 68%"></div>
+</div>
+</div>
+<!-- Metric 4: In Escrow / Pending -->
+<div class="bg-surface-container-lowest p-space-md rounded flex flex-col justify-between shadow-sm">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-caps-sm text-label-caps-sm uppercase tracking-wider">In Escrow / Pending</span>
+<span class="material-symbols-outlined text-[18px]">lock_clock</span>
+</div>
+<div class="my-space-sm">
+<div class="font-headline-sm text-headline-sm text-on-surface">₦630,000</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">2 pending gateway releases</div>
+</div>
+<div class="flex items-center gap-space-xs text-on-secondary-container">
+<span class="material-symbols-outlined text-[14px]">info</span>
+<span class="font-data-mono text-data-mono">Enugu inspection gate</span>
+</div>
+</div>
+<!-- Metric 5: Disputes -->
+<div class="bg-surface-container-lowest p-space-md rounded flex flex-col justify-between shadow-sm">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-caps-sm text-label-caps-sm uppercase tracking-wider">Refunds / Chargebacks</span>
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+</div>
+<div class="my-space-sm">
+<div class="font-headline-sm text-headline-sm text-on-surface">₦0.00</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">0% dispute rate (Q3-Q4)</div>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+<span class="font-data-mono text-data-mono">100% atelier SLA fulfilled</span>
+</div>
+</div>
+</div>
+<!-- Filter & Control Toolbar -->
+<div class="bg-surface-container-lowest p-space-md rounded shadow-sm flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-space-md">
+<!-- Search Input -->
+<div class="flex-1 max-w-md flex items-center gap-space-sm bg-surface-container-low px-space-md py-space-xs rounded">
+<span class="material-symbols-outlined text-outline text-[18px]">search</span>
+<input class="bg-transparent w-full font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none" placeholder="Search reference, #WL-order, or patron..." type="text" value="PSTK-99201482"/>
+</div>
+<!-- Date Range & Filters -->
+<div class="flex flex-wrap items-center gap-space-sm">
+<div class="flex items-center gap-space-xs bg-surface-container-low px-space-md py-space-xs rounded text-on-surface font-data-mono text-data-mono">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">date_range</span>
+<span>Oct 01 - Oct 31, 2024</span>
+<span class="material-symbols-outlined text-[14px] text-outline ml-1">expand_more</span>
+</div>
+<!-- Filter Pills -->
+<div class="flex items-center bg-surface-container-low p-0.5 rounded gap-0.5">
+<button class="px-space-sm py-1 font-label-caps-sm text-label-caps-sm uppercase tracking-wider rounded text-on-surface-variant hover:text-on-surface transition-colors" type="button">All</button>
+<button class="px-space-sm py-1 font-label-caps-sm text-label-caps-sm uppercase tracking-wider rounded bg-primary text-on-primary font-bold shadow-sm" type="button">Successful</button>
+<button class="px-space-sm py-1 font-label-caps-sm text-label-caps-sm uppercase tracking-wider rounded text-on-surface-variant hover:text-on-surface transition-colors" type="button">Processing</button>
+<button class="px-space-sm py-1 font-label-caps-sm text-label-caps-sm uppercase tracking-wider rounded text-on-surface-variant hover:text-on-surface transition-colors" type="button">Escrow Hold</button>
+<button class="px-space-sm py-1 font-label-caps-sm text-label-caps-sm uppercase tracking-wider rounded text-on-surface-variant hover:text-on-surface transition-colors" type="button">Refunded</button>
+</div>
+</div>
+</div>
+<!-- Main Content Area: Split 65% Ledger / 35% Dossier Drawer -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- Left Ledger Table: 8 cols (~67%) -->
+<div class="lg:col-span-8 bg-surface-container-lowest rounded shadow-sm overflow-hidden flex flex-col">
+<!-- Table Topbar -->
+<div class="px-space-md py-space-sm bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="font-title-md text-title-md text-on-surface">Verified Transaction Feed</span>
+<span class="bg-surface-container-high px-space-xs py-0.5 rounded font-data-mono text-data-mono text-on-surface-variant">5 recorded</span>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px]">sync</span>
+<span class="font-data-mono text-data-mono">Live Webhook Relay Active</span>
+</div>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left font-body-sm text-body-sm">
+<thead>
+<tr class="bg-surface-container-lowest text-on-surface-variant font-label-caps-sm text-label-caps-sm uppercase tracking-wider">
+<th class="py-space-sm px-space-md">Timestamp</th>
+<th class="py-space-sm px-space-md">Paystack Ref / Order</th>
+<th class="py-space-sm px-space-md">Patron</th>
+<th class="py-space-sm px-space-md">Type &amp; Channel</th>
+<th class="py-space-sm px-space-md text-right">Amount</th>
+<th class="py-space-sm px-space-md text-center">Status</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container-low">
+<!-- Row 1 (ACTIVE / SELECTED) -->
+<tr class="bg-surface-container-high cursor-pointer transition-colors" id="row-pstk-99201482">
+<td class="py-space-md px-space-md">
+<div class="font-data-mono text-data-mono text-on-surface font-semibold">Oct 24, 2024</div>
+<div class="font-data-mono text-data-mono text-on-surface-variant">12:20 WAT</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="font-data-mono text-data-mono text-secondary font-bold">#PSTK-99201482</div>
+<div class="font-label-caps-sm text-label-caps-sm uppercase tracking-wider text-on-surface-variant">Order #WL-1042</div>
+</td>
+<td class="py-space-md px-space-md min-w-[150px]">
+<div class="font-title-md text-title-md text-on-surface leading-snug">Chidiebere Okonkwo</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant text-xs truncate">Enugu Commercial Project</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="font-body-sm text-body-sm text-on-surface font-medium">50% Bespoke Deposit</div>
+<div class="font-data-mono text-data-mono text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">credit_card</span>
+<span>Mastercard 3DS</span>
+</div>
+</td>
+<td class="py-space-md px-space-md text-right">
+<div class="font-headline-sm text-headline-sm text-on-surface">₦458,000</div>
+<div class="font-data-mono text-data-mono text-on-surface-variant">Net: ₦456,000</div>
+</td>
+<td class="py-space-md px-space-md text-center">
+<span class="inline-flex items-center gap-1 px-space-sm py-0.5 rounded-full bg-surface-container text-on-surface font-label-caps-sm text-label-caps-sm uppercase tracking-wider shadow-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>Successful</span>
+</span>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-container-low cursor-pointer transition-colors">
+<td class="py-space-md px-space-md">
+<div class="font-data-mono text-data-mono text-on-surface">Oct 23, 2024</div>
+<div class="font-data-mono text-data-mono text-on-surface-variant">16:45 WAT</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="font-data-mono text-data-mono text-on-surface font-medium">#PSTK-99182301</div>
+<div class="font-label-caps-sm text-label-caps-sm uppercase tracking-wider text-on-surface-variant">Order #WL-C-0001</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="font-title-md text-title-md text-on-surface leading-snug">Fatima Dangote</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant text-xs">Maitama Villa Residence</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="font-body-sm text-body-sm text-on-surface font-medium">Full Premade Settlement</div>
+<div class="font-data-mono text-data-mono text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">account_balance</span>
+<span>NIBSS Instant Transfer</span>
+</div>
+</td>
+<td class="py-space-md px-space-md text-right">
+<div class="font-headline-sm text-headline-sm text-on-surface">₦1,750,000</div>
+<div class="font-data-mono text-data-mono text-on-surface-variant">Net: ₦1,748,000</div>
+</td>
+<td class="py-space-md px-space-md text-center">
+<span class="inline-flex items-center gap-1 px-space-sm py-0.5 rounded-full bg-primary text-on-primary font-label-caps-sm text-label-caps-sm uppercase tracking-wider shadow-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-fixed"></span>
+<span>Settled</span>
+</span>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface-container-low cursor-pointer transition-colors">
+<td class="py-space-md px-space-md">
+<div class="font-data-mono text-data-mono text-on-surface">Oct 22, 2024</div>
+<div class="font-data-mono text-data-mono text-on-surface-variant">14:05 WAT</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="font-data-mono text-data-mono text-on-surface font-medium">#PSTK-99175411</div>
+<div class="font-label-caps-sm text-label-caps-sm uppercase tracking-wider text-on-surface-variant">Order #WL-1039</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="font-title-md text-title-md text-on-surface leading-snug">Arc. Farouk Danjuma</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant text-xs">Asokoro Penthouse Spec</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="font-body-sm text-body-sm text-on-surface font-medium">Balance on Completion</div>
+<div class="font-data-mono text-data-mono text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">dialpad</span>
+<span>USSD *737# GTBank</span>
+</div>
+</td>
+<td class="py-space-md px-space-md text-right">
+<div class="font-headline-sm text-headline-sm text-on-surface">₦229,000</div>
+<div class="font-data-mono text-data-mono text-on-surface-variant">Net: ₦227,500</div>
+</td>
+<td class="py-space-md px-space-md text-center">
+<span class="inline-flex items-center gap-1 px-space-sm py-0.5 rounded-full bg-surface-container text-on-surface font-label-caps-sm text-label-caps-sm uppercase tracking-wider shadow-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>Successful</span>
+</span>
+</td>
+</tr>
+<!-- Row 4 -->
+<tr class="hover:bg-surface-container-low cursor-pointer transition-colors">
+<td class="py-space-md px-space-md">
+<div class="font-data-mono text-data-mono text-on-surface">Oct 21, 2024</div>
+<div class="font-data-mono text-data-mono text-on-surface-variant">09:15 WAT</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="font-data-mono text-data-mono text-on-surface font-medium">#PSTK-99150824</div>
+<div class="font-label-caps-sm text-label-caps-sm uppercase tracking-wider text-on-surface-variant">Order #WL-1038</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="font-title-md text-title-md text-on-surface leading-snug">Engr. Kenneth N.</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant text-xs">GRA Enugu Timber Joinery</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="font-body-sm text-body-sm text-on-surface font-medium">50% Bespoke Deposit</div>
+<div class="font-data-mono text-data-mono text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">credit_card</span>
+<span>Mastercard 3DS</span>
+</div>
+</td>
+<td class="py-space-md px-space-md text-right">
+<div class="font-headline-sm text-headline-sm text-on-surface">₦400,000</div>
+<div class="font-data-mono text-data-mono text-on-surface-variant">Net: ₦398,000</div>
+</td>
+<td class="py-space-md px-space-md text-center">
+<span class="inline-flex items-center gap-1 px-space-sm py-0.5 rounded-full bg-primary text-on-primary font-label-caps-sm text-label-caps-sm uppercase tracking-wider shadow-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-fixed"></span>
+<span>Settled</span>
+</span>
+</td>
+</tr>
+<!-- Row 5 -->
+<tr class="hover:bg-surface-container-low cursor-pointer transition-colors">
+<td class="py-space-md px-space-md">
+<div class="font-data-mono text-data-mono text-on-surface">Oct 20, 2024</div>
+<div class="font-data-mono text-data-mono text-on-surface-variant">17:30 WAT</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="font-data-mono text-data-mono text-on-surface font-medium">#PSTK-99124409</div>
+<div class="font-label-caps-sm text-label-caps-sm uppercase tracking-wider text-on-surface-variant">Order #WL-C-0004</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="font-title-md text-title-md text-on-surface leading-snug">Arc. Chiemezie Okafor</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant text-xs">Trans-Ekulu Library Suite</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="font-body-sm text-body-sm text-on-surface font-medium">Balance on Completion</div>
+<div class="font-data-mono text-data-mono text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">account_balance</span>
+<span>NIBSS Instant Transfer</span>
+</div>
+</td>
+<td class="py-space-md px-space-md text-right">
+<div class="font-headline-sm text-headline-sm text-on-surface">₦900,000</div>
+<div class="font-data-mono text-data-mono text-on-surface-variant">Net: ₦898,000</div>
+</td>
+<td class="py-space-md px-space-md text-center">
+<span class="inline-flex items-center gap-1 px-space-sm py-0.5 rounded-full bg-surface-container text-on-surface font-label-caps-sm text-label-caps-sm uppercase tracking-wider shadow-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>Successful</span>
+</span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Footer / Settlement Pagination -->
+<div class="px-space-md py-space-sm bg-surface-container-low flex flex-col sm:flex-row items-center justify-between gap-space-sm">
+<div class="font-body-sm text-body-sm text-on-surface-variant">
+            Showing <span class="font-semibold text-on-surface">1–5</span> of 27 transactions audited this cycle
+          </div>
+<div class="flex items-center gap-space-xs">
+<button class="w-8 h-8 rounded bg-surface-container-lowest flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors shadow-sm disabled:opacity-40" disabled="" type="button">
+<span class="material-symbols-outlined text-[18px]">chevron_left</span>
+</button>
+<span class="px-space-sm font-data-mono text-data-mono text-on-surface">Page 01 / 06</span>
+<button class="w-8 h-8 rounded bg-surface-container-lowest flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Right Side Transaction Detail Drawer: 4 cols (~33%) -->
+<div class="lg:col-span-4 flex flex-col gap-space-md">
+<!-- Dossier Card -->
+<div class="bg-surface-container-lowest rounded shadow-sm p-space-lg flex flex-col gap-space-md">
+<!-- Drawer Header -->
+<div class="flex items-start justify-between">
+<div class="flex flex-col gap-0.5">
+<span class="font-label-caps-sm text-label-caps-sm uppercase tracking-widest text-secondary">Gateway Transaction Dossier</span>
+<div class="font-headline-sm text-headline-sm text-on-surface font-bold tracking-tight">#PSTK-99201482</div>
+<div class="font-data-mono text-data-mono text-on-surface-variant">Session ID: 9f8a-c01-wat-982104</div>
+</div>
+<div class="w-9 h-9 rounded bg-surface-container-high flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[20px]">verified</span>
+</div>
+</div>
+<!-- Channel & Card Badge -->
+<div class="bg-surface-container-low p-space-sm rounded flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-7 h-7 rounded bg-surface-container-lowest flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-secondary text-[18px]">credit_card</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface text-xs leading-none font-semibold">Access Bank Plc •••• 4092</span>
+<span class="font-data-mono text-data-mono text-on-surface-variant text-[11px] mt-0.5">Mastercard / Verified by Visa (3DS Secure)</span>
+</div>
+</div>
+<span class="font-label-caps-sm text-label-caps-sm uppercase text-secondary bg-surface-container px-space-xs py-0.5 rounded font-bold">Passed</span>
+</div>
+<!-- Settlement Breakdown Architectural Panel -->
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-caps-sm text-label-caps-sm uppercase tracking-wider text-on-surface-variant">Settlement Allocation Breakdown</span>
+<div class="bg-surface-container-low p-space-md rounded flex flex-col gap-space-sm">
+<div class="flex items-center justify-between font-body-sm text-body-sm">
+<span class="text-on-surface-variant">Gross Inflow:</span>
+<span class="font-data-mono text-data-mono text-on-surface font-semibold">₦458,000.00</span>
+</div>
+<div class="flex items-center justify-between font-body-sm text-body-sm">
+<span class="text-on-surface-variant">Paystack Gateway Toll (1.5% capped):</span>
+<span class="font-data-mono text-data-mono text-error font-semibold">-₦2,000.00</span>
+</div>
+<div class="pt-space-xs flex items-center justify-between font-body-md text-body-md bg-surface-container-high p-space-sm rounded">
+<span class="font-title-md text-title-md text-on-surface font-semibold">Net Workshop Inflow:</span>
+<span class="font-headline-sm text-headline-sm text-secondary font-bold">₦456,000.00</span>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-caps-sm text-label-caps-sm uppercase text-on-surface-variant">Settlement Batch:</span>
+<span class="font-data-mono text-data-mono text-on-surface text-xs">PAY-SETTLE-WAT-20241022-09</span>
+</div>
+</div>
+</div>
+<!-- Linked Order & Joinery Spec Preview -->
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-caps-sm text-label-caps-sm uppercase tracking-wider text-on-surface-variant">Linked Joinery Commission</span>
+<div class="bg-surface-container-low p-space-md rounded flex flex-col gap-space-sm">
+<div class="flex items-start justify-between">
+<div>
+<div class="font-title-md text-title-md text-on-surface">Order #WL-1042</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Nsukka Sofa + Fluted Credenza (Obeche &amp; Brass)</div>
+</div>
+<span class="px-space-xs py-0.5 rounded bg-surface-container text-secondary font-label-caps-sm text-label-caps-sm uppercase tracking-wider">In Atelier</span>
+</div>
+<!-- Product Thumbnail -->
+<div class="flex items-center gap-space-sm bg-surface-container-lowest p-space-xs rounded shadow-sm">
+<div class="w-14 h-14 rounded overflow-hidden flex-shrink-0 bg-surface-dim">
+<img class="w-full h-full object-cover" data-alt="A luxurious bespoke handcrafted wooden fluted credenza and architectural minimalist sofa made of Nigerian seasoned teak and polished brass accents inside a sunlit Enugu architectural studio showroom." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6q4pxjvjhQQFJIuQ8d8QHKevKJjjERcbd1-o9X_A2ps_JK1mLLuCcnY1JasA-5xa5nm_DhAFwQH4Z5pOeQVFRxKdm3SxbEa4xDkdaq-BELbSlhg2BdOaHkeMEhBEDlhxH29A_siePPKvH4cC9u7pIl9c5Yk0E8GKq3Hrvlp-R39eIpCsAZo3ZMVc-FCr7ka8yL4fVMit7QXz6yrifZoAzKndJB0LvpvmGwbtAqWp0M3iav52XAQ9G"/>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface text-xs truncate">Bespoke Living Suite (Enugu)</span>
+<span class="font-data-mono text-data-mono text-on-surface-variant text-[11px]">Total Commission: ₦916,000.00</span>
+<span class="font-data-mono text-data-mono text-secondary text-[11px]">Balance Due on Final Inspection: ₦458,000.00</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Patron Profile Dossier -->
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-caps-sm text-label-caps-sm uppercase tracking-wider text-on-surface-variant">Patron Details</span>
+<div class="bg-surface-container-low p-space-md rounded flex items-start justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-primary text-on-primary flex items-center justify-center font-title-md text-title-md font-bold">
+                  CO
+                </div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface font-semibold">Chidiebere Okonkwo</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-xs">Commercial Architect</span>
+<span class="font-data-mono text-data-mono text-on-surface-variant text-[11px]">Independence Layout, Enugu</span>
+</div>
+</div>
+<button class="w-7 h-7 rounded bg-surface-container-lowest flex items-center justify-center text-on-surface hover:bg-primary hover:text-on-primary transition-colors shadow-sm" title="WhatsApp Patron" type="button">
+<span class="material-symbols-outlined text-[16px]">chat</span>
+</button>
+</div>
+</div>
+<!-- Webhook Relay & Audit Log -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-caps-sm text-label-caps-sm uppercase tracking-wider text-on-surface-variant">Paystack Webhook &amp; Escrow Timeline</span>
+<span class="font-data-mono text-data-mono text-secondary text-[11px]">3 Events Verified</span>
+</div>
+<div class="bg-surface-container-low p-space-md rounded flex flex-col gap-space-sm">
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary mt-0.5">check_circle</span>
+<div class="flex flex-col">
+<span class="font-data-mono text-data-mono text-on-surface font-semibold">14:05:12 WAT • charge.success triggered</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-xs">Payload HMAC SHA512 verified from IP: 52.31.139.228</span>
+</div>
+</div>
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary mt-0.5">account_balance_wallet</span>
+<div class="flex flex-col">
+<span class="font-data-mono text-data-mono text-on-surface font-semibold">14:05:14 WAT • Escrow allocated</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-xs">Enugu Atelier Production Pool #0048291048</span>
+</div>
+</div>
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant mt-0.5">sms</span>
+<div class="flex flex-col">
+<span class="font-data-mono text-data-mono text-on-surface font-semibold">14:05:15 WAT • SMS dispatch completed</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-xs">Digital joinery escrow token delivered to +234 803 490 2811</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Dossier CTAs / Action Buttons -->
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<button class="w-full bg-primary text-on-primary font-label-caps-md text-label-caps-md uppercase tracking-wider py-space-sm px-space-md rounded hover:bg-surface-variant hover:text-on-surface-variant transition-colors flex items-center justify-center gap-space-xs shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">receipt_long</span>
+<span>Download Tax &amp; VAT Receipt (PDF)</span>
+</button>
+<button class="w-full bg-surface-container-high text-on-surface font-label-caps-md text-label-caps-md uppercase tracking-wider py-space-sm px-space-md rounded hover:bg-surface-container-highest transition-colors flex items-center justify-center gap-space-xs" type="button">
+<span class="material-symbols-outlined text-[18px] text-secondary">send</span>
+<span>Resend Payment Confirmation to WhatsApp</span>
+</button>
+<button class="w-full bg-transparent text-error font-label-caps-sm text-label-caps-sm uppercase tracking-widest py-space-xs px-space-md rounded hover:bg-error-container hover:text-on-error-container transition-colors flex items-center justify-center gap-space-xs mt-1" type="button">
+<span class="material-symbols-outlined text-[16px]">replay</span>
+<span>Initiate Partial Refund</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></main></div><script src="/assets/site.js"></script>
+</body></html>

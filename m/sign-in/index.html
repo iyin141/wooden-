@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_blank" name="shell-type"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#fff8f4;}body{overscroll-behavior:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,400&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "inverse-on-surface": "#f6efec", "error-container": "#ffdad6", "on-surface-variant": "#4b4640", "primary-fixed-dim": "#cac6c3", "primary-container": "#1d1b1a", "on-primary-fixed": "#1d1b1a", "on-primary-fixed-variant": "#484645", "on-error": "#ffffff", "outline-variant": "#cdc5bd", "background": "#fff8f4", "on-error-container": "#93000a", "inverse-surface": "#32302e", "secondary-fixed": "#ffdbcc", "surface-container-low": "#f9f2ee", "surface-container-lowest": "#ffffff", "on-primary": "#ffffff", "on-tertiary": "#ffffff", "surface": "#fff8f4", "surface-dim": "#dfd9d5", "on-secondary-fixed-variant": "#743412", "on-tertiary-container": "#997f61", "on-secondary-container": "#773614", "primary": "#000000", "secondary-container": "#fea277", "primary-fixed": "#e6e1df", "secondary-fixed-dim": "#ffb694", "surface-bright": "#fff8f4", "tertiary": "#000000", "secondary": "#924b27", "surface-tint": "#605e5c", "error": "#ba1a1a", "inverse-primary": "#cac6c3", "tertiary-container": "#281803", "on-tertiary-fixed": "#281803", "on-background": "#1d1b19", "tertiary-fixed": "#fdddb9", "surface-variant": "#e7e1de", "tertiary-fixed-dim": "#e0c29f", "on-secondary-fixed": "#351000", "surface-container-high": "#ede7e3", "on-surface": "#1d1b19", "on-tertiary-fixed-variant": "#584329", "on-secondary": "#ffffff", "surface-container-highest": "#e7e1de", "outline": "#7c766f", "on-primary-container": "#868381", "surface-container": "#f3ede9" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "gutter-mobile": "1rem", "space-md": "1rem", "space-lg": "1.5rem", "space-xs": "0.25rem", "margin": "3.5rem", "gutter": "1.5rem", "space-sm": "0.5rem", "margin-mobile": "1.25rem", "space-xl": "2.5rem" }, fontFamily: { "display-lg": ["Playfair Display"], "label-caps-sm": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "headline-sm": ["Playfair Display"], "label-caps-md": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"], "display-lg-mobile": ["Playfair Display"], "body-sm": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Playfair Display"], "headline-lg": ["Playfair Display"], "headline-md": ["Playfair Display"], "data-mono": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"] }, fontSize: { "display-lg": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "label-caps-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.16em", "fontWeight": "700" }], "body-lg": ["17px", { "lineHeight": "28px", "fontWeight": "400" }], "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }], "label-caps-md": ["11px", { "lineHeight": "16px", "letterSpacing": "0.14em", "fontWeight": "700" }], "title-md": ["16px", { "lineHeight": "24px", "letterSpacing": "0.01em", "fontWeight": "600" }], "display-lg-mobile": ["38px", { "lineHeight": "44px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "body-sm": ["13px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "500" }], "headline-lg": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "500" }], "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "500" }], "data-mono": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" }], "body-md": ["15px", { "lineHeight": "24px", "fontWeight": "400" }] } } } }</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased flex flex-col min-h-screen selection:bg-secondary-fixed selection:text-on-secondary-fixed" data-page="sign-in">
+<!-- PAGE: Sign in or create an account --><main class="flex-1 flex flex-col relative w-full bg-surface pt-safe pb-safe"><div class="flex flex-col w-full px-margin-mobile py-space-md max-w-full overflow-x-hidden">
+<!-- Subtle Architectural Header Framing -->
+<div class="flex flex-col items-center text-center mb-space-lg">
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-high text-on-surface-variant font-label-caps-sm text-label-caps-sm mb-space-sm uppercase tracking-widest">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+      Atelier Client Access • Vault v3.4
+    </div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface tracking-tight mb-space-xs">
+      Sign in or create an account
+    </h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-xs leading-relaxed">
+      Access your bespoke commission dossiers, private catalog drops, and showroom reservations.
+    </p>
+</div>
+<!-- Main Interaction Card Container -->
+<div class="flex flex-col w-full bg-surface-container-lowest rounded-xl shadow-md p-space-md mb-space-md">
+<!-- Step 1: Pre-filled Mobile Credential Overview -->
+<div class="flex flex-col mb-space-md">
+<div class="flex items-center justify-between mb-1.5">
+<span class="font-label-caps-sm text-label-caps-sm text-secondary uppercase font-bold tracking-wider">
+          Direct Cellular Access
+        </span>
+<span class="font-data-mono text-data-mono text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-sm text-secondary">verified_user</span>
+          Secured
+        </span>
+</div>
+<!-- Cellular Input Shell (Filled State) -->
+<div class="flex items-center justify-between bg-surface-container-low rounded-lg px-3 py-2.5">
+<div class="flex items-center gap-2">
+<!-- Nigeria Flag Representation -->
+<div class="flex items-center justify-center w-5 h-3.5 bg-surface-container-highest rounded-xs overflow-hidden shadow-xs">
+<span class="w-1/3 h-full bg-[#008751]"></span>
+<span class="w-1/3 h-full bg-[#FFFFFF]"></span>
+<span class="w-1/3 h-full bg-[#008751]"></span>
+</div>
+<span class="font-data-mono text-data-mono text-on-surface font-semibold">+234</span>
+<span class="font-body-md text-body-md text-on-surface tracking-wide">803 490 2811</span>
+</div>
+<button class="text-secondary hover:text-on-secondary-fixed-variant font-label-caps-sm text-label-caps-sm uppercase tracking-wider font-bold" type="button">
+          Edit
+        </button>
+</div>
+</div>
+<!-- Active OTP Authorization Card/Panel -->
+<div class="flex flex-col bg-surface-container-low rounded-lg p-3.5 mb-space-md">
+<div class="flex items-start gap-2.5 mb-3">
+<div class="w-7 h-7 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-base">pin</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-md text-body-sm font-semibold text-on-surface">Enter 6-Digit Passcode</span>
+<span class="font-body-sm text-data-mono text-on-surface-variant">Dispatched to +234 803 490 2811</span>
+</div>
+</div>
+<!-- 6-digit Code Boxes -->
+<div class="grid grid-cols-6 gap-1.5 w-full mb-3" id="otp-group">
+<div class="flex items-center justify-center h-12 bg-surface-container-lowest rounded-md text-on-surface font-headline-sm text-headline-sm shadow-xs font-semibold">
+          5
+        </div>
+<div class="flex items-center justify-center h-12 bg-surface-container-lowest rounded-md text-on-surface font-headline-sm text-headline-sm shadow-xs font-semibold">
+          9
+        </div>
+<div class="flex items-center justify-center h-12 bg-surface-container-lowest rounded-md text-on-surface font-headline-sm text-headline-sm shadow-xs font-semibold">
+          2
+        </div>
+<div class="flex items-center justify-center h-12 bg-surface-container-lowest rounded-md text-on-surface font-headline-sm text-headline-sm shadow-xs font-semibold">
+          7
+        </div>
+<div class="relative flex items-center justify-center h-12 bg-surface-container-lowest rounded-md text-on-surface font-headline-sm text-headline-sm shadow-xs font-semibold">
+<span class="inline-block w-0.5 h-6 bg-secondary animate-pulse"></span>
+</div>
+<div class="flex items-center justify-center h-12 bg-surface-container-high rounded-md text-outline font-headline-sm text-headline-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
+</div>
+</div>
+<!-- Timer & Recovery Links -->
+<div class="flex items-center justify-between text-on-surface-variant px-0.5">
+<div class="flex items-center gap-1.5 font-data-mono text-data-mono">
+<span class="material-symbols-outlined text-sm text-secondary animate-spin" style="animation-duration: 3s;">history</span>
+<span>Resend code in <strong class="text-on-surface font-semibold">0:23</strong></span>
+</div>
+<button class="font-label-caps-sm text-label-caps-sm uppercase tracking-wider text-secondary hover:text-on-secondary-fixed-variant underline" type="button">
+          Change Phone
+        </button>
+</div>
+</div>
+<!-- Primary Action -->
+<button class="w-full h-12 bg-primary hover:bg-inverse-surface text-on-primary font-label-caps-md text-label-caps-md uppercase tracking-widest rounded-lg flex items-center justify-center gap-2 shadow-sm transition-colors active:scale-[0.99]" type="button">
+<span>Verify Dossier Credentials</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+<!-- Editorial Divider -->
+<div class="relative flex items-center justify-center my-space-xs mb-space-md">
+<div class="w-full h-px bg-surface-container-high"></div>
+<span class="absolute px-3 bg-surface text-on-surface-variant font-label-caps-sm text-label-caps-sm uppercase tracking-widest">
+      Or continue with
+    </span>
+</div>
+<!-- Social & Alternative Authentication -->
+<div class="flex flex-col gap-2.5 w-full mb-space-md">
+<!-- Google OAuth -->
+<button class="w-full h-11 bg-surface-container-lowest hover:bg-surface-container-low text-on-surface rounded-lg flex items-center justify-center gap-3 shadow-xs transition-colors" type="button">
+<svg class="w-4 h-4" viewbox="0 0 24 24">
+<path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"></path>
+<path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"></path>
+<path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z" fill="#FBBC05"></path>
+<path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z" fill="#EA4335"></path>
+</svg>
+<span class="font-title-md text-body-sm font-semibold">Continue with Google</span>
+</button>
+<!-- Email Alternative -->
+<button class="w-full h-11 bg-surface-container-lowest hover:bg-surface-container-low text-on-surface rounded-lg flex items-center justify-center gap-2.5 shadow-xs transition-colors" type="button">
+<span class="material-symbols-outlined text-base text-on-surface-variant">mail</span>
+<span class="font-title-md text-body-sm font-semibold">Private Email</span>
+</button>
+</div>
+<!-- Guest Access Gateway -->
+<div class="flex flex-col items-center text-center mb-space-lg">
+<button class="group inline-flex items-center gap-1.5 font-label-caps-md text-label-caps-md text-on-surface hover:text-secondary uppercase tracking-widest font-bold py-1" type="button">
+<span>Continue as Guest</span>
+<span class="material-symbols-outlined text-sm group-hover:translate-x-0.5 transition-transform">arrow_forward</span>
+</button>
+<span class="font-body-sm text-data-mono text-on-surface-variant mt-0.5">Explore standard collection without saved architectural specs</span>
+</div>
+<!-- Atelier Trust Footnote -->
+<div class="flex items-center justify-center gap-2 text-on-surface-variant py-2 mb-space-lg px-2 bg-surface-container-low rounded-lg">
+<span class="material-symbols-outlined text-base text-secondary">encrypted</span>
+<span class="font-data-mono text-data-mono">256-Bit Encrypted Client Portal • Archival Protocol</span>
+</div>
+<!-- 3-Point Atelier Trust Micro-Badges -->
+<div class="grid grid-cols-3 gap-2 pt-space-xs border-t border-surface-container pb-space-sm">
+<div class="flex flex-col items-center text-center p-2 rounded-lg bg-surface-container-lowest shadow-xs">
+<span class="material-symbols-outlined text-base text-secondary mb-1">carpenter</span>
+<span class="font-label-caps-sm text-label-caps-sm uppercase font-bold text-on-surface">Enugu</span>
+<span class="font-data-mono text-data-mono text-on-surface-variant">Main Joinery</span>
+</div>
+<div class="flex flex-col items-center text-center p-2 rounded-lg bg-surface-container-lowest shadow-xs">
+<span class="material-symbols-outlined text-base text-secondary mb-1">deck</span>
+<span class="font-label-caps-sm text-label-caps-sm uppercase font-bold text-on-surface">Abuja</span>
+<span class="font-data-mono text-data-mono text-on-surface-variant">Salon &amp; Studio</span>
+</div>
+<div class="flex flex-col items-center text-center p-2 rounded-lg bg-surface-container-lowest shadow-xs">
+<span class="material-symbols-outlined text-base text-secondary mb-1">flight_takeoff</span>
+<span class="font-label-caps-sm text-label-caps-sm uppercase font-bold text-on-surface">Diaspora</span>
+<span class="font-data-mono text-data-mono text-on-surface-variant">Air Logistics</span>
+</div>
+</div>
+</div></main><script src="/assets/site.js"></script>
+</body></html>

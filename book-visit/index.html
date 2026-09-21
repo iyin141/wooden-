@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "on-tertiary-container": "#997f61",
+          "surface": "#fff8f4",
+          "on-primary-container": "#868381",
+          "on-secondary-fixed-variant": "#743412",
+          "on-error-container": "#93000a",
+          "primary-fixed": "#e6e1df",
+          "error": "#ba1a1a",
+          "background": "#fff8f4",
+          "on-surface-variant": "#4b4640",
+          "primary-container": "#1d1b1a",
+          "surface-bright": "#fff8f4",
+          "on-background": "#1d1b19",
+          "tertiary-container": "#281803",
+          "surface-container-highest": "#e7e1de",
+          "inverse-surface": "#32302e",
+          "on-error": "#ffffff",
+          "outline-variant": "#cdc5bd",
+          "on-tertiary-fixed": "#281803",
+          "on-secondary-fixed": "#351000",
+          "outline": "#7c766f",
+          "surface-variant": "#e7e1de",
+          "surface-tint": "#605e5c",
+          "secondary-fixed": "#ffdbcc",
+          "inverse-on-surface": "#f6efec",
+          "on-primary-fixed": "#1d1b1a",
+          "on-secondary": "#ffffff",
+          "on-tertiary": "#ffffff",
+          "on-primary": "#ffffff",
+          "secondary": "#924b27",
+          "inverse-primary": "#cac6c3",
+          "surface-container": "#f3ede9",
+          "error-container": "#ffdad6",
+          "primary-fixed-dim": "#cac6c3",
+          "surface-container-high": "#ede7e3",
+          "surface-container-low": "#f9f2ee",
+          "on-tertiary-fixed-variant": "#584329",
+          "primary": "#000000",
+          "secondary-fixed-dim": "#ffb694",
+          "on-surface": "#1d1b19",
+          "on-primary-fixed-variant": "#484645",
+          "secondary-container": "#fea277",
+          "surface-dim": "#dfd9d5",
+          "tertiary-fixed-dim": "#e0c29f",
+          "tertiary": "#000000",
+          "tertiary-fixed": "#fdddb9",
+          "surface-container-lowest": "#ffffff",
+          "on-secondary-container": "#773614"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "gutter": "1.5rem",
+          "space-md": "1rem",
+          "space-xs": "0.25rem",
+          "margin": "3.5rem",
+          "space-lg": "1.5rem",
+          "space-xl": "2.5rem",
+          "margin-mobile": "1.25rem",
+          "space-sm": "0.5rem",
+          "gutter-mobile": "1rem"
+        },
+        "fontFamily": {
+          "body-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "label-caps-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-sm": [
+            "Playfair Display"
+          ],
+          "headline-lg": [
+            "Playfair Display"
+          ],
+          "body-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "display-lg": [
+            "Playfair Display"
+          ],
+          "display-lg-mobile": [
+            "Playfair Display"
+          ],
+          "headline-lg-mobile": [
+            "Playfair Display"
+          ],
+          "headline-md": [
+            "Playfair Display"
+          ],
+          "body-md": [
+            "Plus Jakarta Sans"
+          ],
+          "data-mono": [
+            "Plus Jakarta Sans"
+          ],
+          "title-md": [
+            "Plus Jakarta Sans"
+          ],
+          "label-caps-md": [
+            "Plus Jakarta Sans"
+          ]
+        },
+        "fontSize": {
+          "body-lg": [
+            "17px",
+            {
+              "lineHeight": "28px",
+              "fontWeight": "400"
+            }
+          ],
+          "label-caps-sm": [
+            "10px",
+            {
+              "lineHeight": "14px",
+              "letterSpacing": "0.16em",
+              "fontWeight": "700"
+            }
+          ],
+          "headline-sm": [
+            "20px",
+            {
+              "lineHeight": "28px",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-lg": [
+            "36px",
+            {
+              "lineHeight": "44px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "500"
+            }
+          ],
+          "body-sm": [
+            "13px",
+            {
+              "lineHeight": "20px",
+              "fontWeight": "400"
+            }
+          ],
+          "display-lg": [
+            "56px",
+            {
+              "lineHeight": "64px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "600"
+            }
+          ],
+          "display-lg-mobile": [
+            "38px",
+            {
+              "lineHeight": "44px",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-lg-mobile": [
+            "28px",
+            {
+              "lineHeight": "36px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "500"
+            }
+          ],
+          "headline-md": [
+            "24px",
+            {
+              "lineHeight": "32px",
+              "fontWeight": "500"
+            }
+          ],
+          "body-md": [
+            "15px",
+            {
+              "lineHeight": "24px",
+              "fontWeight": "400"
+            }
+          ],
+          "data-mono": [
+            "12px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.02em",
+              "fontWeight": "500"
+            }
+          ],
+          "title-md": [
+            "16px",
+            {
+              "lineHeight": "24px",
+              "letterSpacing": "0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "label-caps-md": [
+            "11px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.14em",
+              "fontWeight": "700"
+            }
+          ]
+        }
+      },
+    },
+  }</script></head><body class="bg-surface text-on-surface selection:bg-secondary-fixed selection:text-on-secondary-fixed" data-page="book-visit">
+<!-- PAGE: Book a Visit --><header class="fixed top-0 w-full z-50 bg-primary shadow-[0_1px_8px_rgba(0,0,0,0.12)]"><div class="h-20 max-w-[1280px] mx-auto px-margin-mobile md:px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg shrink-0"><a class="flex flex-col group" data-path="home" href="/"><span class="font-headline-sm text-headline-sm text-on-primary tracking-tight font-semibold leading-none">WOODEN LOUNGE</span><span class="font-label-caps-sm text-label-caps-sm text-on-primary-container tracking-[0.2em] uppercase mt-space-xs">ENUGU • NIGERIA</span></a><button aria-label="Search Catalog" class="p-space-xs text-on-primary-container hover:text-on-primary transition-colors flex items-center justify-center" type="button"><span class="material-symbols-outlined text-[20px]">search</span></button></div><nav class="hidden xl:flex items-center gap-space-lg shrink-0" data-active-classes="text-on-primary font-bold underline underline-offset-8"><a class="font-label-caps-md text-label-caps-md text-on-primary-container hover:text-on-primary transition-colors tracking-widest" data-path="lounge" href="/shop/?room=lounge">LOUNGE</a><a class="font-label-caps-md text-label-caps-md text-on-primary-container hover:text-on-primary transition-colors tracking-widest" data-path="furniture" href="/shop/?room=furniture">FURNITURE</a><a class="font-label-caps-md text-label-caps-md text-on-primary-container hover:text-on-primary transition-colors tracking-widest" data-path="living" href="/shop/?room=living">LIVING</a><a class="font-label-caps-md text-label-caps-md text-on-primary-container hover:text-on-primary transition-colors tracking-widest" data-path="dining" href="/shop/?room=dining">DINING</a><a class="font-label-caps-md text-label-caps-md text-on-primary-container hover:text-on-primary transition-colors tracking-widest" data-path="bed" href="/shop/?room=bed">BED</a></nav><div class="flex items-center gap-space-md shrink-0"><a class="hidden md:inline-block font-label-caps-sm text-label-caps-sm text-on-primary underline underline-offset-4 tracking-wider uppercase hover:text-on-primary-container transition-colors" data-path="book-online-visit" href="/book-visit/?type=online">BOOK ONLINE VISIT</a><a class="hidden sm:inline-flex items-center px-space-md py-space-xs font-label-caps-sm text-label-caps-sm text-on-primary border border-on-primary/30 hover:border-on-primary hover:bg-on-primary hover:text-primary transition-all uppercase tracking-wider" data-path="book-custom-design" href="/custom-order/">BOOK CUSTOM DESIGN</a><div class="flex items-center gap-space-sm pl-space-xs"><a aria-label="Client Account" class="relative p-space-xs text-on-primary-container hover:text-on-primary transition-colors flex items-center justify-center" data-path="account" href="/sign-in/"><span class="material-symbols-outlined text-[22px]">person</span></a><a aria-label="Shopping Bag" class="relative p-space-xs text-on-primary-container hover:text-on-primary transition-colors flex items-center justify-center" data-path="bag" href="/cart/"><span class="material-symbols-outlined text-[22px]">shopping_bag</span><span class="absolute top-0 right-0 w-4 h-4 bg-secondary text-on-secondary rounded-full flex items-center justify-center font-data-mono text-[10px] leading-none font-bold">2</span></a><div class="w-8 h-8 rounded-full bg-primary-container flex items-center justify-center border border-outline-variant/30 ml-space-xs"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-80px)]"><div class="flex flex-col w-full">
+<!-- Subtle Architectural Radial Glow for Atmospheric Depth -->
+<div class="relative w-full overflow-hidden pb-space-xl">
+<div class="absolute -top-32 left-1/2 -translate-x-1/2 w-[850px] h-[340px] bg-secondary-fixed/30 rounded-full blur-[110px] pointer-events-none -z-10"></div>
+<div class="max-w-[1280px] w-full mx-auto px-margin-mobile md:px-margin pt-space-xl">
+<!-- Editorial Header Section -->
+<div class="flex flex-col md:flex-row md:items-end justify-between pb-space-lg gap-space-md">
+<div class="max-w-2xl">
+<div class="flex items-center gap-space-xs mb-space-xs">
+<span class="w-1.5 h-1.5 bg-secondary rounded-full"></span>
+<span class="font-label-caps-sm text-label-caps-sm uppercase text-secondary tracking-[0.25em]">Atelier Private Scheduling</span>
+</div>
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface tracking-tight font-headline-lg">Book a Visit</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-space-xs max-w-xl">
+            Experience our architectural craftsmanship in person or consult virtually with our design studio.
+          </p>
+</div>
+<div class="flex items-center gap-space-md shrink-0 pb-space-xs">
+<div class="flex items-center gap-space-xs bg-surface-container px-space-md py-space-xs rounded-full shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified</span>
+<span class="font-data-mono text-data-mono text-on-surface">Autumn Cohort Availability Open</span>
+</div>
+</div>
+</div>
+<!-- Section 1: Three Appointment Type Cards -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg mt-space-md" id="appointment-cards">
+<!-- Card 1: Site Inspection (ACTIVE DEFAULT) -->
+<div class="appointment-card group relative bg-surface-container-lowest p-space-lg flex flex-col justify-between shadow-md transition-all duration-300 hover:shadow-xl ring-2 ring-primary" data-tier="site">
+<div class="flex flex-col">
+<div class="flex items-center justify-between gap-space-sm mb-space-md">
+<span class="inline-flex items-center px-space-sm py-0.5 bg-secondary-fixed text-on-secondary-fixed rounded-full font-label-caps-sm text-label-caps-sm tracking-wider uppercase">
+                Field Surveyor
+              </span>
+<span class="font-data-mono text-data-mono text-on-surface-variant">60 MIN</span>
+</div>
+<div class="w-12 h-12 bg-surface-container-high rounded-full flex items-center justify-center mb-space-md text-primary">
+<span class="material-symbols-outlined text-[24px]">architecture</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-xs">Site Inspection</h3>
+<p class="font-data-mono text-data-mono text-secondary mb-space-sm">At your residential or commercial site</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-space-lg">
+              Detailed measurements, timber grain advice, and spatial planning by our lead surveyor at your home or site across Enugu, Abuja, or Lagos.
+            </p>
+</div>
+<button class="w-full bg-primary text-on-primary py-space-sm font-label-caps-md text-label-caps-md uppercase tracking-widest transition-all duration-200" onclick="selectType(this, 'Site Inspection (60 min)', 'Enugu Metropolitan Area')" type="button">
+            Selected
+          </button>
+</div>
+<!-- Card 2: Online Visit -->
+<div class="appointment-card group relative bg-surface-container-lowest p-space-lg flex flex-col justify-between shadow-sm transition-all duration-300 hover:shadow-lg" data-tier="online">
+<div class="flex flex-col">
+<div class="flex items-center justify-between gap-space-sm mb-space-md">
+<span class="inline-flex items-center px-space-sm py-0.5 bg-surface-container-high text-on-surface-variant rounded-full font-label-caps-sm text-label-caps-sm tracking-wider uppercase">
+                Digital Atelier
+              </span>
+<span class="font-data-mono text-data-mono text-on-surface-variant">30 MIN</span>
+</div>
+<div class="w-12 h-12 bg-surface-container-high rounded-full flex items-center justify-center mb-space-md text-primary">
+<span class="material-symbols-outlined text-[24px]">videocam</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-xs">Online Visit</h3>
+<p class="font-data-mono text-data-mono text-secondary mb-space-sm">Via Encrypted HD Video Link</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-space-lg">
+              Virtual showroom walkthrough, finish swatches high-res presentation, and bespoke joinery consultation with our senior project architect.
+            </p>
+</div>
+<button class="w-full bg-surface-container text-on-surface py-space-sm font-label-caps-md text-label-caps-md uppercase tracking-widest hover:bg-primary hover:text-on-primary transition-all duration-200" onclick="selectType(this, 'Online Visit (30 min)', 'Virtual Consultation Link')" type="button">
+            Select
+          </button>
+</div>
+<!-- Card 3: Showroom Visit -->
+<div class="appointment-card group relative bg-surface-container-lowest p-space-lg flex flex-col justify-between shadow-sm transition-all duration-300 hover:shadow-lg" data-tier="showroom">
+<div class="flex flex-col">
+<div class="flex items-center justify-between gap-space-sm mb-space-md">
+<span class="inline-flex items-center px-space-sm py-0.5 bg-surface-container-high text-on-surface-variant rounded-full font-label-caps-sm text-label-caps-sm tracking-wider uppercase">
+                Physical Salons
+              </span>
+<span class="font-data-mono text-data-mono text-on-surface-variant">45 MIN</span>
+</div>
+<div class="w-12 h-12 bg-surface-container-high rounded-full flex items-center justify-center mb-space-md text-primary">
+<span class="material-symbols-outlined text-[24px]">storefront</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-xs">Showroom Visit</h3>
+<p class="font-data-mono text-data-mono text-secondary mb-space-sm">Enugu Studio or Abuja Salon</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-space-lg">
+              Private walkthrough at 160 Ogui Rd Enugu or 2 Lobito Crescent Abuja with our design directors to touch joinery and material proofs.
+            </p>
+</div>
+<button class="w-full bg-surface-container text-on-surface py-space-sm font-label-caps-md text-label-caps-md uppercase tracking-widest hover:bg-primary hover:text-on-primary transition-all duration-200" onclick="selectType(this, 'Showroom Visit (45 min)', '160 Ogui Rd Showroom, Enugu')" type="button">
+            Select
+          </button>
+</div>
+</div>
+<!-- Section 2: Split Booking Scheduling Layout -->
+<div class="mt-space-xl grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start">
+<!-- Left & Center Primary Form Flow (8 Columns) -->
+<div class="lg:col-span-8 flex flex-col gap-space-xl">
+<!-- Date & Time Specification Card -->
+<div class="bg-surface-container-lowest p-space-lg md:p-space-xl shadow-sm rounded-none">
+<div class="flex items-center justify-between pb-space-md mb-space-lg">
+<div>
+<span class="font-label-caps-sm text-label-caps-sm uppercase tracking-widest text-secondary">Step 01</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface mt-space-xs">Select Preferred Date &amp; Hour</h2>
+</div>
+<div class="flex items-center gap-space-xs font-data-mono text-data-mono text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px]">calendar_today</span>
+<span>October 2024</span>
+</div>
+</div>
+<!-- Architectural Month Calendar Component -->
+<div class="bg-surface-container-low p-space-md rounded-none mb-space-xl">
+<div class="flex items-center justify-between pb-space-sm mb-space-sm">
+<span class="font-title-md text-title-md text-on-surface">October 2024 (WAT Timezone)</span>
+<div class="flex items-center gap-space-xs">
+<button aria-label="Previous Month" class="w-8 h-8 flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">chevron_left</span>
+</button>
+<button aria-label="Next Month" class="w-8 h-8 flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- Day Header -->
+<div class="grid grid-cols-7 text-center font-label-caps-sm text-label-caps-sm uppercase tracking-wider text-outline mb-space-xs">
+<span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span><span>Sun</span>
+</div>
+<!-- Calendar Grid -->
+<div class="grid grid-cols-7 gap-1 text-center font-data-mono text-data-mono" id="calendar-days">
+<!-- Row 1 -->
+<span class="py-2.5 text-outline-variant/50">30</span>
+<button class="py-2.5 hover:bg-surface-container-high transition-colors text-on-surface" type="button">1</button>
+<button class="py-2.5 hover:bg-surface-container-high transition-colors text-on-surface" type="button">2</button>
+<button class="py-2.5 hover:bg-surface-container-high transition-colors text-on-surface" type="button">3</button>
+<button class="py-2.5 hover:bg-surface-container-high transition-colors text-on-surface" type="button">4</button>
+<button class="py-2.5 hover:bg-surface-container-high transition-colors text-on-surface" type="button">5</button>
+<span class="py-2.5 text-outline/40">6</span>
+<!-- Row 2 -->
+<button class="py-2.5 hover:bg-surface-container-high transition-colors text-on-surface" type="button">7</button>
+<button class="py-2.5 hover:bg-surface-container-high transition-colors text-on-surface" type="button">8</button>
+<button class="py-2.5 hover:bg-surface-container-high transition-colors text-on-surface" type="button">9</button>
+<button class="py-2.5 hover:bg-surface-container-high transition-colors text-on-surface" type="button">10</button>
+<button class="py-2.5 hover:bg-surface-container-high transition-colors text-on-surface" type="button">11</button>
+<button class="py-2.5 hover:bg-surface-container-high transition-colors text-on-surface" type="button">12</button>
+<span class="py-2.5 text-outline/40">13</span>
+<!-- Row 3 -->
+<button class="py-2.5 hover:bg-surface-container-high transition-colors text-on-surface" type="button">14</button>
+<button class="py-2.5 hover:bg-surface-container-high transition-colors text-on-surface" type="button">15</button>
+<button class="py-2.5 hover:bg-surface-container-high transition-colors text-on-surface" type="button">16</button>
+<button class="py-2.5 hover:bg-surface-container-high transition-colors text-on-surface" type="button">17</button>
+<button class="py-2.5 hover:bg-surface-container-high transition-colors text-on-surface" type="button">18</button>
+<button class="py-2.5 hover:bg-surface-container-high transition-colors text-on-surface" type="button">19</button>
+<span class="py-2.5 text-outline/40">20</span>
+<!-- Row 4 -->
+<button class="py-2.5 hover:bg-surface-container-high transition-colors text-on-surface" type="button">21</button>
+<button class="py-2.5 hover:bg-surface-container-high transition-colors text-on-surface" type="button">22</button>
+<button class="py-2.5 hover:bg-surface-container-high transition-colors text-on-surface" type="button">23</button>
+<!-- Active Selected Date: Thu Oct 24 -->
+<button class="py-2.5 bg-primary text-on-primary font-bold shadow-sm ring-2 ring-secondary/50" type="button">24</button>
+<button class="py-2.5 hover:bg-surface-container-high transition-colors text-on-surface" type="button">25</button>
+<button class="py-2.5 hover:bg-surface-container-high transition-colors text-on-surface" type="button">26</button>
+<span class="py-2.5 text-outline/40">27</span>
+<!-- Row 5 -->
+<button class="py-2.5 hover:bg-surface-container-high transition-colors text-on-surface" type="button">28</button>
+<button class="py-2.5 hover:bg-surface-container-high transition-colors text-on-surface" type="button">29</button>
+<button class="py-2.5 hover:bg-surface-container-high transition-colors text-on-surface" type="button">30</button>
+<button class="py-2.5 hover:bg-surface-container-high transition-colors text-on-surface" type="button">31</button>
+<span class="py-2.5 text-outline-variant/50">1</span>
+<span class="py-2.5 text-outline-variant/50">2</span>
+<span class="py-2.5 text-outline-variant/50">3</span>
+</div>
+</div>
+<!-- Time Slots Section -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-caps-sm text-label-caps-sm uppercase tracking-widest text-on-surface-variant">Available Surveyor Time Slots (WAT)</label>
+<div class="grid grid-cols-2 sm:grid-cols-5 gap-space-sm mt-space-xs" id="slot-container">
+<button class="slot-btn py-space-sm px-space-xs bg-surface-container text-on-surface font-data-mono text-data-mono text-center hover:bg-surface-container-highest transition-all" onclick="selectSlot(this, '10:00 AM')" type="button">
+                  10:00 AM
+                </button>
+<button class="slot-btn py-space-sm px-space-xs bg-surface-container text-on-surface font-data-mono text-data-mono text-center hover:bg-surface-container-highest transition-all" onclick="selectSlot(this, '11:30 AM')" type="button">
+                  11:30 AM
+                </button>
+<!-- Active slot -->
+<button class="slot-btn py-space-sm px-space-xs bg-primary text-on-primary font-data-mono text-data-mono text-center shadow-md ring-2 ring-secondary/50 font-bold" onclick="selectSlot(this, '02:00 PM')" type="button">
+                  02:00 PM
+                </button>
+<button class="slot-btn py-space-sm px-space-xs bg-surface-container text-on-surface font-data-mono text-data-mono text-center hover:bg-surface-container-highest transition-all" onclick="selectSlot(this, '03:30 PM')" type="button">
+                  03:30 PM
+                </button>
+<button class="slot-btn py-space-sm px-space-xs bg-surface-container text-on-surface font-data-mono text-data-mono text-center hover:bg-surface-container-highest transition-all" onclick="selectSlot(this, '05:00 PM')" type="button">
+                  05:00 PM
+                </button>
+</div>
+</div>
+</div>
+<!-- Location & Architectural Scope Inputs -->
+<div class="bg-surface-container-lowest p-space-lg md:p-space-xl shadow-sm rounded-none">
+<div class="pb-space-md mb-space-lg">
+<span class="font-label-caps-sm text-label-caps-sm uppercase tracking-widest text-secondary">Step 02</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface mt-space-xs">Address &amp; Site Parameters</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Required for physical site survey dispatch</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="flex flex-col md:col-span-2">
+<label class="font-label-caps-sm text-label-caps-sm uppercase text-on-surface-variant mb-space-xs tracking-wider" for="street-address">Street Address / Estate Name *</label>
+<input class="w-full bg-surface-container-low px-space-md py-space-sm font-body-md text-body-md text-on-surface focus:outline-none focus:bg-surface-container-lowest shadow-inner transition-colors" id="street-address" placeholder="e.g. 42 African Club Road or Villa 9, Guzape" type="text" value="Plot 14, Independence Layout, Near Govt House"/>
+</div>
+<div class="flex flex-col">
+<label class="font-label-caps-sm text-label-caps-sm uppercase text-on-surface-variant mb-space-xs tracking-wider" for="landmark">Nearest Landmark / Gate Code</label>
+<input class="w-full bg-surface-container-low px-space-md py-space-sm font-body-md text-body-md text-on-surface focus:outline-none focus:bg-surface-container-lowest shadow-inner transition-colors" id="landmark" placeholder="e.g. Opp. Central Mosque or North Gate" type="text" value="Adjacent to Presidential Gate 2"/>
+</div>
+<div class="flex flex-col">
+<label class="font-label-caps-sm text-label-caps-sm uppercase text-on-surface-variant mb-space-xs tracking-wider" for="city">City / District *</label>
+<input class="w-full bg-surface-container-low px-space-md py-space-sm font-body-md text-body-md text-on-surface focus:outline-none focus:bg-surface-container-lowest shadow-inner transition-colors" id="city" placeholder="e.g. Asata, Maitama, Ikeja GRA" type="text" value="Enugu City"/>
+</div>
+<div class="flex flex-col">
+<label class="font-label-caps-sm text-label-caps-sm uppercase text-on-surface-variant mb-space-xs tracking-wider" for="state-select">State / Territory *</label>
+<select class="w-full bg-surface-container-low px-space-md py-space-sm font-body-md text-body-md text-on-surface focus:outline-none focus:bg-surface-container-lowest shadow-inner transition-colors" id="state-select" onchange="updateLocation(this.value)">
+<option selected="" value="Enugu Metropolitan Area">Enugu State</option>
+<option value="Abuja FCT Area">Federal Capital Territory (Abuja)</option>
+<option value="Lagos Island &amp; Mainland">Lagos State</option>
+<option value="Anambra (Awka &amp; Onitsha)">Anambra State</option>
+<option value="Rivers (Port Harcourt)">Rivers State</option>
+<option value="Other Regional Center">Other States (By Private Arrangement)</option>
+</select>
+</div>
+<div class="flex flex-col">
+<label class="font-label-caps-sm text-label-caps-sm uppercase text-on-surface-variant mb-space-xs tracking-wider" for="contact-phone">Primary Phone (WhatsApp Enabled) *</label>
+<input class="w-full bg-surface-container-low px-space-md py-space-sm font-body-md text-body-md text-on-surface focus:outline-none focus:bg-surface-container-lowest shadow-inner transition-colors" id="contact-phone" type="tel" value="+234 803 892 4410"/>
+</div>
+<div class="flex flex-col md:col-span-2 mt-space-xs">
+<label class="font-label-caps-sm text-label-caps-sm uppercase text-on-surface-variant mb-space-xs tracking-wider" for="project-notes">Special Requirements &amp; Project Notes</label>
+<textarea class="w-full bg-surface-container-low p-space-md font-body-md text-body-md text-on-surface focus:outline-none focus:bg-surface-container-lowest shadow-inner transition-colors" id="project-notes" placeholder="Tell us about your spatial concept: ceiling heights, preferred hardwoods (Teak, Iroko, Walnut), architectural elevations, or living room lounge configurations..." rows="3">Dual-height penthouse reception lounge. Need consultation on bookmatched smoked walnut media unit and floating console joinery.</textarea>
+</div>
+</div>
+<!-- Prominent Submit Trigger -->
+<div class="mt-space-xl pt-space-md flex flex-col sm:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-[20px] text-secondary">lock</span>
+<span class="font-data-mono text-data-mono">Discreet atelier privacy guaranteed</span>
+</div>
+<button class="w-full sm:w-auto bg-primary hover:bg-on-surface-variant text-on-primary px-space-xl py-space-md font-label-caps-md text-label-caps-md uppercase tracking-[0.2em] shadow-md hover:shadow-xl transition-all" onclick="confirmAppointment()" type="button">
+                Confirm Booking
+              </button>
+</div>
+</div>
+<!-- Section 3: Booking Confirmation Status Badge (WL-V-0001) -->
+<div class="bg-surface-container-lowest p-space-lg md:p-space-xl shadow-lg border-l-4 border-secondary flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md transition-all" id="confirmation-banner">
+<div class="flex items-start gap-space-md">
+<div class="w-12 h-12 bg-secondary-fixed text-on-secondary-fixed rounded-full flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[26px]">check_circle</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-caps-sm text-label-caps-sm bg-surface-container px-space-xs py-0.5 text-on-surface uppercase tracking-wider font-bold">Booking Received</span>
+<span class="font-data-mono text-data-mono text-secondary font-semibold">REF: WL-V-0001</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mt-1">Slot Reserved in Dispatch Queue</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                  We will confirm your slot shortly via WhatsApp and SMS with surveyor profile credentials.
+                </p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm shrink-0 self-end md:self-center">
+<a class="px-space-md py-space-xs bg-surface-container text-on-surface hover:bg-surface-container-high font-label-caps-sm text-label-caps-sm uppercase tracking-wider transition-colors inline-flex items-center gap-space-xs" href="/">
+<span class="material-symbols-outlined text-[16px]">download</span>
+                Calendar Invite (.ics)
+              </a>
+</div>
+</div>
+</div>
+<!-- Right Side: Sticky Architectural Booking Summary (4 Columns) -->
+<div class="lg:col-span-4 flex flex-col gap-space-lg lg:sticky lg:top-28">
+<div class="bg-surface-container-lowest p-space-lg shadow-md flex flex-col">
+<div class="flex items-center justify-between pb-space-md">
+<span class="font-label-caps-sm text-label-caps-sm uppercase tracking-[0.2em] text-on-surface-variant">Specification Sheet</span>
+<span class="w-2 h-2 bg-secondary rounded-full"></span>
+</div>
+<!-- Selected Appointment -->
+<div class="py-space-md">
+<span class="font-label-caps-sm text-label-caps-sm uppercase text-outline tracking-wider">Appointment Type</span>
+<div class="flex items-baseline justify-between mt-1">
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-medium" id="summary-tier">Site Inspection (60 min)</h4>
+</div>
+<span class="font-data-mono text-data-mono text-secondary block mt-0.5">Lead Field Surveyor Accompanied</span>
+</div>
+<!-- Date & Time -->
+<div class="py-space-md bg-surface-container-low/50 -mx-space-lg px-space-lg">
+<span class="font-label-caps-sm text-label-caps-sm uppercase text-outline tracking-wider">Date &amp; Time</span>
+<p class="font-title-md text-title-md text-on-surface font-semibold mt-1" id="summary-datetime">
+                Thursday, October 24, 2024 at 02:00 PM
+              </p>
+<span class="font-data-mono text-data-mono text-on-surface-variant mt-0.5 block">West Africa Time (GMT+1)</span>
+</div>
+<!-- Location -->
+<div class="py-space-md">
+<span class="font-label-caps-sm text-label-caps-sm uppercase text-outline tracking-wider">Location / Venue</span>
+<p class="font-body-md text-body-md text-on-surface font-medium mt-1" id="summary-location">
+                Enugu Metropolitan Area
+              </p>
+<span class="font-data-mono text-data-mono text-outline-variant block mt-0.5">Independence Layout Dispatch Zone</span>
+</div>
+<!-- Fee Note Section -->
+<div class="p-space-md bg-surface-container rounded-none my-space-sm flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-[20px] text-secondary shrink-0 mt-0.5">info</span>
+<div class="flex flex-col">
+<span class="font-label-caps-sm text-label-caps-sm uppercase font-bold text-on-surface">Atelier Fee Policy</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-snug mt-0.5">
+                  Complimentary consultation for projects over ₦500,000. Survey fee is 100% credited toward production commission.
+                </p>
+</div>
+</div>
+<!-- Workshop Concierge Line -->
+<div class="pt-space-md flex flex-col gap-space-sm">
+<a class="w-full bg-[#1F4E37] text-on-primary py-space-sm px-space-md flex items-center justify-center gap-space-xs font-label-caps-sm text-label-caps-sm uppercase tracking-widest hover:bg-[#163b29] transition-colors shadow-sm" href="https://wa.me/2348038924410?text=Hello%20Wooden%20Lounge%20Atelier,%20I%20am%20scheduling%20a%20visit" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+                Direct WhatsApp Support
+              </a>
+<div class="flex items-center justify-between font-data-mono text-data-mono text-on-surface-variant px-space-xs pt-space-xs">
+<span>Atelier Concierge:</span>
+<span class="text-on-surface font-semibold">+234 (0) 803 892 4410</span>
+</div>
+</div>
+</div>
+<!-- Studio Heritage Context Graphic -->
+<div class="bg-surface-container-high p-space-md relative overflow-hidden flex items-center gap-space-md">
+<div class="w-16 h-16 shrink-0 bg-surface-container-lowest overflow-hidden shadow-inner">
+<img class="w-full h-full object-cover" data-alt="Close up view of bespoke furniture woodwork showing warm Nigerian teak grain, polished brass inlay accents and hand-crafted dovetail joinery in an architectural studio setting with soft directional daylight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUEAJ2UV1c8q-227CHwZKl7uvpO-gxKMSRHj8zlI2z91u24NKboyljYm3TXXZ0UEl5W6IZ6T_FsJKhplGSkYlMo0ZfqsLmp7MyONG3pUekoe1Yb1BFKFngK8wNVOssboRZqx4ksDb5N3vN1KKJ0YzC6RKEiz6Rpdr1vhkvqks4mMEbPU49mseJlQALcCM7EgjSeLBO_7d0cqFtimZ9Qe0rvRfM-Mh4tf-iep713BSHaRX9ouQxfRd_"/>
+</div>
+<div class="flex flex-col">
+<span class="font-label-caps-sm text-label-caps-sm uppercase text-secondary tracking-widest font-bold">Material Integrity</span>
+<p class="font-body-sm text-body-sm text-on-surface leading-tight mt-1">
+                Sustainably harvested Obeche, Nigerian Teak, and smoked walnut seasoned for local climate stability.
+              </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Section 4: Architectural Quality Standards Gallery Footer Callout -->
+<div class="mt-space-xl pt-space-xl grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+<div class="bg-surface-container-low p-space-lg flex flex-col justify-between">
+<div>
+<span class="font-data-mono text-data-mono text-secondary">01 / DISPATCH PRECISION</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mt-space-xs mb-space-xs">Laser Scans &amp; Mockups</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Our site surveyors bring digital distance meters and timber spec blocks to evaluate sunlight exposure, wall plumbness, and ambient humidity.
+            </p>
+</div>
+<div class="mt-space-md h-32 w-full overflow-hidden">
+<img class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" data-alt="Modern architectural interior drafting table with architectural blueprints, laser measurement tools, solid timber samples, and brass drafting rules bathed in warm gallery light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBv_EgSFKPAva5j5-RiWKGbdl8wVGIiVL-WGRTFB-LTIJ25mENP1jlpZaGkp6YoiWUkWxBN0DD3CowK5McAhFYFalqD7aum2N6XGlxz-53BAf97PMyL4n3oVCOeitdgdKMAPoWc2Dcgkh7DNg2592TDB2WDPqZtrrMdO_TZAsUa8_9rwGOxLf4hZj5NGeaGfVyYnIuCuIAbD6e5jq3Nea06fZE_hqkRrjCIiXyFm2UVuMbEywPOmKoa"/>
+</div>
+</div>
+<div class="bg-surface-container-low p-space-lg flex flex-col justify-between">
+<div>
+<span class="font-data-mono text-data-mono text-secondary">02 / WORKSHOP ACCESS</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mt-space-xs mb-space-xs">The Enugu Master Floor</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              For showroom appointments at 160 Ogui Road, clients may observe raw timber seasoning kilns and our master joiners sculpting bespoke frames.
+            </p>
+</div>
+<div class="mt-space-md h-32 w-full overflow-hidden">
+<img class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" data-alt="Interior of high-end furniture master workshop in Enugu Nigeria with craftsmen polishing a large live-edge hardwood dining table under industrial pendant lighting and high ceilings" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCic_fVwSogf4xFuUIBQ9bJb6fOWf9Xin1YPhHH9zuTZ7tjlkRZIBOyQqbg4N4poJzS5asA8JYsznE8TsZtInZ4HYkMhlSUfo_pMQAIDK8WFJRxzYKl3QlFPgcsT2JCMa18TJ_afUpNvMjRraWJsKKRIHXgbN9538FPFY9HYgMoEbYLLojEKlSLa65y5bRV6LoqfrqBt8WGy7Fz0A2jNycMQijnvBYSMqik3TD5bgZQ4Nw8qOk_0A3s"/>
+</div>
+</div>
+<div class="bg-surface-container-low p-space-lg flex flex-col justify-between">
+<div>
+<span class="font-data-mono text-data-mono text-secondary">03 / CONTINENTAL FREIGHT</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mt-space-xs mb-space-xs">Diaspora Direct Crating</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Serving patrons abroad. Online visits include global timber freight estimations, sea-container fumigation logs, and air cargo routing.
+            </p>
+</div>
+<div class="mt-space-md h-32 w-full overflow-hidden">
+<img class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" data-alt="Luxury handcrafted wooden lounge chair wrapped in natural linen dust cover being prepared for international export inside custom-built pine shipping crates with architectural stamp logos" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1V7Mvh-10JlJ1R2gZFHpexZBYgEMLqdvI-wZ46VpKvqZhBRJAnFcD_QXyVXbnGHyoI8HbUkeEwVQ1ys3uRLQxShW5KsBqJFo5ERuWJXGtiHzP5kVk62UoOv9aat-Xly3otOLIavlJlbReH8MQZYKX6o-7RQgSG0GOqrgxGpKVSAAD-Ck6v3KyNHIs7f4iDs7dToOuFrBxImpdAxC3PuyGK-i-18RAixcwsM2CgUHe3Cb9frS2dS_S"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Interactive JavaScript Logic -->
+<script>
+    function selectType(buttonEl, typeName, defaultLocation) {
+      // Update active state across tier cards
+      const cards = document.querySelectorAll('.appointment-card');
+      cards.forEach(card => {
+        card.classList.remove('ring-2', 'ring-primary', 'shadow-xl');
+        card.classList.add('shadow-sm');
+        const btn = card.querySelector('button');
+        if (btn) {
+          btn.textContent = 'Select';
+          btn.className = 'w-full bg-surface-container text-on-surface py-space-sm font-label-caps-md text-label-caps-md uppercase tracking-widest hover:bg-primary hover:text-on-primary transition-all duration-200';
+        }
+      });
+
+      const parentCard = buttonEl.closest('.appointment-card');
+      if (parentCard) {
+        parentCard.classList.add('ring-2', 'ring-primary', 'shadow-xl');
+        parentCard.classList.remove('shadow-sm');
+      }
+
+      buttonEl.textContent = 'Selected';
+      buttonEl.className = 'w-full bg-primary text-on-primary py-space-sm font-label-caps-md text-label-caps-md uppercase tracking-widest transition-all duration-200';
+
+      // Update summary sidebar
+      const summaryTier = document.getElementById('summary-tier');
+      const summaryLocation = document.getElementById('summary-location');
+      if (summaryTier) summaryTier.textContent = typeName;
+      if (summaryLocation) summaryLocation.textContent = defaultLocation;
+    }
+
+    function selectSlot(slotBtn, slotTime) {
+      const allSlots = document.querySelectorAll('.slot-btn');
+      allSlots.forEach(btn => {
+        btn.className = 'slot-btn py-space-sm px-space-xs bg-surface-container text-on-surface font-data-mono text-data-mono text-center hover:bg-surface-container-highest transition-all';
+      });
+
+      slotBtn.className = 'slot-btn py-space-sm px-space-xs bg-primary text-on-primary font-data-mono text-data-mono text-center shadow-md ring-2 ring-secondary/50 font-bold';
+
+      const summaryDateTime = document.getElementById('summary-datetime');
+      if (summaryDateTime) {
+        summaryDateTime.textContent = 'Thursday, October 24, 2024 at ' + slotTime;
+      }
+    }
+
+    function updateLocation(val) {
+      const summaryLoc = document.getElementById('summary-location');
+      if (summaryLoc) {
+        summaryLoc.textContent = val;
+      }
+    }
+
+    function confirmAppointment() {
+      const banner = document.getElementById('confirmation-banner');
+      if (banner) {
+        banner.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        banner.classList.add('ring-4', 'ring-secondary');
+        setTimeout(() => {
+          banner.classList.remove('ring-4', 'ring-secondary');
+        }, 1800);
+      }
+    }
+  </script>
+</div></main><footer class="w-full bg-surface-container-low relative"><div class="max-w-[1280px] mx-auto px-margin-mobile md:px-margin pt-space-xl pb-space-lg"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-xl pb-space-xl border-b border-outline-variant/30"><div class="flex flex-col"><h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-sm">Enugu Showroom</h3><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-space-xs">160 Ogui Rd, Asata Chemist</p><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-space-sm">Enugu State, Nigeria</p><span class="font-label-caps-sm text-label-caps-sm text-on-tertiary-container tracking-wider uppercase">STUDIO &amp; MASTER WORKSHOP</span><p class="font-data-mono text-data-mono text-on-surface-variant mt-space-sm">Mon – Sat: 09:00 – 18:00 WAT</p></div><div class="flex flex-col"><h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-sm">Abuja Showroom</h3><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-space-xs">2 Lobito Crescent, Wuse 2</p><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-space-sm">Federal Capital Territory, Nigeria</p><span class="font-label-caps-sm text-label-caps-sm text-on-tertiary-container tracking-wider uppercase">RESIDENTIAL SPECIFICATION SALON</span><p class="font-data-mono text-data-mono text-on-surface-variant mt-space-sm">Tue – Sat: 10:00 – 19:00 WAT</p></div><div class="flex flex-col"><h3 class="font-label-caps-md text-label-caps-md text-on-surface tracking-widest uppercase mb-space-md">THE ATELIER</h3><nav class="flex flex-col gap-space-xs"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="bespoke-process" href="/">Bespoke Commission Process</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="timber-archives" href="/">Nigerian Timber Archives</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="joinery-philosophy" href="/">Joinery Philosophy</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="residential-portfolio" href="/">Residential Portfolio</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="diaspora-shipping" href="/">Diaspora Freight &amp; Crating</a></nav></div><div class="flex flex-col"><h3 class="font-label-caps-md text-label-caps-md text-on-surface tracking-widest uppercase mb-space-sm">PRIVATE CATALOG</h3><p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md leading-relaxed">Receive private showroom drops, architectural releases, and seasonal timber consignments.</p><form class="flex flex-col gap-space-xs"><div class="flex w-full"><input class="w-full bg-surface-container-lowest border border-outline-variant px-space-md py-space-sm font-label-caps-sm text-label-caps-sm text-on-surface placeholder:text-outline focus:outline-none focus:border-primary transition-colors" placeholder="ARCHITECT / CLIENT EMAIL" type="email"/><button class="bg-primary text-on-primary px-space-md py-space-sm font-label-caps-sm text-label-caps-sm uppercase tracking-wider hover:bg-on-surface-variant hover:text-on-primary transition-colors shrink-0" type="button">JOIN</button></div><span class="font-data-mono text-data-mono text-outline">Discreet seasonal dispatch only.</span></form></div></div><div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg flex-wrap"><span class="font-headline-lg text-headline-sm md:text-headline-md text-outline-variant/40 tracking-tight font-light select-none">WOODEN LOUNGE ATELIER</span></div><div class="flex items-center gap-space-md flex-wrap"><a class="font-label-caps-sm text-label-caps-sm text-on-surface-variant hover:text-on-surface transition-colors uppercase" data-path="legal-terms" href="/">TERMS OF COMMISSION</a><span class="text-outline-variant">•</span><a class="font-label-caps-sm text-label-caps-sm text-on-surface-variant hover:text-on-surface transition-colors uppercase" data-path="legal-privacy" href="/">PRIVACY ARCHIVE</a><span class="text-outline-variant">•</span><a class="font-label-caps-sm text-label-caps-sm text-on-surface-variant hover:text-on-surface transition-colors uppercase" data-path="legal-warranty" href="/">LIFETIME JOINERY WARRANTY</a></div><div class="font-data-mono text-data-mono text-outline">© 2025 WOODEN LOUNGE NIGERIA.</div></div></div></footer><a aria-label="Consult Showroom Concierge" class="fixed bottom-space-lg right-space-lg z-40 bg-primary text-on-primary shadow-[0_12px_32px_-4px_rgba(13,12,11,0.25)] px-space-md py-space-sm flex items-center gap-space-xs group hover:bg-secondary transition-all" data-path="concierge-message" href="/"><span class="material-symbols-outlined text-[18px] text-on-primary">chat</span><span class="font-label-caps-sm text-label-caps-sm text-on-primary uppercase tracking-widest">ENQUIRY DESK</span></a><script src="/assets/site.js"></script>
+</body></html>

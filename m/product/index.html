@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#fff8f4;}body{overscroll-behavior:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,400&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "inverse-on-surface": "#f6efec", "error-container": "#ffdad6", "on-surface-variant": "#4b4640", "primary-fixed-dim": "#cac6c3", "primary-container": "#1d1b1a", "on-primary-fixed": "#1d1b1a", "on-primary-fixed-variant": "#484645", "on-error": "#ffffff", "outline-variant": "#cdc5bd", "background": "#fff8f4", "on-error-container": "#93000a", "inverse-surface": "#32302e", "secondary-fixed": "#ffdbcc", "surface-container-low": "#f9f2ee", "surface-container-lowest": "#ffffff", "on-primary": "#ffffff", "on-tertiary": "#ffffff", "surface": "#fff8f4", "surface-dim": "#dfd9d5", "on-secondary-fixed-variant": "#743412", "on-tertiary-container": "#997f61", "on-secondary-container": "#773614", "primary": "#000000", "secondary-container": "#fea277", "primary-fixed": "#e6e1df", "secondary-fixed-dim": "#ffb694", "surface-bright": "#fff8f4", "tertiary": "#000000", "secondary": "#924b27", "surface-tint": "#605e5c", "error": "#ba1a1a", "inverse-primary": "#cac6c3", "tertiary-container": "#281803", "on-tertiary-fixed": "#281803", "on-background": "#1d1b19", "tertiary-fixed": "#fdddb9", "surface-variant": "#e7e1de", "tertiary-fixed-dim": "#e0c29f", "on-secondary-fixed": "#351000", "surface-container-high": "#ede7e3", "on-surface": "#1d1b19", "on-tertiary-fixed-variant": "#584329", "on-secondary": "#ffffff", "surface-container-highest": "#e7e1de", "outline": "#7c766f", "on-primary-container": "#868381", "surface-container": "#f3ede9" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "gutter-mobile": "1rem", "space-md": "1rem", "space-lg": "1.5rem", "space-xs": "0.25rem", "margin": "3.5rem", "gutter": "1.5rem", "space-sm": "0.5rem", "margin-mobile": "1.25rem", "space-xl": "2.5rem" }, fontFamily: { "display-lg": ["Playfair Display"], "label-caps-sm": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "headline-sm": ["Playfair Display"], "label-caps-md": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"], "display-lg-mobile": ["Playfair Display"], "body-sm": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Playfair Display"], "headline-lg": ["Playfair Display"], "headline-md": ["Playfair Display"], "data-mono": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"] }, fontSize: { "display-lg": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "label-caps-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.16em", "fontWeight": "700" }], "body-lg": ["17px", { "lineHeight": "28px", "fontWeight": "400" }], "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }], "label-caps-md": ["11px", { "lineHeight": "16px", "letterSpacing": "0.14em", "fontWeight": "700" }], "title-md": ["16px", { "lineHeight": "24px", "letterSpacing": "0.01em", "fontWeight": "600" }], "display-lg-mobile": ["38px", { "lineHeight": "44px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "body-sm": ["13px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "500" }], "headline-lg": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "500" }], "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "500" }], "data-mono": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" }], "body-md": ["15px", { "lineHeight": "24px", "fontWeight": "400" }] } } } }</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased flex flex-col min-h-screen selection:bg-secondary-fixed selection:text-on-secondary-fixed" data-page="product">
+<!-- PAGE: Piece Specification --><header class="fixed top-0 w-full z-50 pt-safe bg-primary-container/95 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.12)]"><div class="h-16 px-gutter-mobile flex items-center justify-between"><div class="flex items-center gap-space-xs"><button aria-label="Return to Previous View" class="w-11 h-11 flex items-center justify-center text-on-primary hover:text-secondary-fixed transition-colors" onclick="history.back()"><span class="material-symbols-outlined text-[22px]">arrow_back</span></button><div class="flex flex-col ml-1"><span class="font-label-caps-sm text-[9px] uppercase tracking-[0.2em] text-outline-variant">Wooden Lounge Atelier</span><h1 class="font-headline-sm text-headline-sm text-on-primary leading-tight truncate max-w-[180px]">Piece Specification</h1></div></div><div class="flex items-center gap-space-xs"><a aria-label="Acquisition Bag" class="w-11 h-11 relative flex items-center justify-center text-on-primary hover:text-secondary-fixed transition-colors" data-path="acquisition-bag" href="/m/cart/"><span class="material-symbols-outlined text-[22px]">shopping_bag</span><span class="absolute top-2 right-2 w-4 h-4 bg-secondary text-on-secondary font-data-mono text-[10px] leading-none flex items-center justify-center rounded-full">2</span></a><div class="w-11 h-11 flex items-center justify-center pl-1"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-outline-variant/30" src="https://lh3.googleusercontent.com/aida/AEtjO1WtxZs5G5772MVRzWOOyO_-ewG0RVE7WxEecnfe2lOq93RcdZNImsRSCllRYD_TDbthUpsdEWwghyxv-uzW4d2J03PRrhYgN4F-x_vP9RqkjLnGkV2SMclf7ieWdsZnnRPupbtOODdrUQorOcRnHOXcvNkKQvlPIWFYVMN8V2d9egxeEBnMhKKBPq_79zjP0eFr99j1R9zHL53YWFCReTB7dRrtCdhBxW09Y-ylGi5uC7DJ-uvl8A2p16U_vjIgg-lQbJhNG06LIQ"/></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-safe bg-surface"><div class="flex flex-col w-full overflow-x-hidden pb-24">
+<!-- Breadcrumb Navigation -->
+<div class="px-margin-mobile pt-3 pb-2 flex items-center gap-space-xs text-on-surface-variant font-label-caps-sm text-label-caps-sm">
+<a class="hover:text-primary transition-colors" href="/m/">HOME</a>
+<span class="text-[9px] opacity-40">/</span>
+<a class="hover:text-primary transition-colors" href="/m/shop/?room=living">LIVING</a>
+<span class="text-[9px] opacity-40">/</span>
+<span class="text-secondary font-bold">SOFAS</span>
+</div>
+<!-- Primary Showcase Imagery -->
+<div class="relative w-full px-margin-mobile">
+<div class="relative w-full aspect-[4/3] rounded-lg overflow-hidden bg-surface-container shadow-sm">
+<img alt="Nsukka Curved Sofa in Oatmeal Sand Bouclé with Nigerian Teak Base" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXMA4aC6QydxjUebXaHzPub5YD8iPBP79AAtylOgZcMEqqVi3xicJsWEl5PdC13rTzSJLqrr-n7oJufDRLhkHGHqaNm_7kuyk68onQHX7WV8MGwS_Eeh5S2a7sGEzgma6KO9Gd6-SfWV2mClhA-kt3Kz4Npl1CUNcZ2fcyfeXF03eInLGjF73RnNQ03gv1Gz1tnNRgOf0EI3Qv5fTyr8U_tgf016vcEul6uExLMKEzOkta1IiOiOT9CsSsxTsJsFTc-Q"/>
+<!-- Availability Stamp Badge -->
+<div class="absolute top-3 left-3 bg-surface-container-lowest/95 backdrop-blur-md px-2.5 py-1 rounded shadow-sm flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="font-label-caps-sm text-label-caps-sm text-on-surface tracking-wider uppercase">Ready in Enugu</span>
+</div>
+<!-- Gallery Quick Control Overlay -->
+<div class="absolute bottom-3 right-3 bg-primary-container/85 text-on-primary px-2 py-0.5 rounded font-data-mono text-data-mono flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">photo_camera</span>
+<span>1/5</span>
+</div>
+</div>
+<!-- Swipe Indicator Dots -->
+<div class="flex items-center justify-center gap-1.5 mt-2.5">
+<span class="w-5 h-1 rounded-full bg-primary"></span>
+<span class="w-1.5 h-1 rounded-full bg-surface-variant"></span>
+<span class="w-1.5 h-1 rounded-full bg-surface-variant"></span>
+<span class="w-1.5 h-1 rounded-full bg-surface-variant"></span>
+<span class="w-1.5 h-1 rounded-full bg-surface-variant"></span>
+</div>
+</div>
+<!-- Editorial Product Header & Meta -->
+<section class="px-margin-mobile mt-4 flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<span class="font-label-caps-sm text-label-caps-sm text-on-tertiary-container uppercase tracking-widest">Master Joinery Series</span>
+<div class="flex items-center gap-1 bg-surface-container-low px-2 py-0.5 rounded">
+<span class="material-symbols-outlined text-[15px] text-secondary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-data-mono text-data-mono text-on-surface font-semibold">4.9</span>
+<span class="font-body-sm text-body-sm text-outline">(18 reviews)</span>
+</div>
+</div>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface leading-tight">Nsukka Curved Sofa</h2>
+<div class="flex items-baseline gap-2 mt-0.5">
+<span class="font-headline-sm text-headline-sm text-secondary font-bold" id="display-price">₦229,000</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">VAT &amp; showroom staging included</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1.5 leading-relaxed">
+      Sculptural low-profile silhouette anchored by hand-carved, double-dovetail Nigerian Teak base rails. Triple-layer feather-blend cushions create deep lounge ergonomics tailored for humid and temperate West African residences.
+    </p>
+</section>
+<!-- Numbered Configuration Steps -->
+<div class="px-margin-mobile mt-6 flex flex-col gap-5">
+<!-- Step 1: Size & Configuration -->
+<div class="flex flex-col gap-2.5">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-5 h-5 rounded-full bg-primary-container text-on-primary font-data-mono text-[10px] flex items-center justify-center font-bold">1</span>
+<span class="font-label-caps-md text-label-caps-md uppercase tracking-wider text-on-surface">Size &amp; Configuration</span>
+</div>
+<span class="font-body-sm text-body-sm text-secondary font-medium" id="config-summary">3-Seater (240cm)</span>
+</div>
+<div class="grid grid-cols-1 gap-2">
+<!-- 2-Seater -->
+<button class="size-btn flex items-center justify-between p-3 rounded-lg text-left transition-all bg-surface-container-low hover:bg-surface-container" onclick="selectSize(this, '2-Seater (185cm)', '198,000', 198000)" type="button">
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface">2-Seater</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">185cm length • Intimate sitting room</span>
+</div>
+<span class="font-title-md text-title-md text-on-surface">₦198,000</span>
+</button>
+<!-- 3-Seater Selected -->
+<button class="size-btn flex items-center justify-between p-3 rounded-lg text-left transition-all bg-secondary-fixed text-on-secondary-fixed shadow-sm" onclick="selectSize(this, '3-Seater (240cm)', '229,000', 229000)" type="button">
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-title-md text-title-md font-bold">3-Seater (Standard)</span>
+<span class="font-label-caps-sm text-[9px] bg-secondary text-on-secondary px-1.5 py-0.2 rounded uppercase tracking-wider">Atelier Signature</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-secondary-fixed-variant">240cm length • Balanced proportion</span>
+</div>
+<span class="font-title-md text-title-md font-bold">₦229,000</span>
+</button>
+<!-- Sectional -->
+<button class="size-btn flex items-center justify-between p-3 rounded-lg text-left transition-all bg-surface-container-low hover:bg-surface-container" onclick="selectSize(this, 'Sectional (310cm L)', '345,000', 345000)" type="button">
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface">Sectional</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">310cm L-Curvature • Grand reception</span>
+</div>
+<span class="font-title-md text-title-md text-on-surface">₦345,000</span>
+</button>
+</div>
+</div>
+<!-- Step 2: Wood Species -->
+<div class="flex flex-col gap-2.5">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-5 h-5 rounded-full bg-primary-container text-on-primary font-data-mono text-[10px] flex items-center justify-center font-bold">2</span>
+<span class="font-label-caps-md text-label-caps-md uppercase tracking-wider text-on-surface">Timber Foundation</span>
+</div>
+<span class="font-body-sm text-body-sm text-secondary font-medium" id="timber-summary">Solid Nigerian Teak</span>
+</div>
+<div class="grid grid-cols-2 gap-2">
+<button class="timber-btn p-3 rounded-lg text-left transition-all bg-secondary-fixed text-on-secondary-fixed shadow-sm" onclick="selectTimber(this, 'Solid Nigerian Teak', 0)" type="button">
+<span class="font-title-md text-title-md font-bold block">Solid Teak</span>
+<span class="font-body-sm text-body-sm text-on-secondary-fixed-variant block mt-0.5">Enugu Mill Cut</span>
+<span class="font-data-mono text-data-mono mt-2 inline-block font-semibold">Included</span>
+</button>
+<button class="timber-btn p-3 rounded-lg text-left transition-all bg-surface-container-low hover:bg-surface-container text-on-surface" onclick="selectTimber(this, 'Kiln-Dried Iroko', 35000)" type="button">
+<span class="font-title-md text-title-md font-semibold block">Kiln-Dried Iroko</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant block mt-0.5">Smoked Wax Finish</span>
+<span class="font-data-mono text-data-mono text-secondary mt-2 inline-block font-semibold">+₦35,000</span>
+</button>
+</div>
+</div>
+<!-- Step 3: Finish & Fabric Swatches -->
+<div class="flex flex-col gap-2.5">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-5 h-5 rounded-full bg-primary-container text-on-primary font-data-mono text-[10px] flex items-center justify-center font-bold">3</span>
+<span class="font-label-caps-md text-label-caps-md uppercase tracking-wider text-on-surface">Fabric Upholstery</span>
+</div>
+<span class="font-body-sm text-body-sm text-secondary font-medium" id="color-summary">Oatmeal Sand Bouclé</span>
+</div>
+<div class="grid grid-cols-4 gap-2.5">
+<!-- Oatmeal Sand Selected -->
+<button class="color-btn flex flex-col items-center gap-1.5 p-2 rounded-lg bg-surface-container-high transition-all" onclick="selectColor(this, 'Oatmeal Sand Bouclé')" type="button">
+<div class="w-10 h-10 rounded-full bg-[#E5DFD6] shadow-sm flex items-center justify-center">
+<span class="material-symbols-outlined text-[16px] text-[#544F49]">check</span>
+</div>
+<span class="font-label-caps-sm text-[9px] text-center uppercase tracking-tight text-on-surface font-semibold">Oatmeal</span>
+</button>
+<!-- Terracotta -->
+<button class="color-btn flex flex-col items-center gap-1.5 p-2 rounded-lg bg-surface-container-low hover:bg-surface-container-high transition-all" onclick="selectColor(this, 'Terracotta Mineral Clay')" type="button">
+<div class="w-10 h-10 rounded-full bg-[#B2533E] shadow-sm flex items-center justify-center">
+<span class="material-symbols-outlined text-[16px] text-transparent">check</span>
+</div>
+<span class="font-label-caps-sm text-[9px] text-center uppercase tracking-tight text-on-surface-variant">Terracotta</span>
+</button>
+<!-- Olive -->
+<button class="color-btn flex flex-col items-center gap-1.5 p-2 rounded-lg bg-surface-container-low hover:bg-surface-container-high transition-all" onclick="selectColor(this, 'Olive Botanical Slub')" type="button">
+<div class="w-10 h-10 rounded-full bg-[#5D6B53] shadow-sm flex items-center justify-center">
+<span class="material-symbols-outlined text-[16px] text-transparent">check</span>
+</div>
+<span class="font-label-caps-sm text-[9px] text-center uppercase tracking-tight text-on-surface-variant">Olive</span>
+</button>
+<!-- Charcoal -->
+<button class="color-btn flex flex-col items-center gap-1.5 p-2 rounded-lg bg-surface-container-low hover:bg-surface-container-high transition-all" onclick="selectColor(this, 'Charcoal Ash Weave')" type="button">
+<div class="w-10 h-10 rounded-full bg-[#2C2B2A] shadow-sm flex items-center justify-center">
+<span class="material-symbols-outlined text-[16px] text-transparent">check</span>
+</div>
+<span class="font-label-caps-sm text-[9px] text-center uppercase tracking-tight text-on-surface-variant">Charcoal</span>
+</button>
+</div>
+</div>
+<!-- Delivery Estimate Dropdown Card -->
+<div class="bg-surface-container-low p-3.5 rounded-lg flex flex-col gap-2">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-secondary">local_shipping</span>
+<span class="font-label-caps-sm text-label-caps-sm uppercase tracking-wider text-on-surface font-bold">Delivery Timeline</span>
+</div>
+<div class="relative w-full">
+<select class="w-full bg-surface-container-lowest text-on-surface font-body-sm text-body-sm py-2.5 px-3 rounded appearance-none shadow-sm focus:outline-none">
+<option>Enugu State (Local Metro Delivery) - 24 to 48 Hours</option>
+<option>Abuja FCT (Dedicated White-Glove Shuttles) - 3 to 5 Days</option>
+<option>Lagos Island / Lekki (Secured Freight &amp; Staging) - 5 to 7 Days</option>
+<option>Asaba / Onitsha Corridor - 48 Hours</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-2.5 text-on-surface-variant pointer-events-none text-[20px]">expand_more</span>
+</div>
+</div>
+<!-- Secondary Customization Action -->
+<button class="w-full py-3 px-4 rounded bg-surface-container hover:bg-surface-container-high text-on-surface font-label-caps-md text-label-caps-md uppercase tracking-widest font-bold flex items-center justify-center gap-2 transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+<span>Customize This Piece (Dimensions / Spec)</span>
+</button>
+<!-- Atelier Reassurance & WhatsApp Link -->
+<div class="flex flex-col gap-2.5 p-3.5 bg-secondary-container/20 rounded-lg">
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[18px] text-secondary mt-0.5">savings</span>
+<span class="font-body-sm text-body-sm text-on-surface">Pay a <strong>40% commission deposit</strong> now, with the balance reconciled post-inspection prior to dispatch.</span>
+</div>
+<a class="flex items-center justify-center gap-2 text-secondary font-title-md text-body-sm font-semibold hover:underline" href="https://wa.me/">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+<span>Have questions? WhatsApp our Enugu design studio</span>
+</a>
+</div>
+</div>
+<!-- Collapsible Specification Accordions -->
+<section class="px-margin-mobile mt-8 flex flex-col gap-2">
+<!-- Accordion 1 -->
+<div class="rounded-lg bg-surface-container-low overflow-hidden">
+<button class="w-full p-4 flex items-center justify-between text-left" onclick="toggleAccordion('acc-overview', this)" type="button">
+<span class="font-title-md text-title-md text-on-surface font-semibold">Atelier Overview &amp; Craft Notes</span>
+<span class="material-symbols-outlined text-on-surface-variant transition-transform duration-200" id="icon-acc-overview">expand_more</span>
+</button>
+<div class="px-4 pb-4 hidden" id="acc-overview">
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          Commissioned and built within our Ogui Road timber facility in Enugu. The curve radius is hand-bent using steam-softened Nigerian hardwoods, eliminating internal joint weaknesses. Every seam is double-topstitched using wax-coated bonded thread.
+        </p>
+</div>
+</div>
+<!-- Accordion 2 -->
+<div class="rounded-lg bg-surface-container-low overflow-hidden">
+<button class="w-full p-4 flex items-center justify-between text-left" onclick="toggleAccordion('acc-details', this)" type="button">
+<span class="font-title-md text-title-md text-on-surface font-semibold">Details &amp; Dimensions</span>
+<span class="material-symbols-outlined text-on-surface-variant transition-transform duration-200" id="icon-acc-details">expand_more</span>
+</button>
+<div class="px-4 pb-4 hidden" id="acc-details">
+<div class="grid grid-cols-2 gap-y-2 gap-x-4 font-body-sm text-body-sm">
+<div>
+<span class="block text-outline uppercase font-label-caps-sm text-[9px]">Length</span>
+<span class="text-on-surface font-medium">240 cm (Standard 3-Seat)</span>
+</div>
+<div>
+<span class="block text-outline uppercase font-label-caps-sm text-[9px]">Depth</span>
+<span class="text-on-surface font-medium">102 cm deep seat</span>
+</div>
+<div>
+<span class="block text-outline uppercase font-label-caps-sm text-[9px]">Seat Height</span>
+<span class="text-on-surface font-medium">42 cm from floor</span>
+</div>
+<div>
+<span class="block text-outline uppercase font-label-caps-sm text-[9px]">Frame Core</span>
+<span class="text-on-surface font-medium">Solid Nigerian Teak</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Accordion 3 -->
+<div class="rounded-lg bg-surface-container-low overflow-hidden">
+<button class="w-full p-4 flex items-center justify-between text-left" onclick="toggleAccordion('acc-care', this)" type="button">
+<span class="font-title-md text-title-md text-on-surface font-semibold">Care &amp; 10-Year Timber Warranty</span>
+<span class="material-symbols-outlined text-on-surface-variant transition-transform duration-200" id="icon-acc-care">expand_more</span>
+</button>
+<div class="px-4 pb-4 hidden" id="acc-care">
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          Our seasoned hardwoods carry an unconditional 10-year structural guarantee against woodworm, humidity warping, or joint fatigue. Clean bouclé covers with dry foam upholstery shampoo or solvent-free spot treatment.
+        </p>
+</div>
+</div>
+</section>
+<!-- In Our Customers' Homes Gallery -->
+<section class="mt-8 flex flex-col gap-3">
+<div class="px-margin-mobile flex items-end justify-between">
+<div>
+<span class="font-label-caps-sm text-label-caps-sm uppercase tracking-widest text-secondary">Spatial Portfolio</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">In Our Clients’ Homes</h3>
+</div>
+<span class="font-data-mono text-data-mono text-on-surface-variant">Residential Staging</span>
+</div>
+<!-- Horizontal Visual Reel -->
+<div class="flex gap-3 overflow-x-auto px-margin-mobile pb-2 snap-x snap-mandatory">
+<!-- Living Scene 1 -->
+<div class="flex-shrink-0 w-[270px] snap-center flex flex-col gap-2">
+<div class="relative w-full aspect-[4/3] rounded-lg overflow-hidden bg-surface-container shadow-sm">
+<img alt="Nsukka styling commission inside an airy residence with tall ceilings, arch details, and neutral woven wool rug" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1X6Mg-gIZbIq2hzBZzrauPwliwhfhe9FEFBhBb5a8c1t67RkldDJpgH0Jwwq2XC9CU6IFmxGWPFtk5SfG5hssj878w7zm8f4rZFEApw2kjPX3YCuhsuPGVKf-G4Ssac7g9CqWSdYsmb2WRqYGHriU07w5v8lzw0gbtndeCBAF-pI9tCBVYxTMBS7-OTCrrA-ZabChQg4C04J-4Zskywknr3imvbRRA0ZBI4hk27quMvyhT26PaH1nlSDQc"/>
+<span class="absolute bottom-2 left-2 bg-surface-container-lowest/90 px-2 py-0.5 rounded font-label-caps-sm text-[9px] uppercase tracking-wider text-on-surface">
+            Private Residence, Maitama, Abuja
+          </span>
+</div>
+</div>
+<!-- Living Scene 2 -->
+<div class="flex-shrink-0 w-[270px] snap-center flex flex-col gap-2">
+<div class="relative w-full aspect-[4/3] rounded-lg overflow-hidden bg-surface-container shadow-sm">
+<img alt="Warm walnut wood paneled study and living corner featuring organic lounge forms and sculptural paper lamp" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1XQ72yPvIbqVaBj1XeasjFW_4FyHNf-vzzWliZurAtD7vlJBRc9rgIRRktc5ER3zjY-WABctd0SjN-jTm3WKMmPS6rFf8hsR2jMRADHrJCM2Txg2rtvPR_pgO5MgsY2m5Tm30VdU6GMmi348p9IXIZrvzuMelvLDHZ9JwqB8_6CjJD5HIex-gBBnbdUNhD_j6sNqlxvbkdhMU8jJJo-e4tRFtPCWmgDtr7TXdKcWIZoLe4cOqH8FDVkGBM"/>
+<span class="absolute bottom-2 left-2 bg-surface-container-lowest/90 px-2 py-0.5 rounded font-label-caps-sm text-[9px] uppercase tracking-wider text-on-surface">
+            Atelier Loft, Independence Layout, Enugu
+          </span>
+</div>
+</div>
+</div>
+</section>
+<!-- Complete the Room (2-item Stack) -->
+<section class="px-margin-mobile mt-8 mb-4 flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Complete the Room</h3>
+<span class="font-label-caps-sm text-label-caps-sm text-secondary uppercase tracking-wider">Curated Pairings</span>
+</div>
+<div class="flex flex-col gap-3">
+<!-- Item 1: Lobito Accent Chair -->
+<div class="flex items-center gap-3 p-3 rounded-lg bg-surface-container-low shadow-sm">
+<div class="w-20 h-20 rounded bg-surface-container overflow-hidden flex-shrink-0">
+<img alt="Lobito Accent Chair in sculpted hardwood and natural neutral textile" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1XQ72yPvIbqVaBj1XeasjFW_4FyHNf-vzzWliZurAtD7vlJBRc9rgIRRktc5ER3zjY-WABctd0SjN-jTm3WKMmPS6rFf8hsR2jMRADHrJCM2Txg2rtvPR_pgO5MgsY2m5Tm30VdU6GMmi348p9IXIZrvzuMelvLDHZ9JwqB8_6CjJD5HIex-gBBnbdUNhD_j6sNqlxvbkdhMU8jJJo-e4tRFtPCWmgDtr7TXdKcWIZoLe4cOqH8FDVkGBM"/>
+</div>
+<div class="flex-1 min-w-0">
+<span class="font-label-caps-sm text-[9px] text-outline uppercase tracking-wider">Accent Seating</span>
+<h4 class="font-title-md text-title-md text-on-surface truncate">Lobito Accent Chair</h4>
+<span class="font-title-md text-title-md text-secondary font-semibold block mt-0.5">₦285,000</span>
+</div>
+<button aria-label="Add Lobito Chair" class="w-10 h-10 rounded bg-primary-container text-on-primary flex items-center justify-center hover:bg-primary transition-colors flex-shrink-0" type="button">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+<!-- Item 2: Asata Coffee Table -->
+<div class="flex items-center gap-3 p-3 rounded-lg bg-surface-container-low shadow-sm">
+<div class="w-20 h-20 rounded bg-surface-container overflow-hidden flex-shrink-0">
+<img alt="Asata Coffee Table in dark oiled Nigerian hardwood with flush brass shadow reveal" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1X6Mg-gIZbIq2hzBZzrauPwliwhfhe9FEFBhBb5a8c1t67RkldDJpgH0Jwwq2XC9CU6IFmxGWPFtk5SfG5hssj878w7zm8f4rZFEApw2kjPX3YCuhsuPGVKf-G4Ssac7g9CqWSdYsmb2WRqYGHriU07w5v8lzw0gbtndeCBAF-pI9tCBVYxTMBS7-OTCrrA-ZabChQg4C04J-4Zskywknr3imvbRRA0ZBI4hk27quMvyhT26PaH1nlSDQc"/>
+</div>
+<div class="flex-1 min-w-0">
+<span class="font-label-caps-sm text-[9px] text-outline uppercase tracking-wider">Low Tables</span>
+<h4 class="font-title-md text-title-md text-on-surface truncate">Asata Coffee Table</h4>
+<span class="font-title-md text-title-md text-secondary font-semibold block mt-0.5">₦229,000</span>
+</div>
+<button aria-label="Add Asata Table" class="w-10 h-10 rounded bg-primary-container text-on-primary flex items-center justify-center hover:bg-primary transition-colors flex-shrink-0" type="button">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Sticky Bottom Mobile Action Bar -->
+<aside class="fixed bottom-0 left-0 right-0 z-40 bg-surface-container-lowest/95 backdrop-blur-lg shadow-[0_-4px_16px_rgba(0,0,0,0.06)] px-margin-mobile py-3 flex items-center justify-between gap-4">
+<div class="flex flex-col">
+<span class="font-label-caps-sm text-[9px] uppercase tracking-wider text-outline">Selected Configuration</span>
+<div class="flex items-baseline gap-1">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold" id="sticky-price">₦229,000</span>
+</div>
+</div>
+<button class="flex-1 py-3.5 px-5 bg-primary text-on-primary rounded font-label-caps-md text-label-caps-md uppercase tracking-widest font-bold shadow-md hover:bg-on-surface-variant transition-colors flex items-center justify-center gap-2" onclick="handleAddToCart(this)" type="button">
+<span class="material-symbols-outlined text-[18px]">shopping_bag</span>
+<span id="cart-btn-text">Add to Cart</span>
+</button>
+</aside>
+</div>
+<script>
+  let basePrice = 229000;
+  let timberAddon = 0;
+
+  function updatePrice() {
+    const total = basePrice + timberAddon;
+    const formatted = '₦' + total.toLocaleString('en-NG');
+    document.getElementById('display-price').innerText = formatted;
+    document.getElementById('sticky-price').innerText = formatted;
+  }
+
+  function selectSize(btn, label, priceStr, numericVal) {
+    document.querySelectorAll('.size-btn').forEach(b => {
+      b.className = 'size-btn flex items-center justify-between p-3 rounded-lg text-left transition-all bg-surface-container-low hover:bg-surface-container text-on-surface';
+      const badge = b.querySelector('.bg-secondary');
+      if (badge) badge.remove();
+    });
+    btn.className = 'size-btn flex items-center justify-between p-3 rounded-lg text-left transition-all bg-secondary-fixed text-on-secondary-fixed shadow-sm';
+    document.getElementById('config-summary').innerText = label;
+    basePrice = numericVal;
+    updatePrice();
+  }
+
+  function selectTimber(btn, label, addon) {
+    document.querySelectorAll('.timber-btn').forEach(b => {
+      b.className = 'timber-btn p-3 rounded-lg text-left transition-all bg-surface-container-low hover:bg-surface-container text-on-surface';
+    });
+    btn.className = 'timber-btn p-3 rounded-lg text-left transition-all bg-secondary-fixed text-on-secondary-fixed shadow-sm';
+    document.getElementById('timber-summary').innerText = label;
+    timberAddon = addon;
+    updatePrice();
+  }
+
+  function selectColor(btn, label) {
+    document.querySelectorAll('.color-btn').forEach(b => {
+      b.className = 'color-btn flex flex-col items-center gap-1.5 p-2 rounded-lg bg-surface-container-low hover:bg-surface-container-high transition-all';
+      const icon = b.querySelector('.material-symbols-outlined');
+      if (icon) {
+        icon.classList.remove('text-[#544F49]', 'text-white');
+        icon.classList.add('text-transparent');
+      }
+    });
+    btn.className = 'color-btn flex flex-col items-center gap-1.5 p-2 rounded-lg bg-surface-container-high transition-all';
+    const icon = btn.querySelector('.material-symbols-outlined');
+    if (icon) {
+      icon.classList.remove('text-transparent');
+      icon.classList.add('text-[#544F49]');
+    }
+    document.getElementById('color-summary').innerText = label;
+  }
+
+  function toggleAccordion(id, btn) {
+    const el = document.getElementById(id);
+    const icon = document.getElementById('icon-' + id);
+    const isHidden = el.classList.contains('hidden');
+    
+    if (isHidden) {
+      el.classList.remove('hidden');
+      icon.style.transform = 'rotate(180deg)';
+    } else {
+      el.classList.add('hidden');
+      icon.style.transform = 'rotate(0deg)';
+    }
+  }
+
+  function handleAddToCart(btn) {
+    const textSpan = document.getElementById('cart-btn-text');
+    const originalText = textSpan.innerText;
+    textSpan.innerText = "Added to Atelier Bag";
+    btn.classList.remove('bg-primary');
+    btn.classList.add('bg-secondary');
+    
+    setTimeout(() => {
+      textSpan.innerText = originalText;
+      btn.classList.remove('bg-secondary');
+      btn.classList.add('bg-primary');
+    }, 2200);
+  }
+</script></main><script src="/assets/site.js"></script>
+</body></html>

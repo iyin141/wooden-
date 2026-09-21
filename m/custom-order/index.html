@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#fff8f4;}body{overscroll-behavior:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,400&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "inverse-on-surface": "#f6efec", "error-container": "#ffdad6", "on-surface-variant": "#4b4640", "primary-fixed-dim": "#cac6c3", "primary-container": "#1d1b1a", "on-primary-fixed": "#1d1b1a", "on-primary-fixed-variant": "#484645", "on-error": "#ffffff", "outline-variant": "#cdc5bd", "background": "#fff8f4", "on-error-container": "#93000a", "inverse-surface": "#32302e", "secondary-fixed": "#ffdbcc", "surface-container-low": "#f9f2ee", "surface-container-lowest": "#ffffff", "on-primary": "#ffffff", "on-tertiary": "#ffffff", "surface": "#fff8f4", "surface-dim": "#dfd9d5", "on-secondary-fixed-variant": "#743412", "on-tertiary-container": "#997f61", "on-secondary-container": "#773614", "primary": "#000000", "secondary-container": "#fea277", "primary-fixed": "#e6e1df", "secondary-fixed-dim": "#ffb694", "surface-bright": "#fff8f4", "tertiary": "#000000", "secondary": "#924b27", "surface-tint": "#605e5c", "error": "#ba1a1a", "inverse-primary": "#cac6c3", "tertiary-container": "#281803", "on-tertiary-fixed": "#281803", "on-background": "#1d1b19", "tertiary-fixed": "#fdddb9", "surface-variant": "#e7e1de", "tertiary-fixed-dim": "#e0c29f", "on-secondary-fixed": "#351000", "surface-container-high": "#ede7e3", "on-surface": "#1d1b19", "on-tertiary-fixed-variant": "#584329", "on-secondary": "#ffffff", "surface-container-highest": "#e7e1de", "outline": "#7c766f", "on-primary-container": "#868381", "surface-container": "#f3ede9" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "gutter-mobile": "1rem", "space-md": "1rem", "space-lg": "1.5rem", "space-xs": "0.25rem", "margin": "3.5rem", "gutter": "1.5rem", "space-sm": "0.5rem", "margin-mobile": "1.25rem", "space-xl": "2.5rem" }, fontFamily: { "display-lg": ["Playfair Display"], "label-caps-sm": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "headline-sm": ["Playfair Display"], "label-caps-md": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"], "display-lg-mobile": ["Playfair Display"], "body-sm": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Playfair Display"], "headline-lg": ["Playfair Display"], "headline-md": ["Playfair Display"], "data-mono": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"] }, fontSize: { "display-lg": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "label-caps-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.16em", "fontWeight": "700" }], "body-lg": ["17px", { "lineHeight": "28px", "fontWeight": "400" }], "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }], "label-caps-md": ["11px", { "lineHeight": "16px", "letterSpacing": "0.14em", "fontWeight": "700" }], "title-md": ["16px", { "lineHeight": "24px", "letterSpacing": "0.01em", "fontWeight": "600" }], "display-lg-mobile": ["38px", { "lineHeight": "44px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "body-sm": ["13px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "500" }], "headline-lg": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "500" }], "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "500" }], "data-mono": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" }], "body-md": ["15px", { "lineHeight": "24px", "fontWeight": "400" }] } } } }</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased flex flex-col min-h-screen selection:bg-secondary-fixed selection:text-on-secondary-fixed" data-page="custom-order">
+<!-- PAGE: Commission Inquiry --><header class="fixed top-0 w-full z-50 pt-safe bg-primary-container/95 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.12)]"><div class="h-16 px-gutter-mobile flex items-center justify-between"><div class="flex items-center gap-space-xs"><button aria-label="Return to Previous View" class="w-11 h-11 flex items-center justify-center text-on-primary hover:text-secondary-fixed transition-colors" onclick="history.back()"><span class="material-symbols-outlined text-[22px]">arrow_back</span></button><div class="flex flex-col ml-1"><span class="font-label-caps-sm text-[9px] uppercase tracking-[0.2em] text-outline-variant">Wooden Lounge Atelier</span><h1 class="font-headline-sm text-headline-sm text-on-primary leading-tight truncate max-w-[180px]">Commission Inquiry</h1></div></div><div class="flex items-center gap-space-xs"><a aria-label="Acquisition Bag" class="w-11 h-11 relative flex items-center justify-center text-on-primary hover:text-secondary-fixed transition-colors" data-path="acquisition-bag" href="/m/cart/"><span class="material-symbols-outlined text-[22px]">shopping_bag</span><span class="absolute top-2 right-2 w-4 h-4 bg-secondary text-on-secondary font-data-mono text-[10px] leading-none flex items-center justify-center rounded-full">2</span></a><div class="w-11 h-11 flex items-center justify-center pl-1"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-outline-variant/30" src="https://lh3.googleusercontent.com/aida/AEtjO1WtxZs5G5772MVRzWOOyO_-ewG0RVE7WxEecnfe2lOq93RcdZNImsRSCllRYD_TDbthUpsdEWwghyxv-uzW4d2J03PRrhYgN4F-x_vP9RqkjLnGkV2SMclf7ieWdsZnnRPupbtOODdrUQorOcRnHOXcvNkKQvlPIWFYVMN8V2d9egxeEBnMhKKBPq_79zjP0eFr99j1R9zHL53YWFCReTB7dRrtCdhBxW09Y-ylGi5uC7DJ-uvl8A2p16U_vjIgg-lQbJhNG06LIQ"/></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-safe bg-surface"><div class="flex flex-col w-full pb-10">
+<div class="px-margin-mobile pt-space-lg flex flex-col">
+<div class="inline-flex items-center gap-2 mb-space-xs">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="font-label-caps-sm text-label-caps-sm text-secondary uppercase tracking-[0.2em]">Atelier Commission Protocol</span>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface">Book a Custom Order</h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs leading-relaxed">
+      Collaborate directly with our master joiners in Enugu for tailored architectural woodwork.
+    </p>
+<div class="mt-space-md p-3 rounded-lg bg-surface-container flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-2">
+<span class="w-5 h-5 rounded-full bg-primary text-on-primary font-data-mono text-[10px] flex items-center justify-center font-bold">1</span>
+<span class="font-label-caps-md text-label-caps-md text-on-surface uppercase">Step 1 of 4</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-data-mono text-data-mono text-on-surface-variant font-medium">Active Specification</span>
+</div>
+</div>
+</div>
+<section class="mt-space-xl px-margin-mobile flex flex-col gap-space-md">
+<div class="flex flex-col">
+<span class="font-label-caps-sm text-label-caps-sm text-outline uppercase tracking-wider">Phase 01</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Select Commission Scope</h2>
+</div>
+<div class="flex flex-col gap-3" id="scope-selector">
+<button class="scope-card text-left p-4 rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all flex flex-col gap-2 relative" onclick="selectScope(this, 'tier1')" type="button">
+<div class="flex items-start justify-between">
+<span class="font-label-caps-sm text-label-caps-sm text-outline uppercase">Tier 01</span>
+<span class="font-data-mono text-[11px] px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant">3-4 Weeks</span>
+</div>
+<div class="flex items-center justify-between">
+<div>
+<h3 class="font-title-md text-title-md text-on-surface">Modify an Existing Piece</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Adjust timber species, grain direction, or sizing from our archive.</p>
+</div>
+<span class="material-symbols-outlined text-outline check-icon">radio_button_unchecked</span>
+</div>
+</button>
+<button class="scope-card selected text-left p-4 rounded-xl bg-primary text-on-primary shadow-md transition-all flex flex-col gap-2 relative" onclick="selectScope(this, 'tier2')" type="button">
+<div class="flex items-start justify-between">
+<span class="font-label-caps-sm text-label-caps-sm text-secondary-fixed uppercase">Tier 02 • Recommended</span>
+<span class="font-data-mono text-[11px] px-2.5 py-0.5 rounded-full bg-primary-container text-secondary-fixed">4-6 Weeks</span>
+</div>
+<div class="flex items-center justify-between">
+<div class="pr-2">
+<h3 class="font-title-md text-title-md text-on-primary">Fully Bespoke Piece</h3>
+<p class="font-body-sm text-body-sm text-primary-fixed-dim">One-off architectural joinery handcrafted to single millimetre tolerances.</p>
+</div>
+<span class="material-symbols-outlined text-secondary-fixed check-icon" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+</button>
+<button class="scope-card text-left p-4 rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all flex flex-col gap-2 relative" onclick="selectScope(this, 'tier3')" type="button">
+<div class="flex items-start justify-between">
+<span class="font-label-caps-sm text-label-caps-sm text-outline uppercase">Tier 03</span>
+<span class="font-data-mono text-[11px] px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant">8-12 Weeks</span>
+</div>
+<div class="flex items-center justify-between">
+<div>
+<h3 class="font-title-md text-title-md text-on-surface">Full Room or Whole Home</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Integrated architectural casework, paneled partitions, and full suites.</p>
+</div>
+<span class="material-symbols-outlined text-outline check-icon">radio_button_unchecked</span>
+</div>
+</button>
+</div>
+</section>
+<section class="mt-space-xl px-margin-mobile flex flex-col gap-space-md">
+<div class="flex flex-col">
+<span class="font-label-caps-sm text-label-caps-sm text-outline uppercase tracking-wider">Phase 02</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Typology &amp; Dimensions</h2>
+</div>
+<div class="flex flex-col gap-4">
+<div class="flex flex-col gap-1.5">
+<label class="font-label-caps-sm text-label-caps-sm text-on-surface-variant uppercase">Furniture Typology</label>
+<div class="relative bg-surface-container-lowest rounded-lg shadow-sm">
+<select class="w-full h-12 px-3 appearance-none bg-transparent font-title-md text-title-md text-on-surface focus:outline-none">
+<option selected="">Dining Table (Live-edge / Architectural trestle)</option>
+<option>Sculptural Credenza / Media Console</option>
+<option>Canopy Bedstead with Floating Nightstands</option>
+<option>Lounge Accent Chair with Raffia Weave</option>
+<option>Architectural Fluted Bookshelf</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-3 pointer-events-none text-on-surface-variant">expand_more</span>
+</div>
+</div>
+<div class="p-4 rounded-xl bg-surface-container flex flex-col gap-3 shadow-sm">
+<span class="font-label-caps-sm text-label-caps-sm text-on-surface-variant uppercase tracking-wider">Envelope Measurements</span>
+<div class="flex flex-col gap-2.5">
+<div class="flex items-center justify-between bg-surface-container-lowest p-3 rounded-lg shadow-sm">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Length (Span)</span>
+<div class="flex items-center gap-1">
+<input class="w-16 text-right font-data-mono text-body-md text-on-surface focus:outline-none bg-transparent font-semibold" type="number" value="280"/>
+<span class="font-data-mono text-data-mono text-outline">cm</span>
+</div>
+</div>
+<div class="flex items-center justify-between bg-surface-container-lowest p-3 rounded-lg shadow-sm">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Width (Depth)</span>
+<div class="flex items-center gap-1">
+<input class="w-16 text-right font-data-mono text-body-md text-on-surface focus:outline-none bg-transparent font-semibold" type="number" value="110"/>
+<span class="font-data-mono text-data-mono text-outline">cm</span>
+</div>
+</div>
+<div class="flex items-center justify-between bg-surface-container-lowest p-3 rounded-lg shadow-sm">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Finished Height</span>
+<div class="flex items-center gap-1">
+<input class="w-16 text-right font-data-mono text-body-md text-on-surface focus:outline-none bg-transparent font-semibold" type="number" value="76"/>
+<span class="font-data-mono text-data-mono text-outline">cm</span>
+</div>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-label-caps-sm text-label-caps-sm text-on-surface-variant uppercase">Material Selection</label>
+<div class="grid grid-cols-3 gap-2.5" id="swatch-container">
+<button class="swatch-card selected p-2 rounded-xl bg-surface-container-lowest shadow-md flex flex-col gap-2 text-left relative transition-all" onclick="selectSwatch(this)" type="button">
+<img class="w-full h-16 rounded-lg object-cover" data-alt="Close-up macro texture photograph of seasoned Nigerian Teak timber grain with warm amber undertones, delicate linear pores, and hand-rubbed wax finish under soft gallery directional light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAj3dWpe_xPcupBvxOlF_u1XrnJBc9g8JLzIRC_qi8-kyNqzNKrrNYoES2fSWqYbXOUVRsYRIrL6Wd0ribHHMzPJ90wre6-qdS8z6j1R1f3trH9QgDRZuzhRYrTYce3k1hezu7BMjaoLXPNnc_SL52e54ftjIXqCsr6geNqIRdwA24DcKIywTkwl4geHICkneXKqDqU-jQFV2RnJXdwTF17a59E4ePkjbzI3P86v_8QacVneaDIoDxB"/>
+<div class="flex flex-col">
+<span class="font-title-md text-[12px] text-on-surface font-semibold leading-snug">Nigerian Teak</span>
+<span class="font-label-caps-sm text-[9px] text-secondary font-bold uppercase tracking-wider mt-0.5">Kiln-Dried</span>
+</div>
+<div class="absolute top-3 right-3 w-5 h-5 rounded-full bg-secondary text-on-secondary flex items-center justify-center swatch-badge shadow-sm">
+<span class="material-symbols-outlined text-[13px]">check</span>
+</div>
+</button>
+<button class="swatch-card p-2 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-2 text-left relative opacity-85 transition-all" onclick="selectSwatch(this)" type="button">
+<img class="w-full h-16 rounded-lg object-cover" data-alt="Close-up macro architectural surface of aged West African Iroko wood showing rich golden-brown interlocking grain patterns and silky satin matte architectural finish." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAg7RUrj-D7ogrFKUIH4tU6okncYdz-oIRxzSv2WLebPBbErOq1Zuz8vBrDdst1PsXuJvMZh16onH3nZGD6JfszIZiYZPFG_RCOkGUHoLLQ8va70t7T6MtXfvdgTzFjYom8w2hzO1NUX5Mg7mncCSBfpGn7L0uen2rOsndWZuybpYVUNsEj-k8KIvVtbG28ij28xOy9bB8-uW8yAR3aoUybJ3QFbU3DzurNn4o6Ol__mhmwtcg9v2Oa"/>
+<div class="flex flex-col">
+<span class="font-title-md text-[12px] text-on-surface font-semibold leading-snug">Aged Iroko</span>
+<span class="font-label-caps-sm text-[9px] text-outline font-medium uppercase tracking-wider mt-0.5">Hardwood</span>
+</div>
+<div class="absolute top-3 right-3 w-5 h-5 rounded-full bg-secondary text-on-secondary hidden items-center justify-center swatch-badge shadow-sm">
+<span class="material-symbols-outlined text-[13px]">check</span>
+</div>
+</button>
+<button class="swatch-card p-2 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-2 text-left relative opacity-85 transition-all" onclick="selectSwatch(this)" type="button">
+<img class="w-full h-16 rounded-lg object-cover" data-alt="Tactile textured surface of heavy oatmeal boucle upholstery fabric with organic woven loops in soft cream and warm beige tones under diffuse architectural studio illumination." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDM2AV52v_5IRyjXoJz__lMxIr49YtlkMccZ1IQP3xgVm0WaWAheCQAUGr4tWENeY8f608O-KVEHh6aDDnGjENqXfzW-iovbeR29MnsYrY3ZUnCRxR1Laub8-KEdP53NqTjZ-KjiKiK6-csn7EpE6x-NvaujYLxVxJddLrRm-oK3Saxdo4JfKI5v5Y3pPll_1YZDuDaMu2eQZ1SUtQqKT5giIelBB1z4VyYILwO2X-oVbDIMRaxYcQo"/>
+<div class="flex flex-col">
+<span class="font-title-md text-[12px] text-on-surface font-semibold leading-snug">Oatmeal</span>
+<span class="font-label-caps-sm text-[9px] text-outline font-medium uppercase tracking-wider mt-0.5">Bouclé Weave</span>
+</div>
+<div class="absolute top-3 right-3 w-5 h-5 rounded-full bg-secondary text-on-secondary hidden items-center justify-center swatch-badge shadow-sm">
+<span class="material-symbols-outlined text-[13px]">check</span>
+</div>
+</button>
+</div>
+</div>
+</div>
+</section>
+<section class="mt-space-xl px-margin-mobile flex flex-col gap-space-md">
+<div class="flex flex-col">
+<span class="font-label-caps-sm text-label-caps-sm text-outline uppercase tracking-wider">Phase 03</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Budget &amp; Timeline</h2>
+</div>
+<div class="flex flex-col gap-3" id="budget-group">
+<button class="budget-card p-3.5 rounded-xl bg-surface-container-lowest text-left shadow-sm flex items-center justify-between transition-all" onclick="selectBudget(this)" type="button">
+<div class="flex flex-col">
+<span class="font-data-mono text-body-md text-on-surface font-bold">₦650,000 - ₦1,200,000</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Accent Furniture &amp; Small Consoles</span>
+</div>
+<span class="material-symbols-outlined text-outline radio-icon">radio_button_unchecked</span>
+</button>
+<button class="budget-card selected p-3.5 rounded-xl bg-secondary-fixed text-left shadow-sm flex items-center justify-between transition-all" onclick="selectBudget(this)" type="button">
+<div class="flex flex-col">
+<span class="font-data-mono text-body-md text-on-secondary-fixed font-bold">₦1,200,000 - ₦3,000,000</span>
+<span class="font-body-sm text-body-sm text-on-secondary-fixed-variant font-medium">Bespoke Dining Suites &amp; Daybeds</span>
+</div>
+<span class="material-symbols-outlined text-secondary radio-icon" style="font-variation-settings: 'FILL' 1;">radio_button_checked</span>
+</button>
+<button class="budget-card p-3.5 rounded-xl bg-surface-container-lowest text-left shadow-sm flex items-center justify-between transition-all" onclick="selectBudget(this)" type="button">
+<div class="flex flex-col">
+<span class="font-data-mono text-body-md text-on-surface font-bold">₦3,000,000 - ₦7,500,000+</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Whole Space Casework &amp; Heritage Timber</span>
+</div>
+<span class="material-symbols-outlined text-outline radio-icon">radio_button_unchecked</span>
+</button>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-caps-sm text-label-caps-sm text-on-surface-variant uppercase">Required By Date</label>
+<div class="relative bg-surface-container-lowest rounded-lg shadow-sm">
+<input class="w-full h-12 px-3 appearance-none bg-transparent font-data-mono text-body-md text-on-surface focus:outline-none" type="date" value="2025-05-15"/>
+<span class="material-symbols-outlined absolute right-3 top-3 pointer-events-none text-on-surface-variant">calendar_today</span>
+</div>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-caps-sm text-label-caps-sm text-on-surface-variant uppercase">Commission Scope &amp; Vision</label>
+<textarea class="w-full p-3 rounded-lg bg-surface-container-lowest shadow-sm font-body-md text-body-md text-on-surface placeholder:text-outline focus:outline-none resize-none" placeholder="Describe the room setting, architectural context, desired edge finish, brass inlays, or special clearances..." rows="3"></textarea>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-caps-sm text-label-caps-sm text-on-surface-variant uppercase">Architectural References &amp; Plans</label>
+<div class="p-5 rounded-xl bg-surface-container-low shadow-sm flex flex-col items-center text-center cursor-pointer transition-colors active:bg-surface-container-high" onclick="document.getElementById('file-upload').click()">
+<input class="hidden" id="file-upload" type="file"/>
+<div class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center text-secondary mb-2">
+<span class="material-symbols-outlined text-[22px]">cloud_upload</span>
+</div>
+<span class="font-title-md text-title-md text-on-surface">Tap to upload drawings or photos</span>
+<span class="font-data-mono text-[11px] text-on-surface-variant mt-1">DWG, PDF, JPG, PNG up to 25MB</span>
+</div>
+</div>
+</section>
+<section class="mt-space-xl px-margin-mobile flex flex-col gap-space-md">
+<div class="flex flex-col">
+<span class="font-label-caps-sm text-label-caps-sm text-outline uppercase tracking-wider">Phase 04</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Contact &amp; Delivery</h2>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-caps-sm text-label-caps-sm text-on-surface-variant uppercase">Direct Response Channel</label>
+<div class="grid grid-cols-3 gap-2" id="channel-group">
+<button class="channel-btn selected py-2.5 px-2 rounded-lg bg-primary text-on-primary text-center shadow-sm transition-all flex flex-col items-center gap-1" onclick="selectChannel(this)" type="button">
+<span class="font-label-caps-sm text-[10px] uppercase tracking-wider font-bold">WhatsApp</span>
+<span class="font-data-mono text-[9px] text-secondary-fixed">Fastest (2h)</span>
+</button>
+<button class="channel-btn py-2.5 px-2 rounded-lg bg-surface-container-lowest text-on-surface text-center shadow-sm transition-all flex flex-col items-center gap-1" onclick="selectChannel(this)" type="button">
+<span class="font-label-caps-sm text-[10px] uppercase tracking-wider font-bold">Direct Phone</span>
+<span class="font-data-mono text-[9px] text-outline">Voice Call</span>
+</button>
+<button class="channel-btn py-2.5 px-2 rounded-lg bg-surface-container-lowest text-on-surface text-center shadow-sm transition-all flex flex-col items-center gap-1" onclick="selectChannel(this)" type="button">
+<span class="font-label-caps-sm text-[10px] uppercase tracking-wider font-bold">Email</span>
+<span class="font-data-mono text-[9px] text-outline">Formal Spec</span>
+</button>
+</div>
+</div>
+<div class="flex flex-col gap-3">
+<div class="flex flex-col gap-1">
+<label class="font-label-caps-sm text-label-caps-sm text-on-surface-variant uppercase">Full Legal Name</label>
+<input class="w-full h-12 px-3 rounded-lg bg-surface-container-lowest shadow-sm font-title-md text-title-md text-on-surface focus:outline-none" type="text" value="Dr. Emeka Maduka"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-caps-sm text-label-caps-sm text-on-surface-variant uppercase">Phone Number</label>
+<div class="flex gap-2">
+<div class="w-20 h-12 rounded-lg bg-surface-container flex items-center justify-center font-data-mono text-body-md text-on-surface font-semibold shadow-sm">
+            +234
+          </div>
+<input class="flex-1 h-12 px-3 rounded-lg bg-surface-container-lowest shadow-sm font-data-mono text-body-md text-on-surface focus:outline-none" type="tel" value="803 555 0192"/>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-caps-sm text-label-caps-sm text-on-surface-variant uppercase">Email Address</label>
+<input class="w-full h-12 px-3 rounded-lg bg-surface-container-lowest shadow-sm font-body-md text-body-md text-on-surface focus:outline-none" type="email" value="e.maduka@architecture-ng.com"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-caps-sm text-label-caps-sm text-on-surface-variant uppercase">Installation City &amp; State</label>
+<input class="w-full h-12 px-3 rounded-lg bg-surface-container-lowest shadow-sm font-body-md text-body-md text-on-surface focus:outline-none" type="text" value="Independence Layout, Enugu"/>
+</div>
+</div>
+</section>
+<section class="mt-space-xl px-margin-mobile flex flex-col gap-space-md">
+<div class="p-5 rounded-2xl bg-surface-container-lowest shadow-md flex flex-col gap-4">
+<div class="flex items-center justify-between pb-3 border-b border-surface-container-highest">
+<span class="font-label-caps-sm text-label-caps-sm text-outline uppercase tracking-wider">Estimated Project Scope</span>
+<span class="font-data-mono text-[11px] px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed-variant font-bold">Enugu Atelier</span>
+</div>
+<div class="flex flex-col gap-1.5">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Estimated Valuation Window</span>
+<div class="font-headline-md text-headline-md text-on-surface font-bold">₦1,200,000 – ₦3,000,000</div>
+</div>
+<div class="p-3 rounded-xl bg-surface-container-low flex items-start gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[20px] shrink-0 mt-0.5">verified_user</span>
+<p class="font-body-sm text-[12px] text-on-surface-variant leading-relaxed">
+          50% deposit due only upon formal approval of architectural 3D renders and wood grain selection. Balance upon factory white-glove inspection.
+        </p>
+</div>
+<button class="w-full h-14 bg-primary text-on-primary rounded-xl flex items-center justify-center gap-2 shadow-lg active:scale-[0.99] transition-transform" onclick="submitCustomOrder()" type="button">
+<span class="font-label-caps-md text-label-caps-md tracking-[0.16em] uppercase">Request a Quote</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</section>
+<section class="mt-space-lg px-margin-mobile">
+<div class="p-5 rounded-2xl bg-surface-container flex flex-col gap-3 shadow-sm">
+<div class="flex items-center gap-2">
+<span class="w-6 h-6 rounded-full bg-secondary text-on-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[14px]">check</span>
+</span>
+<span class="font-title-md text-title-md text-on-surface font-semibold">Request Received • Reference WL-C-0001</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+        Our Chief Joiner and spatial draftsman will review your dimensions and contact you within 2 business days via WhatsApp and email.
+      </p>
+<a class="mt-1 w-full h-11 rounded-lg bg-surface-container-lowest text-on-surface flex items-center justify-center gap-2 shadow-sm font-label-caps-md text-label-caps-md uppercase tracking-wider hover:bg-surface-bright transition-colors" href="https://wa.me/2348000000000" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px] text-secondary">chat</span>
+        Direct Atelier WhatsApp Desk
+      </a>
+</div>
+</section>
+</div>
+<script>
+  function selectScope(element, tier) {
+    const cards = document.querySelectorAll('.scope-card');
+    cards.forEach(card => {
+      card.classList.remove('selected', 'bg-primary', 'text-on-primary', 'shadow-md');
+      card.classList.add('bg-surface-container-lowest', 'text-on-surface', 'shadow-sm');
+      const icon = card.querySelector('.check-icon');
+      if (icon) {
+        icon.textContent = 'radio_button_unchecked';
+        icon.classList.remove('text-secondary-fixed');
+        icon.classList.add('text-outline');
+        icon.style.fontVariationSettings = '';
+      }
+      const title = card.querySelector('h3');
+      if (title) title.classList.replace('text-on-primary', 'text-on-surface');
+      const desc = card.querySelector('p');
+      if (desc) desc.classList.replace('text-primary-fixed-dim', 'text-on-surface-variant');
+      const tag = card.querySelector('.font-label-caps-sm');
+      if (tag) tag.classList.replace('text-secondary-fixed', 'text-outline');
+      const badge = card.querySelector('.font-data-mono');
+      if (badge) {
+        badge.classList.replace('bg-primary-container', 'bg-surface-container-high');
+        badge.classList.replace('text-secondary-fixed', 'text-on-surface-variant');
+      }
+    });
+
+    element.classList.add('selected', 'bg-primary', 'text-on-primary', 'shadow-md');
+    element.classList.remove('bg-surface-container-lowest', 'text-on-surface', 'shadow-sm');
+    const icon = element.querySelector('.check-icon');
+    if (icon) {
+      icon.textContent = 'check_circle';
+      icon.classList.remove('text-outline');
+      icon.classList.add('text-secondary-fixed');
+      icon.style.fontVariationSettings = "'FILL' 1";
+    }
+    const title = element.querySelector('h3');
+    if (title) title.classList.replace('text-on-surface', 'text-on-primary');
+    const desc = element.querySelector('p');
+    if (desc) desc.classList.replace('text-on-surface-variant', 'text-primary-fixed-dim');
+    const tag = element.querySelector('.font-label-caps-sm');
+    if (tag) tag.classList.replace('text-outline', 'text-secondary-fixed');
+    const badge = element.querySelector('.font-data-mono');
+    if (badge) {
+      badge.classList.replace('bg-surface-container-high', 'bg-primary-container');
+      badge.classList.replace('text-on-surface-variant', 'text-secondary-fixed');
+    }
+  }
+
+  function selectSwatch(element) {
+    const swatches = document.querySelectorAll('.swatch-card');
+    swatches.forEach(sw => {
+      sw.classList.remove('selected', 'shadow-md');
+      sw.classList.add('shadow-sm', 'opacity-85');
+      const badge = sw.querySelector('.swatch-badge');
+      if (badge) {
+        badge.classList.add('hidden');
+        badge.classList.remove('flex');
+      }
+    });
+    element.classList.add('selected', 'shadow-md');
+    element.classList.remove('shadow-sm', 'opacity-85');
+    const badge = element.querySelector('.swatch-badge');
+    if (badge) {
+      badge.classList.remove('hidden');
+      badge.classList.add('flex');
+    }
+  }
+
+  function selectBudget(element) {
+    const budgets = document.querySelectorAll('.budget-card');
+    budgets.forEach(b => {
+      b.classList.remove('selected', 'bg-secondary-fixed');
+      b.classList.add('bg-surface-container-lowest');
+      const icon = b.querySelector('.radio-icon');
+      if (icon) {
+        icon.textContent = 'radio_button_unchecked';
+        icon.classList.remove('text-secondary');
+        icon.classList.add('text-outline');
+        icon.style.fontVariationSettings = '';
+      }
+      const title = b.querySelector('.font-data-mono');
+      if (title) title.classList.replace('text-on-secondary-fixed', 'text-on-surface');
+      const subtitle = b.querySelector('.font-body-sm');
+      if (subtitle) subtitle.classList.replace('text-on-secondary-fixed-variant', 'text-on-surface-variant');
+    });
+
+    element.classList.add('selected', 'bg-secondary-fixed');
+    element.classList.remove('bg-surface-container-lowest');
+    const icon = element.querySelector('.radio-icon');
+    if (icon) {
+      icon.textContent = 'radio_button_checked';
+      icon.classList.remove('text-outline');
+      icon.classList.add('text-secondary');
+      icon.style.fontVariationSettings = "'FILL' 1";
+    }
+    const title = element.querySelector('.font-data-mono');
+    if (title) title.classList.replace('text-on-surface', 'text-on-secondary-fixed');
+    const subtitle = element.querySelector('.font-body-sm');
+    if (subtitle) subtitle.classList.replace('text-on-surface-variant', 'text-on-secondary-fixed-variant');
+  }
+
+  function selectChannel(element) {
+    const channels = document.querySelectorAll('.channel-btn');
+    channels.forEach(btn => {
+      btn.classList.remove('selected', 'bg-primary', 'text-on-primary');
+      btn.classList.add('bg-surface-container-lowest', 'text-on-surface');
+      const sub = btn.querySelector('.font-data-mono');
+      if (sub) {
+        sub.classList.remove('text-secondary-fixed');
+        sub.classList.add('text-outline');
+      }
+    });
+
+    element.classList.add('selected', 'bg-primary', 'text-on-primary');
+    element.classList.remove('bg-surface-container-lowest', 'text-on-surface');
+    const sub = element.querySelector('.font-data-mono');
+    if (sub) {
+      sub.classList.remove('text-outline');
+      sub.classList.add('text-secondary-fixed');
+    }
+  }
+
+  function submitCustomOrder() {
+    alert("Commission brief recorded under Reference WL-C-0001. A lead designer will reach out shortly.");
+  }
+</script></main><script src="/assets/site.js"></script>
+</body></html>

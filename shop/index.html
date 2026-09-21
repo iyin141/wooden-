@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Living Room Furniture - Wooden Lounge Furniture</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts: Playfair Display & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              black: '#0D0C0B',
+              dark: '#141312',
+              cream: '#F9F8F5',
+              sand: '#F2EFE9',
+              warmgray: '#E6E2D8',
+              muted: '#7A756D',
+              border: '#E2DDD2',
+              accent: '#C86D51',
+              taupe: '#786F63'
+            }
+          },
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      background-color: #F9F8F5;
+      color: #141312;
+      font-family: '"Plus Jakarta Sans"', sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    .serif-title {
+      font-family: '"Cormorant Garamond"', serif;
+    }
+    .custom-scrollbar::-webkit-scrollbar {
+      height: 4px;
+      width: 4px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+      background: #D5CFC3;
+      border-radius: 4px;
+    }
+    /* Toggle Switch */
+    .switch-checkbox:checked + .switch-label {
+      background-color: #141312;
+    }
+    .switch-checkbox:checked + .switch-label .switch-indicator {
+      transform: translateX(18px);
+      background-color: #FFFFFF;
+    }
+  </style>
+</head>
+<body class="min-w-[1280px] text-brand-dark antialiased selection:bg-brand-taupe selection:text-white" data-page="shop">
+<!-- PAGE: Living Room Furniture -->
+
+  <!-- ================= TOP NEAR-BLACK HEADER ================= -->
+  <header class="bg-[#0D0C0B] text-white border-b border-[#22201D] sticky top-0 z-40">
+    <!-- Top Utility & Main Brand Bar -->
+    <div class="max-w-[1440px] mx-auto px-8 h-20 flex items-center justify-between">
+      
+      <!-- Left: Logo & Search -->
+      <div class="flex items-center space-x-7">
+        <a href="/" class="flex flex-col group">
+          <span class="font-serif text-2xl tracking-[0.22em] font-medium leading-tight text-[#F9F8F5] group-hover:text-amber-200 transition-colors">
+            WOODEN LOUNGE
+          </span>
+          <span class="text-[9px] tracking-[0.45em] text-[#A69F92] uppercase font-light">
+            ENUGU • NIGERIA
+          </span>
+        </a>
+
+        <div class="h-6 w-[1px] bg-[#2A2724]"></div>
+
+        <button class="flex items-center space-x-2 text-xs text-[#A69F92] hover:text-white transition-colors group">
+          <svg class="w-4 h-4 stroke-current stroke-[1.5]" fill="none" viewBox="0 0 24 24">
+            <circle cx="11" cy="11" r="7"></circle>
+            <line x1="16.5" y1="16.5" x2="21" y2="21"></line>
+          </svg>
+          <span class="tracking-widest uppercase text-[11px] group-hover:underline underline-offset-4">Search Catalog</span>
+        </button>
+      </div>
+
+      <!-- Center: Category Nav -->
+      <nav class="hidden lg:flex items-center space-x-8 text-xs tracking-[0.25em] font-medium text-[#D1CCC2]">
+        <a href="/shop/?room=lounge" class="hover:text-white transition-colors hover:border-b hover:border-white pb-1">LOUNGE</a>
+        <a href="/shop/?room=furniture" class="hover:text-white transition-colors hover:border-b hover:border-white pb-1">FURNITURE</a>
+        <a href="/shop/?room=living" class="text-white border-b-2 border-white pb-1 font-semibold">LIVING</a>
+        <a href="/shop/?room=dining" class="hover:text-white transition-colors hover:border-b hover:border-white pb-1">DINING</a>
+        <a href="/shop/?room=bed" class="hover:text-white transition-colors hover:border-b hover:border-white pb-1">BED</a>
+      </nav>
+
+      <!-- Right: Action Buttons & Icons -->
+      <div class="flex items-center space-x-6">
+        <a href="/book-visit/?type=online" class="text-[11px] tracking-[0.2em] font-medium text-[#C5BFB3] hover:text-white transition-colors uppercase border-b border-transparent hover:border-[#C5BFB3] pb-0.5">
+          Book Online Visit
+        </a>
+
+        <a href="/custom-order/" class="border border-[#C5BFB3]/80 hover:border-white text-white hover:bg-white hover:text-[#0D0C0B] px-4 py-2 text-[11px] tracking-[0.2em] font-medium transition duration-200 uppercase">
+          Book Custom Design
+        </a>
+
+        <div class="flex items-center space-x-4 pl-2 text-[#C5BFB3]">
+          <!-- Account Icon -->
+          <button title="Account" class="hover:text-white transition-colors p-1">
+            <svg class="w-5 h-5 stroke-current stroke-[1.3]" fill="none" viewBox="0 0 24 24">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+          </button>
+          <!-- Bag Icon -->
+          <button title="Cart" class="hover:text-white transition-colors p-1 relative">
+            <svg class="w-5 h-5 stroke-current stroke-[1.3]" fill="none" viewBox="0 0 24 24">
+              <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <path d="M16 10a4 4 0 0 1-8 0"></path>
+            </svg>
+            <span class="absolute -top-1 -right-1.5 w-4 h-4 bg-[#C86D51] text-white text-[9px] font-bold rounded-full flex items-center justify-center">2</span>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= MAIN BODY ================= -->
+  <main class="max-w-[1440px] mx-auto px-8 pt-8 pb-24">
+
+    <!-- Breadcrumb & Header Title -->
+    <div class="mb-10">
+      <nav class="text-[11px] uppercase tracking-[0.25em] text-brand-muted mb-3 flex items-center space-x-2">
+        <a href="/" class="hover:text-brand-dark transition-colors">Home</a>
+        <span class="text-brand-taupe/40">/</span>
+        <span class="text-brand-dark font-medium">Living</span>
+      </nav>
+
+      <div class="flex items-baseline justify-between border-b border-brand-border pb-6">
+        <div>
+          <h1 class="font-serif text-4xl lg:text-5xl text-brand-dark font-medium tracking-tight">
+            Living Room Furniture
+          </h1>
+          <p class="text-brand-muted text-xs tracking-wider uppercase mt-2">
+            Handcrafted architectural woodwork & upholstery crafted in Enugu
+          </p>
+        </div>
+        <span class="text-xs uppercase tracking-[0.2em] font-medium text-brand-taupe bg-brand-sand px-3 py-1.5 rounded-sm border border-brand-border">
+          48 Pieces
+        </span>
+      </div>
+    </div>
+
+    <!-- Row of 5 Category Tiles with photo thumbnails -->
+    <section class="mb-12">
+      <div class="grid grid-cols-5 gap-4">
+        
+        <!-- Tile 1: Lounge -->
+        <a href="/" class="group block relative overflow-hidden bg-brand-sand border border-brand-border rounded-sm hover:border-brand-taupe transition-all duration-300">
+          <div class="aspect-[4/3] w-full overflow-hidden bg-brand-warmgray/40">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAodNBcMNQJYo4-yJAYFuEXS-EE-7W5PH9iCGDmbWJJBPmGI0q3W9xvEw49S7thBnVTSuj6Eva-qm0VaKalVYWIEraeZa9d5lxVUST0BZqu3rd-tX6-ZNIO32yqzRkbp60cRfxesCFbtDTsvC3Ylmh8bIkDBvlSGY3GDU8IneQdPenxQGP3qwmd7gTQeJ6rVQnA-cw1pTjJa_vFOqFiUFCnT1XKxjqMWqHzPn7yjYUwPMJVSJpWUo5t" alt="Lounge category" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="p-3.5 bg-brand-sand text-center flex flex-col items-center justify-center">
+            <span class="text-[11px] font-medium tracking-[0.22em] uppercase text-brand-dark group-hover:text-brand-accent transition-colors">
+              Lounge
+            </span>
+            <span class="text-[10px] text-brand-muted mt-0.5">14 Designs</span>
+          </div>
+        </a>
+
+        <!-- Tile 2: Furniture -->
+        <a href="/" class="group block relative overflow-hidden bg-brand-sand border border-brand-border rounded-sm hover:border-brand-taupe transition-all duration-300">
+          <div class="aspect-[4/3] w-full overflow-hidden bg-brand-warmgray/40">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBq8CIApMJzKCfAQe_i5ZZNUW52dTQFLATiGi4LnP3_ekIWLTjxTE-aPOnOY89O3ArozuLaGfNHeW2WdTM5YGG5uRcGJLaXHqm2lRnDWtIFtBqIOcdNytd8RQ9nKG0d69fNQUJdaq4hgPL29I0Ewu7_q9zXBDccO_RekhOqrpCnI9c8_oV_OvvIEu10eFVHi-_PXPZBk1iMHesJtD2YCHM4GihQRD4yExz901mdSVBSDtJUg54y4BDc" alt="Furniture category" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="p-3.5 bg-brand-sand text-center flex flex-col items-center justify-center">
+            <span class="text-[11px] font-medium tracking-[0.22em] uppercase text-brand-dark group-hover:text-brand-accent transition-colors">
+              Furniture
+            </span>
+            <span class="text-[10px] text-brand-muted mt-0.5">26 Designs</span>
+          </div>
+        </a>
+
+        <!-- Tile 3: Living (Active) -->
+        <a href="/" class="group block relative overflow-hidden bg-white border-2 border-brand-dark rounded-sm shadow-sm transition-all duration-300">
+          <div class="aspect-[4/3] w-full overflow-hidden bg-brand-warmgray/40 relative">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0faHUS7DY3LpnVEVC3KV31PsC7Y2tetFy9RiGXQEvw_mP1OB3wtRkA6n5u1x9pHDozgSJJSJYDhd69qSL7NK6n49cR4digvMCrXriWKJkBNmmYbHudwHlSKGo_6zy478aLqRmr2qNQ-WRHAcRQLJ2iy3aZyNv4SLRGASk2vfz31SgQ5WZiZB44eXxa7asUuYVerU556Cz0PUDRlFvvnvQ9mlX-LDYQECK9IPc7JLPm7u5F95f7vrJ" alt="Living category" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
+            <div class="absolute top-2 right-2 bg-brand-dark text-white text-[9px] tracking-widest uppercase px-2 py-0.5">Active</div>
+          </div>
+          <div class="p-3.5 bg-white text-center flex flex-col items-center justify-center">
+            <span class="text-[11px] font-semibold tracking-[0.22em] uppercase text-brand-dark">
+              Living
+            </span>
+            <span class="text-[10px] text-brand-dark font-medium mt-0.5">48 Designs</span>
+          </div>
+        </a>
+
+        <!-- Tile 4: Dining -->
+        <a href="/" class="group block relative overflow-hidden bg-brand-sand border border-brand-border rounded-sm hover:border-brand-taupe transition-all duration-300">
+          <div class="aspect-[4/3] w-full overflow-hidden bg-brand-warmgray/40">
+            <img src="https://lh3.googleusercontent.com/aida/AEtjO1XQ72yPvIbqVaBj1XeasjFW_4FyHNf-vzzWliZurAtD7vlJBRc9rgIRRktc5ER3zjY-WABctd0SjN-jTm3WKMmPS6rFf8hsR2jMRADHrJCM2Txg2rtvPR_pgO5MgsY2m5Tm30VdU6GMmi348p9IXIZrvzuMelvLDHZ9JwqB8_6CjJD5HIex-gBBnbdUNhD_j6sNqlxvbkdhMU8jJJo-e4tRFtPCWmgDtr7TXdKcWIZoLe4cOqH8FDVkGBM" alt="Dining category" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="p-3.5 bg-brand-sand text-center flex flex-col items-center justify-center">
+            <span class="text-[11px] font-medium tracking-[0.22em] uppercase text-brand-dark group-hover:text-brand-accent transition-colors">
+              Dining
+            </span>
+            <span class="text-[10px] text-brand-muted mt-0.5">18 Designs</span>
+          </div>
+        </a>
+
+        <!-- Tile 5: Bed -->
+        <a href="/" class="group block relative overflow-hidden bg-brand-sand border border-brand-border rounded-sm hover:border-brand-taupe transition-all duration-300">
+          <div class="aspect-[4/3] w-full overflow-hidden bg-brand-warmgray/40">
+            <img src="https://lh3.googleusercontent.com/aida/AEtjO1UPT51dtE-zgokaS9-O0JBtWbj3L8Yia94yPdjLb9zhHvBOYLjmivIfMri652wvV9N0hOmWopOlF7HuNq_uujiKsVl-kp8-07_B2t-fZKCWnl-Z1uzunGSSswYNXGtjv8R1EI-Lmu08QCp3j6GSCODotLhkI2UO3fFGH6TsaDTqecl72BIOXY-bF7GTjf7j4dUrIscxAjK6_Kj9LFW0NvNB7njoDTj2Mj4U6BoJWn2FC7UJiMxQnh9BCqg" alt="Bed category" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="p-3.5 bg-brand-sand text-center flex flex-col items-center justify-center">
+            <span class="text-[11px] font-medium tracking-[0.22em] uppercase text-brand-dark group-hover:text-brand-accent transition-colors">
+              Bed
+            </span>
+            <span class="text-[10px] text-brand-muted mt-0.5">12 Designs</span>
+          </div>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- ================= MAIN CONTENT SPLIT: FILTERS & 4-COL PRODUCT GRID ================= -->
+    <div class="flex items-start gap-10">
+      
+      <!-- ================= LEFT FILTER SIDEBAR ================= -->
+      <aside class="w-64 flex-shrink-0">
+        
+        <!-- Sort Control -->
+        <div class="mb-7 pb-6 border-b border-brand-border">
+          <label class="block text-[11px] font-semibold uppercase tracking-[0.22em] text-brand-dark mb-2.5">
+            Sort By
+          </label>
+          <div class="relative">
+            <select class="w-full bg-brand-sand border border-brand-border text-xs px-3.5 py-2.5 appearance-none focus:outline-none focus:border-brand-dark text-brand-dark font-medium cursor-pointer">
+              <option selected>Popularity</option>
+              <option>Price: Low to High</option>
+              <option>Price: High to Low</option>
+              <option>Newest Arrivals</option>
+            </select>
+            <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-3 text-brand-muted">
+              <svg class="w-3.5 h-3.5 stroke-current" fill="none" viewBox="0 0 24 24">
+                <path d="M6 9l6 6 6-6" stroke-width="2" stroke-linecap="round"></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <!-- Filter: Made to Order Toggle -->
+        <div class="mb-7 pb-6 border-b border-brand-border">
+          <div class="flex items-center justify-between">
+            <div>
+              <span class="text-[11px] font-semibold uppercase tracking-[0.22em] text-brand-dark block">
+                Made to Order
+              </span>
+              <span class="text-[10px] text-brand-muted">Custom handcrafted specs</span>
+            </div>
+            <div class="relative inline-block w-10 select-none">
+              <input type="checkbox" id="toggle-mto" class="sr-only switch-checkbox" checked>
+              <label for="toggle-mto" class="switch-label block overflow-hidden h-5 rounded-full bg-brand-border cursor-pointer transition-colors duration-200">
+                <span class="switch-indicator block h-4 w-4 mt-0.5 ml-0.5 rounded-full bg-white transition-transform duration-200 shadow-sm"></span>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Filter Group: Room -->
+        <div class="mb-7 pb-6 border-b border-brand-border">
+          <button class="w-full flex items-center justify-between text-left group">
+            <span class="text-[11px] font-semibold uppercase tracking-[0.22em] text-brand-dark">Room</span>
+            <svg class="w-3.5 h-3.5 text-brand-muted group-hover:text-brand-dark transition-transform" fill="none" viewBox="0 0 24 24">
+              <path d="M19 9l-7 7-7-7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path>
+            </svg>
+          </button>
+          <div class="mt-4 space-y-2.5 text-xs">
+            <label class="flex items-center justify-between group cursor-pointer">
+              <div class="flex items-center space-x-2.5">
+                <input type="checkbox" checked class="w-3.5 h-3.5 accent-brand-dark rounded-none border-brand-border">
+                <span class="text-brand-dark font-medium group-hover:text-brand-accent transition-colors">Living Room</span>
+              </div>
+              <span class="text-[10px] text-brand-muted">48</span>
+            </label>
+            <label class="flex items-center justify-between group cursor-pointer">
+              <div class="flex items-center space-x-2.5">
+                <input type="checkbox" class="w-3.5 h-3.5 accent-brand-dark rounded-none border-brand-border">
+                <span class="text-brand-muted group-hover:text-brand-dark transition-colors">Veranda & Patio</span>
+              </div>
+              <span class="text-[10px] text-brand-muted">12</span>
+            </label>
+            <label class="flex items-center justify-between group cursor-pointer">
+              <div class="flex items-center space-x-2.5">
+                <input type="checkbox" class="w-3.5 h-3.5 accent-brand-dark rounded-none border-brand-border">
+                <span class="text-brand-muted group-hover:text-brand-dark transition-colors">Executive Office</span>
+              </div>
+              <span class="text-[10px] text-brand-muted">9</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Filter Group: Material -->
+        <div class="mb-7 pb-6 border-b border-brand-border">
+          <button class="w-full flex items-center justify-between text-left group">
+            <span class="text-[11px] font-semibold uppercase tracking-[0.22em] text-brand-dark">Material</span>
+            <svg class="w-3.5 h-3.5 text-brand-muted group-hover:text-brand-dark transition-transform" fill="none" viewBox="0 0 24 24">
+              <path d="M19 9l-7 7-7-7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path>
+            </svg>
+          </button>
+          <div class="mt-4 space-y-2.5 text-xs">
+            <label class="flex items-center justify-between group cursor-pointer">
+              <div class="flex items-center space-x-2.5">
+                <input type="checkbox" checked class="w-3.5 h-3.5 accent-brand-dark rounded-none border-brand-border">
+                <span class="text-brand-dark font-medium group-hover:text-brand-accent transition-colors">Solid Wood (Teak & Iroko)</span>
+              </div>
+              <span class="text-[10px] text-brand-muted">24</span>
+            </label>
+            <label class="flex items-center justify-between group cursor-pointer">
+              <div class="flex items-center space-x-2.5">
+                <input type="checkbox" class="w-3.5 h-3.5 accent-brand-dark rounded-none border-brand-border">
+                <span class="text-brand-muted group-hover:text-brand-dark transition-colors">Leather</span>
+              </div>
+              <span class="text-[10px] text-brand-muted">14</span>
+            </label>
+            <label class="flex items-center justify-between group cursor-pointer">
+              <div class="flex items-center space-x-2.5">
+                <input type="checkbox" checked class="w-3.5 h-3.5 accent-brand-dark rounded-none border-brand-border">
+                <span class="text-brand-dark font-medium group-hover:text-brand-accent transition-colors">Fabric & Bouclé</span>
+              </div>
+              <span class="text-[10px] text-brand-muted">19</span>
+            </label>
+            <label class="flex items-center justify-between group cursor-pointer">
+              <div class="flex items-center space-x-2.5">
+                <input type="checkbox" class="w-3.5 h-3.5 accent-brand-dark rounded-none border-brand-border">
+                <span class="text-brand-muted group-hover:text-brand-dark transition-colors">Rattan & Cane</span>
+              </div>
+              <span class="text-[10px] text-brand-muted">7</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Filter Group: Size -->
+        <div class="mb-7 pb-6 border-b border-brand-border">
+          <button class="w-full flex items-center justify-between text-left group">
+            <span class="text-[11px] font-semibold uppercase tracking-[0.22em] text-brand-dark">Size & Seating</span>
+            <svg class="w-3.5 h-3.5 text-brand-muted group-hover:text-brand-dark transition-transform" fill="none" viewBox="0 0 24 24">
+              <path d="M19 9l-7 7-7-7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path>
+            </svg>
+          </button>
+          <div class="mt-4 space-y-2.5 text-xs">
+            <label class="flex items-center justify-between group cursor-pointer">
+              <div class="flex items-center space-x-2.5">
+                <input type="checkbox" class="w-3.5 h-3.5 accent-brand-dark rounded-none border-brand-border">
+                <span class="text-brand-muted group-hover:text-brand-dark transition-colors">1-Seater Accent</span>
+              </div>
+              <span class="text-[10px] text-brand-muted">16</span>
+            </label>
+            <label class="flex items-center justify-between group cursor-pointer">
+              <div class="flex items-center space-x-2.5">
+                <input type="checkbox" class="w-3.5 h-3.5 accent-brand-dark rounded-none border-brand-border">
+                <span class="text-brand-muted group-hover:text-brand-dark transition-colors">2-Seater Loveseat</span>
+              </div>
+              <span class="text-[10px] text-brand-muted">11</span>
+            </label>
+            <label class="flex items-center justify-between group cursor-pointer">
+              <div class="flex items-center space-x-2.5">
+                <input type="checkbox" class="w-3.5 h-3.5 accent-brand-dark rounded-none border-brand-border">
+                <span class="text-brand-muted group-hover:text-brand-dark transition-colors">3-Seater Sofa</span>
+              </div>
+              <span class="text-[10px] text-brand-muted">13</span>
+            </label>
+            <label class="flex items-center justify-between group cursor-pointer">
+              <div class="flex items-center space-x-2.5">
+                <input type="checkbox" class="w-3.5 h-3.5 accent-brand-dark rounded-none border-brand-border">
+                <span class="text-brand-muted group-hover:text-brand-dark transition-colors">Large Sectional</span>
+              </div>
+              <span class="text-[10px] text-brand-muted">8</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Filter Group: Price Range in Naira -->
+        <div class="mb-7 pb-6 border-b border-brand-border">
+          <span class="text-[11px] font-semibold uppercase tracking-[0.22em] text-brand-dark block mb-3">
+            Price Range (NGN)
+          </span>
+          <div class="space-y-2 text-xs">
+            <div class="flex items-center space-x-2">
+              <span class="text-[11px] text-brand-muted">₦</span>
+              <input type="text" value="180,000" class="w-full bg-brand-sand border border-brand-border px-2.5 py-1.5 text-xs font-mono text-brand-dark">
+              <span class="text-brand-muted">—</span>
+              <input type="text" value="1,850,000" class="w-full bg-brand-sand border border-brand-border px-2.5 py-1.5 text-xs font-mono text-brand-dark">
+            </div>
+            <div class="pt-2">
+              <input type="range" min="150000" max="2500000" value="1850000" class="w-full accent-brand-dark cursor-pointer h-1 bg-brand-border">
+            </div>
+          </div>
+        </div>
+
+        <!-- Clear All Filters Button -->
+        <button class="w-full py-2.5 text-center text-[10px] tracking-[0.22em] uppercase font-semibold text-brand-taupe hover:text-brand-dark border border-brand-border hover:border-brand-dark transition-colors">
+          Reset All Filters
+        </button>
+
+      </aside>
+
+      <!-- ================= RIGHT-HAND 4-COLUMN PRODUCT GRID ================= -->
+      <section class="flex-1">
+        
+        <!-- Active Filter Chips & View Count -->
+        <div class="flex items-center justify-between mb-6 text-xs">
+          <div class="flex items-center space-x-2">
+            <span class="text-brand-muted text-[11px] uppercase tracking-wider">Active:</span>
+            <span class="inline-flex items-center bg-brand-sand border border-brand-border px-2.5 py-1 text-[11px] text-brand-dark">
+              Solid Wood <button class="ml-1.5 text-brand-muted hover:text-brand-dark font-bold">×</button>
+            </span>
+            <span class="inline-flex items-center bg-brand-sand border border-brand-border px-2.5 py-1 text-[11px] text-brand-dark">
+              Living Room <button class="ml-1.5 text-brand-muted hover:text-brand-dark font-bold">×</button>
+            </span>
+            <span class="inline-flex items-center bg-brand-sand border border-brand-border px-2.5 py-1 text-[11px] text-brand-dark">
+              Made to Order <button class="ml-1.5 text-brand-muted hover:text-brand-dark font-bold">×</button>
+            </span>
+          </div>
+          <span class="text-brand-muted text-[11px] tracking-widest uppercase">Showing 1–8 of 48</span>
+        </div>
+
+        <!-- 4-COLUMN GRID: ROW 1 (4 PRODUCTS) -->
+        <div class="grid grid-cols-4 gap-6">
+
+          <!-- Product Card 1: Sofa -->
+          <div class="group flex flex-col bg-brand-sand/40 border border-brand-border p-3 rounded-sm hover:border-brand-taupe hover:shadow-sm transition-all duration-300">
+            <div class="relative aspect-[4/5] bg-[#ECE8E1] overflow-hidden mb-3">
+              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrhD7zYXpySTVU4QDNMMuXK6e_8NOXFBm3XdFh_yeLfupDpFoWB_T512J8Y-_csx_zd5or9YW5MLgtawXZ6DcmbL_Hkie-rs92Kc-1Mbpx5jl1DJZ0IrRjmuKFkFP1ANLTqLSxBdSvFwTLcGv56_tgW2m5n7HPuEST9SBP4y9fttMk-SNjdI2NulMFVOZFB3BTHfqDHOlNePaUTRbM1TqNDbiBRXIPBYfew0ef4H4Jau-TukHXEsx_" alt="Ogui Tailored Modular Sofa" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
+              
+              <!-- Badge -->
+              <span class="absolute top-2.5 left-2.5 bg-brand-dark text-white text-[9px] uppercase tracking-widest px-2 py-1 font-medium shadow-sm">
+                Ready in Enugu
+              </span>
+
+              <!-- Wishlist Button -->
+              <button title="Add to Wishlist" class="absolute top-2.5 right-2.5 w-7 h-7 rounded-full bg-white/90 backdrop-blur-sm text-brand-dark hover:text-red-600 flex items-center justify-center transition-colors shadow-sm">
+                <svg class="w-3.5 h-3.5 stroke-current fill-none stroke-[1.8]" viewBox="0 0 24 24">
+                  <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                </svg>
+              </button>
+            </div>
+
+            <!-- Finish Swatches -->
+            <div class="flex items-center space-x-1.5 mb-2.5 px-0.5">
+              <span class="w-3.5 h-3.5 rounded-full bg-[#8E7E6A] border border-white shadow-xs" title="Warm Walnut"></span>
+              <span class="w-3.5 h-3.5 rounded-full bg-[#4A3B32] border border-white shadow-xs" title="Ebony Teak"></span>
+              <span class="w-3.5 h-3.5 rounded-full bg-[#D4C8B8] border border-white ring-1 ring-brand-dark" title="Ivory Bouclé"></span>
+              <span class="text-[9px] text-brand-muted pl-1">+3</span>
+            </div>
+
+            <!-- Info -->
+            <div class="flex-1 flex flex-col justify-between">
+              <div>
+                <h3 class="font-serif text-lg text-brand-dark font-medium leading-snug group-hover:text-brand-accent transition-colors">
+                  Ogui Tailored Modular Sofa
+                </h3>
+                <p class="text-[11px] text-brand-muted uppercase tracking-wider mt-0.5">Handcrafted Fabric & Teak</p>
+              </div>
+              <div class="mt-3 pt-2.5 border-t border-brand-border/60 flex items-baseline justify-between">
+                <span class="font-mono text-sm font-semibold text-brand-dark">₦680,000</span>
+                <span class="text-[10px] tracking-widest uppercase text-brand-taupe group-hover:underline">View Piece →</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product Card 2: Accent Chair -->
+          <div class="group flex flex-col bg-brand-sand/40 border border-brand-border p-3 rounded-sm hover:border-brand-taupe hover:shadow-sm transition-all duration-300">
+            <div class="relative aspect-[4/5] bg-[#ECE8E1] overflow-hidden mb-3">
+              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCtgef3oA430EQjg5qgHGgtNcert625VjQVcW2U4kGkXVplTv9kdBw8ekp16ngMX7zLVvcs-_HGaB_k9jMWp7I9RsfUy3NdO0E6PUJ14pyGQAfogPOgqTa2gcKsgCmrUQ0YYh1Ju0nudk20hO_B8RgpHaolBuAF0Wk7UOEidNOf2LVMiHhP-2XulY4pEh3AIFE4KWSqp6KZq7xKuURkq36eKv-yNxpGiQqTwMzEBX0OFwqOo1ONLNKc" alt="Lobito Curved Accent Armchair" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
+              
+              <!-- Badge -->
+              <span class="absolute top-2.5 left-2.5 bg-[#595247] text-white text-[9px] uppercase tracking-widest px-2 py-1 font-medium shadow-sm">
+                Made to order, 3-4 weeks
+              </span>
+
+              <!-- Wishlist Button -->
+              <button title="Add to Wishlist" class="absolute top-2.5 right-2.5 w-7 h-7 rounded-full bg-white/90 backdrop-blur-sm text-brand-dark hover:text-red-600 flex items-center justify-center transition-colors shadow-sm">
+                <svg class="w-3.5 h-3.5 stroke-current fill-none stroke-[1.8]" viewBox="0 0 24 24">
+                  <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                </svg>
+              </button>
+            </div>
+
+            <!-- Finish Swatches -->
+            <div class="flex items-center space-x-1.5 mb-2.5 px-0.5">
+              <span class="w-3.5 h-3.5 rounded-full bg-[#C2854A] border border-white ring-1 ring-brand-dark" title="Tan Saddle Leather"></span>
+              <span class="w-3.5 h-3.5 rounded-full bg-[#342D26] border border-white shadow-xs" title="Charcoal Solid Oak"></span>
+              <span class="w-3.5 h-3.5 rounded-full bg-[#E5DFD5] border border-white shadow-xs" title="Oatmeal Linen"></span>
+            </div>
+
+            <!-- Info -->
+            <div class="flex-1 flex flex-col justify-between">
+              <div>
+                <h3 class="font-serif text-lg text-brand-dark font-medium leading-snug group-hover:text-brand-accent transition-colors">
+                  Lobito Curved Accent Chair
+                </h3>
+                <p class="text-[11px] text-brand-muted uppercase tracking-wider mt-0.5">Sculptural Teak Frame</p>
+              </div>
+              <div class="mt-3 pt-2.5 border-t border-brand-border/60 flex items-baseline justify-between">
+                <span class="font-mono text-sm font-semibold text-brand-dark">₦285,000</span>
+                <span class="text-[10px] tracking-widest uppercase text-brand-taupe group-hover:underline">View Piece →</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product Card 3: Coffee Table -->
+          <div class="group flex flex-col bg-brand-sand/40 border border-brand-border p-3 rounded-sm hover:border-brand-taupe hover:shadow-sm transition-all duration-300">
+            <div class="relative aspect-[4/5] bg-[#ECE8E1] overflow-hidden mb-3">
+              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFSPHXGWas09Bg3Z8-jo4z_RIWh9pBBzMFFzanOxFkCN2tTSBXWBUqnVBF4ZFOdGbVLtlTJKeTdTBwxCFP7NlLUD4r4CVZhSyYLnGu6Srh4gLxoyUbZ-_332tfD4O32U3z_gBrz2PkBHLztRcKJpzitAAMcQia0tjzwKms97mEB-1JS_O9uayVxcu9FQ0JWKSfyE5jEvQ0lFBBl-4Yqi3djfBaDkrS89S41Qm5q0T2oFM_6JOTMNih" alt="Asata Monolithic Coffee Table" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
+              
+              <!-- Badge -->
+              <span class="absolute top-2.5 left-2.5 bg-brand-dark text-white text-[9px] uppercase tracking-widest px-2 py-1 font-medium shadow-sm">
+                Ready in Enugu
+              </span>
+
+              <!-- Wishlist Button -->
+              <button title="Add to Wishlist" class="absolute top-2.5 right-2.5 w-7 h-7 rounded-full bg-white/90 backdrop-blur-sm text-brand-dark hover:text-red-600 flex items-center justify-center transition-colors shadow-sm">
+                <svg class="w-3.5 h-3.5 stroke-current fill-none stroke-[1.8]" viewBox="0 0 24 24">
+                  <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                </svg>
+              </button>
+            </div>
+
+            <!-- Finish Swatches -->
+            <div class="flex items-center space-x-1.5 mb-2.5 px-0.5">
+              <span class="w-3.5 h-3.5 rounded-full bg-[#523A28] border border-white ring-1 ring-brand-dark" title="Iroko & Black Resin"></span>
+              <span class="w-3.5 h-3.5 rounded-full bg-[#D4C3A3] border border-white shadow-xs" title="Natural Ash"></span>
+            </div>
+
+            <!-- Info -->
+            <div class="flex-1 flex flex-col justify-between">
+              <div>
+                <h3 class="font-serif text-lg text-brand-dark font-medium leading-snug group-hover:text-brand-accent transition-colors">
+                  Asata Dual-Tier Coffee Table
+                </h3>
+                <p class="text-[11px] text-brand-muted uppercase tracking-wider mt-0.5">Solid Iroko Wood & Glass</p>
+              </div>
+              <div class="mt-3 pt-2.5 border-t border-brand-border/60 flex items-baseline justify-between">
+                <span class="font-mono text-sm font-semibold text-brand-dark">₦229,000</span>
+                <span class="text-[10px] tracking-widest uppercase text-brand-taupe group-hover:underline">View Piece →</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product Card 4: Console Table -->
+          <div class="group flex flex-col bg-brand-sand/40 border border-brand-border p-3 rounded-sm hover:border-brand-taupe hover:shadow-sm transition-all duration-300">
+            <div class="relative aspect-[4/5] bg-[#ECE8E1] overflow-hidden mb-3">
+              <img src="https://lh3.googleusercontent.com/aida/AEtjO1X6Mg-gIZbIq2hzBZzrauPwliwhfhe9FEFBhBb5a8c1t67RkldDJpgH0Jwwq2XC9CU6IFmxGWPFtk5SfG5hssj878w7zm8f4rZFEApw2kjPX3YCuhsuPGVKf-G4Ssac7g9CqWSdYsmb2WRqYGHriU07w5v8lzw0gbtndeCBAF-pI9tCBVYxTMBS7-OTCrrA-ZabChQg4C04J-4Zskywknr3imvbRRA0ZBI4hk27quMvyhT26PaH1nlSDQc" alt="Enugu Lowline Media Console" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
+              
+              <!-- Badge -->
+              <span class="absolute top-2.5 left-2.5 bg-[#595247] text-white text-[9px] uppercase tracking-widest px-2 py-1 font-medium shadow-sm">
+                Made to order, 3-4 weeks
+              </span>
+
+              <!-- Wishlist Button -->
+              <button title="Add to Wishlist" class="absolute top-2.5 right-2.5 w-7 h-7 rounded-full bg-white/90 backdrop-blur-sm text-brand-dark hover:text-red-600 flex items-center justify-center transition-colors shadow-sm">
+                <svg class="w-3.5 h-3.5 stroke-current fill-none stroke-[1.8]" viewBox="0 0 24 24">
+                  <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                </svg>
+              </button>
+            </div>
+
+            <!-- Finish Swatches -->
+            <div class="flex items-center space-x-1.5 mb-2.5 px-0.5">
+              <span class="w-3.5 h-3.5 rounded-full bg-[#3B332B] border border-white ring-1 ring-brand-dark" title="Dark Smoked Oak"></span>
+              <span class="w-3.5 h-3.5 rounded-full bg-[#B89F7D] border border-white shadow-xs" title="Bleached Teak"></span>
+            </div>
+
+            <!-- Info -->
+            <div class="flex-1 flex flex-col justify-between">
+              <div>
+                <h3 class="font-serif text-lg text-brand-dark font-medium leading-snug group-hover:text-brand-accent transition-colors">
+                  Wuse Fluted Credenza Console
+                </h3>
+                <p class="text-[11px] text-brand-muted uppercase tracking-wider mt-0.5">Slatted Hardwood Sliding Doors</p>
+              </div>
+              <div class="mt-3 pt-2.5 border-t border-brand-border/60 flex items-baseline justify-between">
+                <span class="font-mono text-sm font-semibold text-brand-dark">₦540,000</span>
+                <span class="text-[10px] tracking-widest uppercase text-brand-taupe group-hover:underline">View Piece →</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- ================= FULL-WIDTH MID-GRID PROMO BANNER ================= -->
+        <div class="my-10 bg-[#141312] text-white p-8 lg:p-10 border border-[#2D2A26] rounded-sm relative overflow-hidden flex items-center justify-between shadow-md">
+          <!-- Subtle decorative watermark / woodgrain vibe -->
+          <div class="absolute right-0 top-0 bottom-0 w-1/3 opacity-10 pointer-events-none bg-gradient-to-l from-white/20 to-transparent"></div>
+          
+          <div class="relative z-10 max-w-xl">
+            <span class="text-[10px] uppercase tracking-[0.35em] text-[#C86D51] font-semibold block mb-2">
+              Bespoke Joinery & Custom Sizing
+            </span>
+            <h2 class="font-serif text-2xl lg:text-3xl text-[#F9F8F5] font-medium leading-tight">
+              Cannot find your size? Book a custom design.
+            </h2>
+            <p class="text-xs text-[#A69F92] mt-2 font-light leading-relaxed">
+              Every home in Enugu and Abuja has unique dimensions. Our master carpenters craft bespoke sofas, dining suites, and consoles tailored exactly to your floor plan.
+            </p>
+          </div>
+
+          <div class="relative z-10 flex items-center space-x-4">
+            <a href="/custom-order/" class="border border-white/80 text-white hover:bg-white hover:text-brand-dark px-6 py-3 text-xs tracking-[0.2em] uppercase font-semibold transition-all duration-200">
+              Book Custom Design
+            </a>
+            <a href="/" class="text-xs tracking-[0.18em] uppercase text-[#D1CCC2] hover:text-white underline underline-offset-4 transition-colors">
+              Chat With Designer →
+            </a>
+          </div>
+        </div>
+
+        <!-- 4-COLUMN GRID: ROW 2 (4 PRODUCTS) -->
+        <div class="grid grid-cols-4 gap-6">
+
+          <!-- Product Card 5: Plush Lounge Sectional -->
+          <div class="group flex flex-col bg-brand-sand/40 border border-brand-border p-3 rounded-sm hover:border-brand-taupe hover:shadow-sm transition-all duration-300">
+            <div class="relative aspect-[4/5] bg-[#ECE8E1] overflow-hidden mb-3">
+              <img src="https://lh3.googleusercontent.com/aida/AEtjO1XQ72yPvIbqVaBj1XeasjFW_4FyHNf-vzzWliZurAtD7vlJBRc9rgIRRktc5ER3zjY-WABctd0SjN-jTm3WKMmPS6rFf8hsR2jMRADHrJCM2Txg2rtvPR_pgO5MgsY2m5Tm30VdU6GMmi348p9IXIZrvzuMelvLDHZ9JwqB8_6CjJD5HIex-gBBnbdUNhD_j6sNqlxvbkdhMU8jJJo-e4tRFtPCWmgDtr7TXdKcWIZoLe4cOqH8FDVkGBM" alt="Aroma Oversized Deep Lounge Chair" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
+              
+              <!-- Badge -->
+              <span class="absolute top-2.5 left-2.5 bg-[#595247] text-white text-[9px] uppercase tracking-widest px-2 py-1 font-medium shadow-sm">
+                Made to order, 3-4 weeks
+              </span>
+
+              <!-- Wishlist Button -->
+              <button title="Add to Wishlist" class="absolute top-2.5 right-2.5 w-7 h-7 rounded-full bg-white/90 backdrop-blur-sm text-brand-dark hover:text-red-600 flex items-center justify-center transition-colors shadow-sm">
+                <svg class="w-3.5 h-3.5 stroke-current fill-none stroke-[1.8]" viewBox="0 0 24 24">
+                  <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                </svg>
+              </button>
+            </div>
+
+            <!-- Finish Swatches -->
+            <div class="flex items-center space-x-1.5 mb-2.5 px-0.5">
+              <span class="w-3.5 h-3.5 rounded-full bg-[#9E2B25] border border-white ring-1 ring-brand-dark" title="Crimson Terracotta"></span>
+              <span class="w-3.5 h-3.5 rounded-full bg-[#E0D7C9] border border-white shadow-xs" title="Parchment Linen"></span>
+              <span class="w-3.5 h-3.5 rounded-full bg-[#39332D] border border-white shadow-xs" title="Espresso Wood"></span>
+            </div>
+
+            <!-- Info -->
+            <div class="flex-1 flex flex-col justify-between">
+              <div>
+                <h3 class="font-serif text-lg text-brand-dark font-medium leading-snug group-hover:text-brand-accent transition-colors">
+                  Aroma Deep Lounge Chair
+                </h3>
+                <p class="text-[11px] text-brand-muted uppercase tracking-wider mt-0.5">Feather Cushioning & Walnut Base</p>
+              </div>
+              <div class="mt-3 pt-2.5 border-t border-brand-border/60 flex items-baseline justify-between">
+                <span class="font-mono text-sm font-semibold text-brand-dark">₦340,000</span>
+                <span class="text-[10px] tracking-widest uppercase text-brand-taupe group-hover:underline">View Piece →</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product Card 6: Architectural Side Table / Stool -->
+          <div class="group flex flex-col bg-brand-sand/40 border border-brand-border p-3 rounded-sm hover:border-brand-taupe hover:shadow-sm transition-all duration-300">
+            <div class="relative aspect-[4/5] bg-[#ECE8E1] overflow-hidden mb-3">
+              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDr93auzgA_gFlkpPQ9586OkySRFXQnbZ--lSCmVvNy_a3ToEkcTOEPDL0e3i1m74_GqAlPv9Zl6NxcUzQLopnzw7cBw36CViz9PErZ244W-ct4Gg09eGtMLdYaARY-DbvipimZiBrqf606IJmOroHS4g9FQ6v15te5MldYurPc8LCUrst66xWqqLvUCy4t1qzxuvPXMHHogrnuFuupUvYc6gsyOCJYXAajj-zbPB8QkaahLjcaMkXx" alt="Zik Monolith Side Console" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
+              
+              <!-- Badge -->
+              <span class="absolute top-2.5 left-2.5 bg-brand-dark text-white text-[9px] uppercase tracking-widest px-2 py-1 font-medium shadow-sm">
+                Ready in Enugu
+              </span>
+
+              <!-- Wishlist Button -->
+              <button title="Add to Wishlist" class="absolute top-2.5 right-2.5 w-7 h-7 rounded-full bg-white/90 backdrop-blur-sm text-brand-dark hover:text-red-600 flex items-center justify-center transition-colors shadow-sm">
+                <svg class="w-3.5 h-3.5 stroke-current fill-none stroke-[1.8]" viewBox="0 0 24 24">
+                  <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                </svg>
+              </button>
+            </div>
+
+            <!-- Finish Swatches -->
+            <div class="flex items-center space-x-1.5 mb-2.5 px-0.5">
+              <span class="w-3.5 h-3.5 rounded-full bg-[#1C1A18] border border-white ring-1 ring-brand-dark" title="Charred Timber"></span>
+              <span class="w-3.5 h-3.5 rounded-full bg-[#7D7164] border border-white shadow-xs" title="Smoked Taupe"></span>
+            </div>
+
+            <!-- Info -->
+            <div class="flex-1 flex flex-col justify-between">
+              <div>
+                <h3 class="font-serif text-lg text-brand-dark font-medium leading-snug group-hover:text-brand-accent transition-colors">
+                  Zik Architectural Side Console
+                </h3>
+                <p class="text-[11px] text-brand-muted uppercase tracking-wider mt-0.5">Raw Edge Hardwood Pillar</p>
+              </div>
+              <div class="mt-3 pt-2.5 border-t border-brand-border/60 flex items-baseline justify-between">
+                <span class="font-mono text-sm font-semibold text-brand-dark">₦195,000</span>
+                <span class="text-[10px] tracking-widest uppercase text-brand-taupe group-hover:underline">View Piece →</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product Card 7: Low Platform Bench / Daybed -->
+          <div class="group flex flex-col bg-brand-sand/40 border border-brand-border p-3 rounded-sm hover:border-brand-taupe hover:shadow-sm transition-all duration-300">
+            <div class="relative aspect-[4/5] bg-[#ECE8E1] overflow-hidden mb-3">
+              <img src="https://lh3.googleusercontent.com/aida/AEtjO1UPT51dtE-zgokaS9-O0JBtWbj3L8Yia94yPdjLb9zhHvBOYLjmivIfMri652wvV9N0hOmWopOlF7HuNq_uujiKsVl-kp8-07_B2t-fZKCWnl-Z1uzunGSSswYNXGtjv8R1EI-Lmu08QCp3j6GSCODotLhkI2UO3fFGH6TsaDTqecl72BIOXY-bF7GTjf7j4dUrIscxAjK6_Kj9LFW0NvNB7njoDTj2Mj4U6BoJWn2FC7UJiMxQnh9BCqg" alt="Independence Platform Daybed" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
+              
+              <!-- Badge -->
+              <span class="absolute top-2.5 left-2.5 bg-[#595247] text-white text-[9px] uppercase tracking-widest px-2 py-1 font-medium shadow-sm">
+                Made to order, 3-4 weeks
+              </span>
+
+              <!-- Wishlist Button -->
+              <button title="Add to Wishlist" class="absolute top-2.5 right-2.5 w-7 h-7 rounded-full bg-white/90 backdrop-blur-sm text-brand-dark hover:text-red-600 flex items-center justify-center transition-colors shadow-sm">
+                <svg class="w-3.5 h-3.5 stroke-current fill-none stroke-[1.8]" viewBox="0 0 24 24">
+                  <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                </svg>
+              </button>
+            </div>
+
+            <!-- Finish Swatches -->
+            <div class="flex items-center space-x-1.5 mb-2.5 px-0.5">
+              <span class="w-3.5 h-3.5 rounded-full bg-[#E5DFD4] border border-white ring-1 ring-brand-dark" title="Natural Ash & Linen"></span>
+              <span class="w-3.5 h-3.5 rounded-full bg-[#594231] border border-white shadow-xs" title="Oiled Iroko"></span>
+            </div>
+
+            <!-- Info -->
+            <div class="flex-1 flex flex-col justify-between">
+              <div>
+                <h3 class="font-serif text-lg text-brand-dark font-medium leading-snug group-hover:text-brand-accent transition-colors">
+                  Independence Platform Bench
+                </h3>
+                <p class="text-[11px] text-brand-muted uppercase tracking-wider mt-0.5">Dovetail Joinery & Woven Straps</p>
+              </div>
+              <div class="mt-3 pt-2.5 border-t border-brand-border/60 flex items-baseline justify-between">
+                <span class="font-mono text-sm font-semibold text-brand-dark">₦310,000</span>
+                <span class="text-[10px] tracking-widest uppercase text-brand-taupe group-hover:underline">View Piece →</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product Card 8: Minimalist Credenza -->
+          <div class="group flex flex-col bg-brand-sand/40 border border-brand-border p-3 rounded-sm hover:border-brand-taupe hover:shadow-sm transition-all duration-300">
+            <div class="relative aspect-[4/5] bg-[#ECE8E1] overflow-hidden mb-3">
+              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSAxlO1M5Gz4fJOWBI2g0MSsu2GFhI_ny1Tx0dgsN09G9Mz9EGJwuBn-j_2yi8ps2ux9Rc-0iuU4c0rb8D31nAUrPNPvaRsC2bO4sgyyPlqNVQBC6jJtSwMQl_b4J0g20XxoK2AHavgnPASyzvGTb0Zg1Smcf_P8bkSLvvPxk_9HK3I_KO9GtUjUlPrQyZJoQrJS9mFxOLvBrkxY_yMaB9PlahU5sx_D8Bp2m3QEH-J4vyHDZscFMN" alt="Bespoke Sectional" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
+              
+              <!-- Badge -->
+              <span class="absolute top-2.5 left-2.5 bg-brand-dark text-white text-[9px] uppercase tracking-widest px-2 py-1 font-medium shadow-sm">
+                Ready in Enugu
+              </span>
+
+              <!-- Wishlist Button -->
+              <button title="Add to Wishlist" class="absolute top-2.5 right-2.5 w-7 h-7 rounded-full bg-white/90 backdrop-blur-sm text-brand-dark hover:text-red-600 flex items-center justify-center transition-colors shadow-sm">
+                <svg class="w-3.5 h-3.5 stroke-current fill-none stroke-[1.8]" viewBox="0 0 24 24">
+                  <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                </svg>
+              </button>
+            </div>
+
+            <!-- Finish Swatches -->
+            <div class="flex items-center space-x-1.5 mb-2.5 px-0.5">
+              <span class="w-3.5 h-3.5 rounded-full bg-[#524134] border border-white ring-1 ring-brand-dark" title="Vintage Walnut"></span>
+              <span class="w-3.5 h-3.5 rounded-full bg-[#201D1A] border border-white shadow-xs" title="Stained Pitch Black"></span>
+              <span class="w-3.5 h-3.5 rounded-full bg-[#D8CEBF] border border-white shadow-xs" title="Ivory Cream"></span>
+            </div>
+
+            <!-- Info -->
+            <div class="flex-1 flex flex-col justify-between">
+              <div>
+                <h3 class="font-serif text-lg text-brand-dark font-medium leading-snug group-hover:text-brand-accent transition-colors">
+                  Capitol Lowline Living Console
+                </h3>
+                <p class="text-[11px] text-brand-muted uppercase tracking-wider mt-0.5">Solid Timber Media Unit</p>
+              </div>
+              <div class="mt-3 pt-2.5 border-t border-brand-border/60 flex items-baseline justify-between">
+                <span class="font-mono text-sm font-semibold text-brand-dark">₦475,000</span>
+                <span class="text-[10px] tracking-widest uppercase text-brand-taupe group-hover:underline">View Piece →</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- ================= LOAD MORE SECTION ================= -->
+        <div class="mt-14 pt-8 border-t border-brand-border flex flex-col items-center">
+          <div class="text-[11px] text-brand-muted uppercase tracking-widest mb-3">
+            Showing 8 of 48 pieces
+          </div>
+          <!-- Progress bar -->
+          <div class="w-48 h-0.5 bg-brand-border mb-6 overflow-hidden">
+            <div class="w-1/6 h-full bg-brand-dark"></div>
+          </div>
+          <button class="bg-brand-dark hover:bg-black text-white px-10 py-3 text-xs uppercase tracking-[0.22em] font-medium transition duration-200 shadow-sm">
+            Load More Designs
+          </button>
+        </div>
+
+      </section>
+
+    </div>
+
+  </main>
+
+  <!-- ================= SITE FOOTER WITH ENUGU & ABUJA SHOWROOMS ================= -->
+  <footer class="bg-[#F2EFE9] border-t border-brand-border pt-16 pb-12 text-brand-dark">
+    <div class="max-w-[1440px] mx-auto px-8">
+      
+      <div class="grid grid-cols-5 gap-10 mb-16">
+        
+        <!-- Col 1: Brand Wordmark -->
+        <div class="col-span-1">
+          <span class="font-serif text-2xl tracking-[0.2em] font-semibold text-brand-dark block mb-2">
+            WOODEN LOUNGE
+          </span>
+          <p class="text-xs text-brand-muted font-light leading-relaxed mb-4">
+            Bespoke architectural furniture designed and manufactured in Enugu, Nigeria with nationwide white-glove installation.
+          </p>
+          <div class="text-[10px] tracking-widest uppercase font-semibold text-brand-taupe">
+            Est. Enugu, Nigeria
+          </div>
+        </div>
+
+        <!-- Col 2: Showrooms (Enugu & Abuja) -->
+        <div class="col-span-1">
+          <h4 class="text-[11px] uppercase tracking-[0.22em] font-bold text-brand-dark mb-4">
+            Showrooms
+          </h4>
+          <div class="space-y-4 text-xs">
+            <div>
+              <p class="font-semibold text-brand-dark">Enugu Showroom</p>
+              <p class="text-brand-muted leading-snug">160 Ogui Rd, Asata Chemist</p>
+              <p class="text-brand-muted">Enugu, Nigeria</p>
+              <p class="text-[10px] text-brand-taupe mt-1">Mon–Sat: 9:00 AM – 6:00 PM</p>
+            </div>
+            <div>
+              <p class="font-semibold text-brand-dark">Abuja Showroom</p>
+              <p class="text-brand-muted leading-snug">2 Lobito Crescent, Wuse 2</p>
+              <p class="text-brand-muted">Abuja, Nigeria</p>
+              <p class="text-[10px] text-brand-taupe mt-1">Mon–Sat: 9:00 AM – 7:00 PM</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Col 3: Company -->
+        <div class="col-span-1">
+          <h4 class="text-[11px] uppercase tracking-[0.22em] font-bold text-brand-dark mb-4">
+            Company
+          </h4>
+          <ul class="space-y-2.5 text-xs text-brand-muted">
+            <li><a href="/" class="hover:text-brand-dark transition-colors">Design Principles</a></li>
+            <li><a href="/" class="hover:text-brand-dark transition-colors">Timber Sustainability</a></li>
+            <li><a href="/" class="hover:text-brand-dark transition-colors">Enugu Workshop Craft</a></li>
+            <li><a href="/" class="hover:text-brand-dark transition-colors">Trade & Interior Designers</a></li>
+            <li><a href="/" class="hover:text-brand-dark transition-colors">Careers</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: We Care -->
+        <div class="col-span-1">
+          <h4 class="text-[11px] uppercase tracking-[0.22em] font-bold text-brand-dark mb-4">
+            We Care
+          </h4>
+          <ul class="space-y-2.5 text-xs text-brand-muted">
+            <li><a href="/" class="hover:text-brand-dark transition-colors">Care & Warranty</a></li>
+            <li><a href="/" class="hover:text-brand-dark transition-colors">Nationwide Delivery</a></li>
+            <li><a href="/book-visit/" class="hover:text-brand-dark transition-colors">Book Showroom Visit</a></li>
+            <li><a href="/" class="hover:text-brand-dark transition-colors">Order Tracking</a></li>
+            <li><a href="/" class="hover:text-brand-dark transition-colors">Contact Support</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 5: Newsletter -->
+        <div class="col-span-1">
+          <h4 class="text-[11px] uppercase tracking-[0.22em] font-bold text-brand-dark mb-4">
+            Private Catalog
+          </h4>
+          <p class="text-xs text-brand-muted mb-3 leading-relaxed">
+            Receive private releases and new timber batch availability directly.
+          </p>
+          <div class="flex items-center border border-brand-border bg-brand-cream focus-within:border-brand-dark">
+            <input type="email" placeholder="Email address" class="w-full bg-transparent px-3 py-2 text-xs text-brand-dark placeholder-brand-muted/70 focus:outline-none">
+            <button class="px-3 text-brand-dark hover:text-brand-accent transition-colors">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path d="M5 12h14M12 5l7 7-7 7" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Giant Brand Watermark -->
+      <div class="border-t border-brand-border/80 pt-10 pb-6 text-center overflow-hidden">
+        <span class="font-serif text-[7.5vw] font-bold tracking-tight text-[#E5E0D5] leading-none select-none block uppercase">
+          WOODEN LOUNGE
+        </span>
+      </div>
+
+      <!-- Legal & Sub-footer -->
+      <div class="border-t border-brand-border/70 pt-6 flex items-center justify-between text-[11px] text-brand-muted">
+        <div>
+          © 2026 Wooden Lounge Furniture. Handcrafted in Enugu & Abuja, Nigeria. All Rights Reserved.
+        </div>
+        <div class="flex space-x-6">
+          <a href="/" class="hover:text-brand-dark transition-colors">Terms of Use</a>
+          <a href="/" class="hover:text-brand-dark transition-colors">Privacy Policy</a>
+          <a href="/" class="hover:text-brand-dark transition-colors">Accessibility</a>
+          <a href="/" class="hover:text-brand-dark transition-colors">Site Map</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Floating Chat Trigger Widget (as seen on brand pages) -->
+  <button title="Chat with Wooden Lounge Support" class="fixed bottom-6 right-6 w-12 h-12 rounded-full bg-[#E54B2F] text-white flex items-center justify-center shadow-lg hover:scale-105 transition-transform duration-200 z-50">
+    <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+      <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"></path>
+    </svg>
+  </button>
+
+<script src="/assets/site.js"></script>
+</body>
+</html>

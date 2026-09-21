@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#fff8f4;}body{overscroll-behavior:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,400&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "inverse-on-surface": "#f6efec", "error-container": "#ffdad6", "on-surface-variant": "#4b4640", "primary-fixed-dim": "#cac6c3", "primary-container": "#1d1b1a", "on-primary-fixed": "#1d1b1a", "on-primary-fixed-variant": "#484645", "on-error": "#ffffff", "outline-variant": "#cdc5bd", "background": "#fff8f4", "on-error-container": "#93000a", "inverse-surface": "#32302e", "secondary-fixed": "#ffdbcc", "surface-container-low": "#f9f2ee", "surface-container-lowest": "#ffffff", "on-primary": "#ffffff", "on-tertiary": "#ffffff", "surface": "#fff8f4", "surface-dim": "#dfd9d5", "on-secondary-fixed-variant": "#743412", "on-tertiary-container": "#997f61", "on-secondary-container": "#773614", "primary": "#000000", "secondary-container": "#fea277", "primary-fixed": "#e6e1df", "secondary-fixed-dim": "#ffb694", "surface-bright": "#fff8f4", "tertiary": "#000000", "secondary": "#924b27", "surface-tint": "#605e5c", "error": "#ba1a1a", "inverse-primary": "#cac6c3", "tertiary-container": "#281803", "on-tertiary-fixed": "#281803", "on-background": "#1d1b19", "tertiary-fixed": "#fdddb9", "surface-variant": "#e7e1de", "tertiary-fixed-dim": "#e0c29f", "on-secondary-fixed": "#351000", "surface-container-high": "#ede7e3", "on-surface": "#1d1b19", "on-tertiary-fixed-variant": "#584329", "on-secondary": "#ffffff", "surface-container-highest": "#e7e1de", "outline": "#7c766f", "on-primary-container": "#868381", "surface-container": "#f3ede9" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "gutter-mobile": "1rem", "space-md": "1rem", "space-lg": "1.5rem", "space-xs": "0.25rem", "margin": "3.5rem", "gutter": "1.5rem", "space-sm": "0.5rem", "margin-mobile": "1.25rem", "space-xl": "2.5rem" }, fontFamily: { "display-lg": ["Playfair Display"], "label-caps-sm": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "headline-sm": ["Playfair Display"], "label-caps-md": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"], "display-lg-mobile": ["Playfair Display"], "body-sm": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Playfair Display"], "headline-lg": ["Playfair Display"], "headline-md": ["Playfair Display"], "data-mono": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"] }, fontSize: { "display-lg": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "label-caps-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.16em", "fontWeight": "700" }], "body-lg": ["17px", { "lineHeight": "28px", "fontWeight": "400" }], "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }], "label-caps-md": ["11px", { "lineHeight": "16px", "letterSpacing": "0.14em", "fontWeight": "700" }], "title-md": ["16px", { "lineHeight": "24px", "letterSpacing": "0.01em", "fontWeight": "600" }], "display-lg-mobile": ["38px", { "lineHeight": "44px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "body-sm": ["13px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "500" }], "headline-lg": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "500" }], "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "500" }], "data-mono": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" }], "body-md": ["15px", { "lineHeight": "24px", "fontWeight": "400" }] } } } }</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased flex flex-col min-h-screen selection:bg-secondary-fixed selection:text-on-secondary-fixed" data-page="checkout">
+<!-- PAGE: Bespoke Acquisition Order --><header class="fixed top-0 w-full z-50 pt-safe bg-primary-container/95 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.12)]"><div class="h-16 px-gutter-mobile flex items-center justify-between"><div class="flex items-center gap-space-xs"><button aria-label="Open Atelier Menu" class="w-11 h-11 flex items-center justify-center text-on-primary hover:text-secondary-fixed transition-colors"><span class="material-symbols-outlined text-[24px]">menu</span></button></div><div class="flex flex-col items-center justify-center"><a class="text-center" data-path="curated-collection" href="/m/"><span class="font-headline-sm text-headline-sm tracking-[0.2em] uppercase text-on-primary block leading-none">Wooden Lounge</span><span class="font-label-caps-sm text-label-caps-sm tracking-[0.24em] text-outline-variant block mt-1 uppercase">Enugu • Abuja</span></a></div><div class="flex items-center gap-space-xs"><button aria-label="Search Catalog" class="w-11 h-11 flex items-center justify-center text-on-primary hover:text-secondary-fixed transition-colors"><span class="material-symbols-outlined text-[22px]">search</span></button><a aria-label="Acquisition Bag" class="w-11 h-11 relative flex items-center justify-center text-on-primary hover:text-secondary-fixed transition-colors" data-path="acquisition-bag" href="/m/cart/"><span class="material-symbols-outlined text-[22px]">shopping_bag</span><span class="absolute top-2 right-2 w-4 h-4 bg-secondary text-on-secondary font-data-mono text-[10px] leading-none flex items-center justify-center rounded-full">2</span></a><div class="w-11 h-11 flex items-center justify-center pl-1"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-outline-variant/30" src="https://lh3.googleusercontent.com/aida/AEtjO1WtxZs5G5772MVRzWOOyO_-ewG0RVE7WxEecnfe2lOq93RcdZNImsRSCllRYD_TDbthUpsdEWwghyxv-uzW4d2J03PRrhYgN4F-x_vP9RqkjLnGkV2SMclf7ieWdsZnnRPupbtOODdrUQorOcRnHOXcvNkKQvlPIWFYVMN8V2d9egxeEBnMhKKBPq_79zjP0eFr99j1R9zHL53YWFCReTB7dRrtCdhBxW09Y-ylGi5uC7DJ-uvl8A2p16U_vjIgg-lQbJhNG06LIQ"/></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-24 bg-surface"><div class="flex flex-col w-full overflow-x-hidden max-w-full px-gutter-mobile space-y-space-md">
+<!-- Order Protocol Header Banner -->
+<div class="flex flex-col bg-surface-container-low rounded-xl p-space-md shadow-sm">
+<div class="flex items-center justify-between gap-space-xs">
+<span class="font-label-caps-sm text-label-caps-sm uppercase text-secondary">
+        Order Protocol • REF-WL-0894
+      </span>
+<span class="inline-flex items-center gap-1 bg-surface-container-highest px-2 py-0.5 rounded-full font-data-mono text-data-mono text-on-surface-variant">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span>
+<span id="countdown-timer">29:40</span>
+</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface mt-1">
+      Bespoke Acquisition Order
+    </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+      Reservation locked: Enugu Atelier Workshop Allocation
+    </p>
+</div>
+<!-- Manifest Accordion Card -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden">
+<!-- Accordion Trigger Button -->
+<button class="w-full text-left p-space-md flex items-center justify-between bg-surface-container-low transition-colors hover:bg-surface-container" id="manifest-toggle-btn" type="button">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-9 h-9 rounded-lg bg-surface-container-highest flex items-center justify-center shrink-0 text-on-surface">
+<span class="material-symbols-outlined text-[20px]">receipt_long</span>
+</div>
+<div class="truncate">
+<span class="font-title-md text-title-md text-on-surface block leading-tight truncate">Acquisition Manifest (3 Items)</span>
+<span class="font-label-caps-sm text-label-caps-sm text-outline uppercase tracking-wider">Tap to review specs &amp; finishes</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs shrink-0 ml-2">
+<span class="font-data-mono text-data-mono text-on-surface">₦758,000</span>
+<span class="material-symbols-outlined text-[20px] text-outline transition-transform duration-300" id="manifest-chevron">expand_more</span>
+</div>
+</button>
+<!-- Accordion Collapsible Body -->
+<div class="px-space-md pt-space-sm pb-space-md space-y-space-sm" id="manifest-content">
+<!-- Item 1 -->
+<div class="flex items-center gap-space-sm pt-space-xs">
+<img class="w-14 h-14 rounded-lg object-cover shrink-0 shadow-sm" data-alt="Nigerian Teak sculptural lounge armchair with woven cane webbing backrest and matte oiled timber finish crafted in Enugu workshop warm daylight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKobHwIEhoi4hsthlDtNSDiGv24MBBZpO2o2BCTgOm1X_rpNrCNCmh2H9cjDgVE9wzuYmnhId3v0fK8iW8KazSNYKmZwvBoT82BBpXcCyMwx_mV4xdMLAd0qIGJXJD9OqlbSlbGIvW3ztACn_N23EEiIKPvQQL21UO8u_XS8HXUSBRLvRwGtYSDrLnPvQk4D0rOeZSZkYrIOT4qU_pspbnqc8jDgPpUxMwmm-n2oU3cJVvNFk-GN88"/>
+<div class="flex-1 min-w-0">
+<h3 class="font-title-md text-[14px] leading-tight text-on-surface truncate">Obi Scupltural Lounge Chair</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Kiln-Dried Nigerian Teak • Natural Cane</p>
+<span class="font-data-mono text-data-mono text-secondary">₦380,000</span>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="flex items-center gap-space-sm pt-space-xs">
+<img class="w-14 h-14 rounded-lg object-cover shrink-0 shadow-sm" data-alt="Smoked Obeche hardwood low profile cantilevered coffee table with satin wax patina and brass inlay joints in minimalist interior" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8iUwoC0ni4-1HRUS--TbMEG3We5leCTBOuk_5lOIss5CVdW5na6ciNWnibKnaAtWcQwO0OtQHzy_8YPVVNtvO50gV2F01fPLDckRwxiG4F7DeRtBtl7cv1jsUMqFDvGMHeveyswGE_PBdhkeBfJiRe_m4R1ctjLzzgNZ3RPSAWcaN6KcmHvvwRObJmwmvRTkLXdqZWvtTwmiavpNzGPJkH64-pdtW1-TfRCTaew0sTnG4mqiryXoM"/>
+<div class="flex-1 min-w-0">
+<h3 class="font-title-md text-[14px] leading-tight text-on-surface truncate">Ikenga Cantilever Coffee Table</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Smoked Obeche • Brushed Brass Inlay</p>
+<span class="font-data-mono text-data-mono text-secondary">₦240,000</span>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="flex items-center gap-space-sm pt-space-xs">
+<img class="w-14 h-14 rounded-lg object-cover shrink-0 shadow-sm" data-alt="Solid cured walnut architectural pedestal side table with fluted pedestal base in luxury salon setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXQeFR8XoVvj0qUpFeZoLAdynYj1sJPBrlAoLquR2b_3LYOAO8b3EIVeyo4XjWOTgGIouABM0dzr_XfqXLUkEBZXyRKyvbnawjfZdNacpMOzkbZSoTkfPYIlmAnJhqsaoaib0FKZ8jexw79HPGrXeXB7u9QbE40AsoLqHHWaBpC_uHLV6AITepdsiRYUPe4zC2LKqPeBD8809G6rvsqrUbXQzxd8iLhAIcvOiCPN0i7QKhxttpok6t"/>
+<div class="flex-1 min-w-0">
+<h3 class="font-title-md text-[14px] leading-tight text-on-surface truncate">Nza Fluted Pedestal Plinth</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Deep Walnut • Hand-turned Pillar</p>
+<span class="font-data-mono text-data-mono text-secondary">₦138,000</span>
+</div>
+</div>
+<!-- Deposit Toggle Architectural Pill Box -->
+<div class="bg-surface-container p-space-sm rounded-lg flex items-center justify-between mt-space-sm">
+<div class="min-w-0 pr-space-xs">
+<span class="font-title-md text-[14px] text-on-surface block leading-tight">60% Atelier Production Deposit</span>
+<span class="font-body-sm text-[12px] text-on-surface-variant block">Balance payable upon final white-glove inspection</span>
+</div>
+<button aria-checked="true" class="w-11 h-6 bg-secondary rounded-full relative p-0.5 transition-colors shrink-0" id="deposit-switch" role="switch" type="button">
+<div class="w-5 h-5 bg-on-secondary rounded-full shadow-sm translate-x-5 transition-transform duration-200" id="switch-thumb"></div>
+</button>
+</div>
+<!-- Manifest Totals Breakdown -->
+<div class="pt-space-xs space-y-1">
+<div class="flex justify-between font-body-sm text-body-sm text-on-surface-variant">
+<span>Subtotal (3 Atelier Works)</span>
+<span class="font-data-mono">₦758,000</span>
+</div>
+<div class="flex justify-between font-body-sm text-body-sm text-on-surface-variant">
+<span>Artisanal White-Glove Transit</span>
+<span class="font-label-caps-sm text-secondary uppercase">Complimentary</span>
+</div>
+<div class="flex justify-between items-baseline pt-space-xs">
+<span class="font-title-md text-title-md text-on-surface">Immediate Settlement Due</span>
+<span class="font-headline-sm text-headline-sm text-secondary" id="payable-amount-display">₦458,000</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Section 01: Client Dossier -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm space-y-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-caps-sm text-label-caps-sm bg-surface-container-high text-on-surface-variant px-1.5 py-0.5 rounded">01</span>
+<h3 class="font-title-md text-title-md text-on-surface uppercase tracking-wider">Client Dossier</h3>
+</div>
+<button class="font-label-caps-sm text-label-caps-sm uppercase tracking-wider text-secondary" type="button">Edit</button>
+</div>
+<div class="space-y-space-xs">
+<div class="bg-surface-container-low p-space-sm rounded-lg flex items-center justify-between">
+<div class="flex items-center gap-space-xs min-w-0">
+<span class="material-symbols-outlined text-[18px] text-outline">call</span>
+<span class="font-data-mono text-data-mono text-on-surface truncate">+234 803 000 0000</span>
+</div>
+<span class="font-label-caps-sm text-label-caps-sm uppercase tracking-wider text-on-surface-variant">Primary Mobile</span>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded-lg flex items-center justify-between">
+<div class="flex items-center gap-space-xs min-w-0">
+<span class="material-symbols-outlined text-[18px] text-outline">alternate_email</span>
+<span class="font-data-mono text-data-mono text-on-surface truncate">okonkwo@design.ng</span>
+</div>
+<span class="font-label-caps-sm text-label-caps-sm uppercase tracking-wider text-on-surface-variant">Dispatch Dispatch</span>
+</div>
+</div>
+<!-- WhatsApp Updates Opt-in -->
+<label class="flex items-center justify-between p-space-sm bg-surface-container-low rounded-lg cursor-pointer">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[20px] text-secondary">chat</span>
+<span class="font-body-sm text-body-sm text-on-surface">Dispatch milestones via WhatsApp</span>
+</div>
+<input checked="" class="w-4 h-4 accent-secondary rounded" type="checkbox"/>
+</label>
+</div>
+<!-- Section 02: Logistics Dispatch -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm space-y-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-caps-sm text-label-caps-sm bg-surface-container-high text-on-surface-variant px-1.5 py-0.5 rounded">02</span>
+<h3 class="font-title-md text-title-md text-on-surface uppercase tracking-wider">Logistics Dispatch</h3>
+</div>
+<span class="inline-flex items-center gap-1 font-label-caps-sm text-label-caps-sm text-secondary uppercase bg-secondary-fixed/40 px-2 py-0.5 rounded-full">
+<span class="material-symbols-outlined text-[14px]">local_shipping</span>
+        White-Glove
+      </span>
+</div>
+<div class="bg-surface-container-low p-space-md rounded-lg space-y-space-xs">
+<div class="flex items-baseline justify-between">
+<span class="font-headline-sm text-[16px] text-on-surface">Chidiebere Okonkwo</span>
+<span class="font-label-caps-sm text-label-caps-sm text-outline uppercase">Commission Lead</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface leading-tight">
+        14 Independence Layout
+      </p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        Enugu • Enugu State • Southeast Nigeria
+      </p>
+<div class="mt-space-sm pt-space-xs bg-surface-container p-2.5 rounded flex items-start gap-2">
+<span class="material-symbols-outlined text-[18px] text-secondary shrink-0 mt-0.5">gate</span>
+<p class="font-body-sm text-[12px] text-on-surface-variant leading-snug">
+<strong class="text-on-surface font-semibold">Estate Gate Access:</strong> Call client on arrival. Private gated community with scheduled heavy cargo transit clearance.
+        </p>
+</div>
+</div>
+</div>
+<!-- Section 03: Settlement Engine -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm space-y-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-caps-sm text-label-caps-sm bg-surface-container-high text-on-surface-variant px-1.5 py-0.5 rounded">03</span>
+<h3 class="font-title-md text-title-md text-on-surface uppercase tracking-wider">Settlement Engine</h3>
+</div>
+<div class="flex items-center gap-1 bg-surface-container-high px-2 py-0.5 rounded text-on-surface-variant font-label-caps-sm text-label-caps-sm">
+<span class="material-symbols-outlined text-[14px]">lock</span>
+        Paystack AES-256
+      </div>
+</div>
+<!-- Payment Methods Touchable Stack -->
+<div class="space-y-space-xs" id="payment-options">
+<!-- Option 1: Card Settlement (Selected) -->
+<div class="payment-method-card bg-surface-container-high p-space-md rounded-xl cursor-pointer flex items-center justify-between shadow-sm transition-all" data-method="card">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-10 h-10 rounded-lg bg-surface-container-lowest flex items-center justify-center shrink-0 text-secondary">
+<span class="material-symbols-outlined text-[24px]">credit_card</span>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="font-title-md text-title-md text-on-surface">Direct Card Protocol</span>
+<span class="font-label-caps-sm text-[9px] bg-secondary text-on-secondary px-1.5 py-0.2 rounded uppercase">Instant</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Mastercard • Visa • Verve • Apple Pay</p>
+</div>
+</div>
+<div class="method-indicator w-6 h-6 rounded-full bg-secondary text-on-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</div>
+</div>
+<!-- Option 2: Bank Transfer -->
+<div class="payment-method-card bg-surface-container-low p-space-md rounded-xl cursor-pointer flex items-center justify-between transition-all hover:bg-surface-container" data-method="transfer">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-10 h-10 rounded-lg bg-surface-container-lowest flex items-center justify-center shrink-0 text-outline">
+<span class="material-symbols-outlined text-[24px]">account_balance</span>
+</div>
+<div class="min-w-0">
+<span class="font-title-md text-title-md text-on-surface block truncate">Instant Virtual Account Transfer</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Dedicated CBN-compliant settlement vault</p>
+</div>
+</div>
+<div class="method-indicator w-6 h-6 rounded-full bg-surface-container-highest text-outline-variant flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[16px] hidden">check</span>
+</div>
+</div>
+<!-- Option 3: USSD Banking -->
+<div class="payment-method-card bg-surface-container-low p-space-md rounded-xl cursor-pointer flex items-center justify-between transition-all hover:bg-surface-container" data-method="ussd">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-10 h-10 rounded-lg bg-surface-container-lowest flex items-center justify-center shrink-0 text-outline">
+<span class="material-symbols-outlined text-[24px]">dialpad</span>
+</div>
+<div class="min-w-0">
+<span class="font-title-md text-title-md text-on-surface block truncate">USSD Offline Fast Pay</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">*737# • *894# • *966# • *919# • GTBank, Zenith</p>
+</div>
+</div>
+<div class="method-indicator w-6 h-6 rounded-full bg-surface-container-highest text-outline-variant flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[16px] hidden">check</span>
+</div>
+</div>
+</div>
+<!-- Security Regulatory Note -->
+<div class="bg-surface-container-low p-space-sm rounded-lg flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-[20px] text-secondary shrink-0 mt-0.5">verified_user</span>
+<p class="font-body-sm text-[12px] text-on-surface-variant leading-relaxed">
+        Direct Tokenized Card Settlement managed by Paystack Payments Limited. Licensed by the Central Bank of Nigeria (CBN) as a Payment Solution Service Provider (PSSP). Card details are never retained on Atelier servers.
+      </p>
+</div>
+</div>
+<!-- Primary Action Call to Action -->
+<div class="space-y-space-xs pt-space-xs pb-space-sm">
+<button class="w-full bg-primary text-on-primary py-4 px-6 rounded flex items-center justify-center gap-space-xs shadow-md transition-all active:scale-[0.99] hover:bg-surface-container-highest hover:text-on-surface" id="paystack-submit-btn" type="button">
+<span class="font-label-caps-md text-label-caps-md tracking-[0.18em] uppercase" id="cta-btn-text">PAY ₦458,000 WITH PAYSTACK</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+<div class="flex items-center justify-center gap-space-xs">
+<span class="material-symbols-outlined text-[14px] text-outline">shield_lock</span>
+<span class="font-label-caps-sm text-[10px] text-outline uppercase tracking-wider">PCI-DSS Level 1 Encrypted Transmission</span>
+</div>
+</div>
+<!-- Atelier Trust Badges Bento -->
+<div class="grid grid-cols-3 gap-space-xs pt-space-xs pb-space-md">
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col items-center text-center">
+<span class="material-symbols-outlined text-[22px] text-secondary mb-1">forest</span>
+<span class="font-label-caps-sm text-[9px] uppercase tracking-wider text-on-surface font-semibold leading-tight">100% Sustainable</span>
+<span class="font-body-sm text-[10px] text-outline truncate w-full">Cured Hardwoods</span>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col items-center text-center">
+<span class="material-symbols-outlined text-[22px] text-secondary mb-1">workspace_premium</span>
+<span class="font-label-caps-sm text-[9px] uppercase tracking-wider text-on-surface font-semibold leading-tight">Lifetime Joinery</span>
+<span class="font-body-sm text-[10px] text-outline truncate w-full">Workshop Guarantee</span>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col items-center text-center">
+<span class="material-symbols-outlined text-[22px] text-secondary mb-1">account_balance_wallet</span>
+<span class="font-label-caps-sm text-[9px] uppercase tracking-wider text-on-surface font-semibold leading-tight">Paystack Escrow</span>
+<span class="font-body-sm text-[10px] text-outline truncate w-full">Inspected Transit</span>
+</div>
+</div>
+</div>
+<!-- Client-side Interactive Behaviors -->
+<script>
+  (function initCheckoutInteraction() {
+    // 1. Accordion Toggle
+    const manifestBtn = document.getElementById('manifest-toggle-btn');
+    const manifestContent = document.getElementById('manifest-content');
+    const manifestChevron = document.getElementById('manifest-chevron');
+
+    manifestBtn.addEventListener('click', function() {
+      const isHidden = manifestContent.classList.contains('hidden');
+      if (isHidden) {
+        manifestContent.classList.remove('hidden');
+        manifestChevron.style.transform = 'rotate(0deg)';
+      } else {
+        manifestContent.classList.add('hidden');
+        manifestChevron.style.transform = 'rotate(180deg)';
+      }
+    });
+
+    // 2. Deposit Switch State
+    const depositSwitch = document.getElementById('deposit-switch');
+    const switchThumb = document.getElementById('switch-thumb');
+    const payableAmountDisplay = document.getElementById('payable-amount-display');
+    const ctaBtnText = document.getElementById('cta-btn-text');
+    let isDeposit = true;
+
+    depositSwitch.addEventListener('click', function() {
+      isDeposit = !isDeposit;
+      depositSwitch.setAttribute('aria-checked', isDeposit.toString());
+      if (isDeposit) {
+        depositSwitch.classList.replace('bg-outline-variant', 'bg-secondary');
+        switchThumb.classList.add('translate-x-5');
+        payableAmountDisplay.textContent = '₦458,000';
+        ctaBtnText.textContent = 'PAY ₦458,000 WITH PAYSTACK';
+      } else {
+        depositSwitch.classList.replace('bg-secondary', 'bg-outline-variant');
+        switchThumb.classList.remove('translate-x-5');
+        payableAmountDisplay.textContent = '₦758,000';
+        ctaBtnText.textContent = 'PAY ₦758,000 WITH PAYSTACK';
+      }
+    });
+
+    // 3. Payment Method Card Selection
+    const cards = document.querySelectorAll('.payment-method-card');
+    cards.forEach(card => {
+      card.addEventListener('click', function() {
+        cards.forEach(c => {
+          c.classList.remove('bg-surface-container-high');
+          c.classList.add('bg-surface-container-low');
+          const ind = c.querySelector('.method-indicator');
+          ind.classList.remove('bg-secondary', 'text-on-secondary');
+          ind.classList.add('bg-surface-container-highest', 'text-outline-variant');
+          ind.querySelector('.material-symbols-outlined').classList.add('hidden');
+        });
+
+        this.classList.remove('bg-surface-container-low');
+        this.classList.add('bg-surface-container-high');
+        const indicator = this.querySelector('.method-indicator');
+        indicator.classList.remove('bg-surface-container-highest', 'text-outline-variant');
+        indicator.classList.add('bg-secondary', 'text-on-secondary');
+        indicator.querySelector('.material-symbols-outlined').classList.remove('hidden');
+      });
+    });
+
+    // 4. Countdown Timer Simulation
+    let minutes = 29;
+    let seconds = 40;
+    const timerElem = document.getElementById('countdown-timer');
+    setInterval(() => {
+      if (seconds > 0) {
+        seconds--;
+      } else if (minutes > 0) {
+        minutes--;
+        seconds = 59;
+      }
+      const mStr = minutes < 10 ? '0' + minutes : minutes;
+      const sStr = seconds < 10 ? '0' + seconds : seconds;
+      timerElem.textContent = mStr + ':' + sStr;
+    }, 1000);
+
+    // 5. Paystack Mock Dispatch
+    const submitBtn = document.getElementById('paystack-submit-btn');
+    submitBtn.addEventListener('click', function() {
+      const originalText = ctaBtnText.textContent;
+      ctaBtnText.textContent = 'INITIALIZING PAYSTACK GATEWAY...';
+      submitBtn.disabled = true;
+      setTimeout(() => {
+        ctaBtnText.textContent = 'TRANSMISSION READY';
+        setTimeout(() => {
+          ctaBtnText.textContent = originalText;
+          submitBtn.disabled = false;
+        }, 1200);
+      }, 900);
+    });
+  })();
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-primary-container/95 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,0,0,0.1)]" data-active-classes="text-secondary-fixed"><div class="flex justify-around items-center h-16 px-space-xs"><a class="flex flex-col items-center justify-center w-16 h-12 text-outline-variant hover:text-on-primary transition-colors" data-path="curated-collection" href="/m/"><span class="material-symbols-outlined text-[20px]">home</span><span class="font-label-caps-sm text-[9px] uppercase tracking-wider mt-1">Atelier</span></a><a class="flex flex-col items-center justify-center w-16 h-12 text-outline-variant hover:text-on-primary transition-colors" data-path="bespoke-archive" href="/m/product/"><span class="material-symbols-outlined text-[20px]">chair</span><span class="font-label-caps-sm text-[9px] uppercase tracking-wider mt-1">Works</span></a><a class="flex flex-col items-center justify-center w-16 h-12 text-outline-variant hover:text-on-primary transition-colors" data-path="showrooms-schedule" href="/m/"><span class="material-symbols-outlined text-[20px]">location_city</span><span class="font-label-caps-sm text-[9px] uppercase tracking-wider mt-1">Salons</span></a><a aria-current="page" class="flex flex-col items-center justify-center w-16 h-12 transition-colors text-secondary-fixed" data-path="acquisition-bag" href="/m/"><span class="material-symbols-outlined text-[20px]">draft</span><span class="font-label-caps-sm text-[9px] uppercase tracking-wider mt-1">Orders</span></a></div><div class="h-4 px-gutter-mobile flex items-center justify-between pb-1"><span class="font-label-caps-sm text-[8px] uppercase tracking-[0.16em] text-on-primary-container">Enugu Studio • Abuja Salon</span><span class="font-label-caps-sm text-[8px] uppercase tracking-[0.16em] text-on-primary-container">© Wooden Lounge MMXXV</span></div></nav><script src="/assets/site.js"></script>
+</body></html>

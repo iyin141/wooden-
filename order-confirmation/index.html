@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "on-tertiary-container": "#997f61",
+          "surface": "#fff8f4",
+          "on-primary-container": "#868381",
+          "on-secondary-fixed-variant": "#743412",
+          "on-error-container": "#93000a",
+          "primary-fixed": "#e6e1df",
+          "error": "#ba1a1a",
+          "background": "#fff8f4",
+          "on-surface-variant": "#4b4640",
+          "primary-container": "#1d1b1a",
+          "surface-bright": "#fff8f4",
+          "on-background": "#1d1b19",
+          "tertiary-container": "#281803",
+          "surface-container-highest": "#e7e1de",
+          "inverse-surface": "#32302e",
+          "on-error": "#ffffff",
+          "outline-variant": "#cdc5bd",
+          "on-tertiary-fixed": "#281803",
+          "on-secondary-fixed": "#351000",
+          "outline": "#7c766f",
+          "surface-variant": "#e7e1de",
+          "surface-tint": "#605e5c",
+          "secondary-fixed": "#ffdbcc",
+          "inverse-on-surface": "#f6efec",
+          "on-primary-fixed": "#1d1b1a",
+          "on-secondary": "#ffffff",
+          "on-tertiary": "#ffffff",
+          "on-primary": "#ffffff",
+          "secondary": "#924b27",
+          "inverse-primary": "#cac6c3",
+          "surface-container": "#f3ede9",
+          "error-container": "#ffdad6",
+          "primary-fixed-dim": "#cac6c3",
+          "surface-container-high": "#ede7e3",
+          "surface-container-low": "#f9f2ee",
+          "on-tertiary-fixed-variant": "#584329",
+          "primary": "#000000",
+          "secondary-fixed-dim": "#ffb694",
+          "on-surface": "#1d1b19",
+          "on-primary-fixed-variant": "#484645",
+          "secondary-container": "#fea277",
+          "surface-dim": "#dfd9d5",
+          "tertiary-fixed-dim": "#e0c29f",
+          "tertiary": "#000000",
+          "tertiary-fixed": "#fdddb9",
+          "surface-container-lowest": "#ffffff",
+          "on-secondary-container": "#773614"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "gutter": "1.5rem",
+          "space-md": "1rem",
+          "space-xs": "0.25rem",
+          "margin": "3.5rem",
+          "space-lg": "1.5rem",
+          "space-xl": "2.5rem",
+          "margin-mobile": "1.25rem",
+          "space-sm": "0.5rem",
+          "gutter-mobile": "1rem"
+        },
+        "fontFamily": {
+          "body-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "label-caps-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-sm": [
+            "Playfair Display"
+          ],
+          "headline-lg": [
+            "Playfair Display"
+          ],
+          "body-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "display-lg": [
+            "Playfair Display"
+          ],
+          "display-lg-mobile": [
+            "Playfair Display"
+          ],
+          "headline-lg-mobile": [
+            "Playfair Display"
+          ],
+          "headline-md": [
+            "Playfair Display"
+          ],
+          "body-md": [
+            "Plus Jakarta Sans"
+          ],
+          "data-mono": [
+            "Plus Jakarta Sans"
+          ],
+          "title-md": [
+            "Plus Jakarta Sans"
+          ],
+          "label-caps-md": [
+            "Plus Jakarta Sans"
+          ]
+        },
+        "fontSize": {
+          "body-lg": [
+            "17px",
+            {
+              "lineHeight": "28px",
+              "fontWeight": "400"
+            }
+          ],
+          "label-caps-sm": [
+            "10px",
+            {
+              "lineHeight": "14px",
+              "letterSpacing": "0.16em",
+              "fontWeight": "700"
+            }
+          ],
+          "headline-sm": [
+            "20px",
+            {
+              "lineHeight": "28px",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-lg": [
+            "36px",
+            {
+              "lineHeight": "44px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "500"
+            }
+          ],
+          "body-sm": [
+            "13px",
+            {
+              "lineHeight": "20px",
+              "fontWeight": "400"
+            }
+          ],
+          "display-lg": [
+            "56px",
+            {
+              "lineHeight": "64px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "600"
+            }
+          ],
+          "display-lg-mobile": [
+            "38px",
+            {
+              "lineHeight": "44px",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-lg-mobile": [
+            "28px",
+            {
+              "lineHeight": "36px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "500"
+            }
+          ],
+          "headline-md": [
+            "24px",
+            {
+              "lineHeight": "32px",
+              "fontWeight": "500"
+            }
+          ],
+          "body-md": [
+            "15px",
+            {
+              "lineHeight": "24px",
+              "fontWeight": "400"
+            }
+          ],
+          "data-mono": [
+            "12px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.02em",
+              "fontWeight": "500"
+            }
+          ],
+          "title-md": [
+            "16px",
+            {
+              "lineHeight": "24px",
+              "letterSpacing": "0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "label-caps-md": [
+            "11px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.14em",
+              "fontWeight": "700"
+            }
+          ]
+        }
+      },
+    },
+  }</script></head><body class="bg-surface text-on-surface selection:bg-secondary-fixed selection:text-on-secondary-fixed" data-page="order-confirmation">
+<!-- PAGE: Thank you, your order is confirmed --><header class="fixed top-0 w-full z-50 bg-primary shadow-[0_1px_8px_rgba(0,0,0,0.12)]"><div class="h-20 max-w-[1280px] mx-auto px-margin-mobile md:px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg shrink-0"><a class="flex flex-col group" data-path="home" href="/"><span class="font-headline-sm text-headline-sm text-on-primary tracking-tight font-semibold leading-none">WOODEN LOUNGE</span><span class="font-label-caps-sm text-label-caps-sm text-on-primary-container tracking-[0.2em] uppercase mt-space-xs">ENUGU • NIGERIA</span></a><button aria-label="Search Catalog" class="p-space-xs text-on-primary-container hover:text-on-primary transition-colors flex items-center justify-center" type="button"><span class="material-symbols-outlined text-[20px]">search</span></button></div><nav class="hidden xl:flex items-center gap-space-lg shrink-0" data-active-classes="text-on-primary font-bold underline underline-offset-8"><a class="font-label-caps-md text-label-caps-md text-on-primary-container hover:text-on-primary transition-colors tracking-widest" data-path="lounge" href="/shop/?room=lounge">LOUNGE</a><a class="font-label-caps-md text-label-caps-md text-on-primary-container hover:text-on-primary transition-colors tracking-widest" data-path="furniture" href="/shop/?room=furniture">FURNITURE</a><a class="font-label-caps-md text-label-caps-md text-on-primary-container hover:text-on-primary transition-colors tracking-widest" data-path="living" href="/shop/?room=living">LIVING</a><a class="font-label-caps-md text-label-caps-md text-on-primary-container hover:text-on-primary transition-colors tracking-widest" data-path="dining" href="/shop/?room=dining">DINING</a><a class="font-label-caps-md text-label-caps-md text-on-primary-container hover:text-on-primary transition-colors tracking-widest" data-path="bed" href="/shop/?room=bed">BED</a></nav><div class="flex items-center gap-space-md shrink-0"><a class="hidden md:inline-block font-label-caps-sm text-label-caps-sm text-on-primary underline underline-offset-4 tracking-wider uppercase hover:text-on-primary-container transition-colors" data-path="book-online-visit" href="/book-visit/?type=online">BOOK ONLINE VISIT</a><a class="hidden sm:inline-flex items-center px-space-md py-space-xs font-label-caps-sm text-label-caps-sm text-on-primary border border-on-primary/30 hover:border-on-primary hover:bg-on-primary hover:text-primary transition-all uppercase tracking-wider" data-path="book-custom-design" href="/custom-order/">BOOK CUSTOM DESIGN</a><div class="flex items-center gap-space-sm pl-space-xs"><a aria-label="Client Account" class="relative p-space-xs text-on-primary-container hover:text-on-primary transition-colors flex items-center justify-center" data-path="account" href="/sign-in/"><span class="material-symbols-outlined text-[22px]">person</span></a><a aria-label="Shopping Bag" class="relative p-space-xs text-on-primary-container hover:text-on-primary transition-colors flex items-center justify-center" data-path="bag" href="/cart/"><span class="material-symbols-outlined text-[22px]">shopping_bag</span><span class="absolute top-0 right-0 w-4 h-4 bg-secondary text-on-secondary rounded-full flex items-center justify-center font-data-mono text-[10px] leading-none font-bold">2</span></a><div class="w-8 h-8 rounded-full bg-primary-container flex items-center justify-center border border-outline-variant/30 ml-space-xs"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-80px)]"><div class="flex flex-col w-full">
+<section class="w-full max-w-[1280px] mx-auto px-margin-mobile md:px-margin py-space-xl">
+<!-- Top Editorial Header & Order Acknowledgment -->
+<div class="flex flex-col items-center text-center max-w-3xl mx-auto mb-space-xl">
+<div class="inline-flex items-center gap-space-xs px-space-md py-space-xs bg-surface-container rounded-full mb-space-md">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-label-caps-sm text-label-caps-sm text-secondary uppercase tracking-[0.2em]">DISPATCH PROTOCOL &amp; TRANSACTION CONFIRMATION</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg md:text-[44px] md:leading-[52px] text-on-surface mb-space-sm font-medium tracking-tight">
+        Thank you, your order is confirmed
+      </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed">
+        Order reference <span class="font-data-mono text-data-mono font-bold text-on-surface bg-surface-container-high px-space-xs py-0.5 rounded">#WL-1042</span> has been officially recorded and allocated to our <span class="font-semibold text-on-surface">Asata Master Workshop</span> in Enugu.
+      </p>
+</div>
+<!-- Main Grid: Detailed Manifest & Timeline / Atelier Sidebar -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start">
+<!-- Primary Manifest & Order Ledger (7 Cols on LG) -->
+<div class="lg:col-span-8 flex flex-col gap-space-lg">
+<!-- Order Financial & Gateway Receipt Header -->
+<div class="bg-surface-container-lowest shadow-[0_2px_12px_rgba(13,12,11,0.04)] p-space-lg md:p-space-xl rounded-lg">
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-md pb-space-lg mb-space-lg bg-surface-container-low/60 p-space-md rounded">
+<div>
+<span class="block font-label-caps-sm text-label-caps-sm text-outline uppercase tracking-wider mb-1">REFERENCE</span>
+<span class="font-data-mono text-title-md font-bold text-on-surface">WL-1042</span>
+</div>
+<div>
+<span class="block font-label-caps-sm text-label-caps-sm text-outline uppercase tracking-wider mb-1">SETTLEMENT</span>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[15px] text-on-surface-variant">verified_user</span>
+<span class="font-body-sm text-body-sm font-semibold text-on-surface">Paystack Token</span>
+</div>
+</div>
+<div>
+<span class="block font-label-caps-sm text-label-caps-sm text-outline uppercase tracking-wider mb-1">TRANSACTION ID</span>
+<span class="font-data-mono text-data-mono text-on-surface-variant truncate block" title="PSTK_TRX_9920148201">PSTK_TRX_99201482</span>
+</div>
+<div>
+<span class="block font-label-caps-sm text-label-caps-sm text-secondary uppercase tracking-wider mb-1">TOTAL SETTLED</span>
+<span class="font-headline-sm text-headline-sm font-semibold text-secondary">₦458,000</span>
+</div>
+</div>
+<!-- Status Dispatch Notice Pill -->
+<div class="flex items-start gap-space-sm p-space-md bg-surface-container-low rounded mb-space-xl">
+<span class="material-symbols-outlined text-secondary text-[22px] shrink-0 mt-0.5">mark_email_read</span>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface">Dispatch Dossier Dispatched</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                A formal architectural VAT invoice &amp; joinery schedule receipt has been sent to <span class="text-on-surface font-semibold underline">okonkwo@design.ng</span> and synchronized via WhatsApp conciergerie.
+              </p>
+</div>
+</div>
+<!-- Items Manifest -->
+<div class="flex items-center justify-between pb-space-sm mb-space-md">
+<h2 class="font-label-caps-md text-label-caps-md text-on-surface tracking-widest uppercase">Commissioned Inventory &amp; Finished Stock</h2>
+<span class="font-data-mono text-data-mono text-outline">3 PIECES TOTAL</span>
+</div>
+<div class="flex flex-col gap-space-md">
+<!-- Item 1: Nsukka Curved Sofa -->
+<div class="flex flex-col sm:flex-row items-start sm:items-center justify-between p-space-md bg-surface-container-low/50 hover:bg-surface-container-low transition-colors rounded gap-space-md">
+<div class="flex items-center gap-space-md">
+<img class="w-20 h-20 object-cover rounded bg-surface-container-high shrink-0" data-alt="Sculptural curved 3-seater living room sofa crafted with solid Nigerian teak frame and organic cream oatmeal boucle textile, photographed in a high-end minimalist sunlit showroom in Enugu with soft architectural shadows." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGzDgWKiqyRaJIciF0CV1D2ZyjwMvQqkxvHIsOIH4whUhEHQzq2g1wBsERac9R5TdFSQLSBmH25TbUBqzIPE8kg01w6gnq8FLjKzxrCEuiTHOtTK4gdI2GLwdCTZbVYZZFEsLfSW-ijANc_azJa4cNouSX8k7Q5EghS10-7jJLwI_TQSsWN_aPkJdyx3kA4HtIDa2MaIsNCClWZUEeLuEWfCO2Vt8EGW7LkrtGU5E"/>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs flex-wrap mb-1">
+<span class="font-title-md text-title-md text-on-surface">Nsukka Curved Sofa</span>
+<span class="inline-flex items-center px-2 py-0.5 rounded-full font-label-caps-sm text-[10px] bg-[#EBF5F0] text-[#1E5E3A] font-semibold tracking-wider uppercase">READY IN ENUGU</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">3-Seater • Seasoned Teak Subframe • Oatmeal Bouclé</span>
+<span class="font-data-mono text-data-mono text-outline mt-0.5">Spec: NSK-3S-TK-BOU</span>
+</div>
+</div>
+<div class="text-right sm:shrink-0 self-end sm:self-center">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">₦229,000</span>
+<span class="block font-data-mono text-data-mono text-outline">Paid in Full</span>
+</div>
+</div>
+<!-- Item 2: Asata Dual-Tier Coffee Table -->
+<div class="flex flex-col sm:flex-row items-start sm:items-center justify-between p-space-md bg-surface-container-low/50 hover:bg-surface-container-low transition-colors rounded gap-space-md">
+<div class="flex items-center gap-space-md">
+<img class="w-20 h-20 object-cover rounded bg-surface-container-high shrink-0" data-alt="Architectural dual-tier coffee table featuring dark aged solid Iroko wood joinery, mortise and tenon details, with a polished low-iron clear tempered glass tabletop, shot in an editorial interior setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNeCdpfoymOZq8FGUpj2ecbtPai9bUPPEVv2hiRyLahvI52la9bWeTlGFe4NAqyGSNRio12VF97M1H4zvF7Aa_vQ46k_olLYtvHi3W0UQyXcl26ZfTM5C9aSFQB5CYR6qDLuddmlFvMprpi00XAIIndmev6c7mu2Zdb9HALV4PRszgP5guwqshzzSnK4Fa6D0e-NyeRw9NrJm9XOYLjJ3C9xLprCsxo1FC_mHxfZU"/>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs flex-wrap mb-1">
+<span class="font-title-md text-title-md text-on-surface">Asata Dual-Tier Coffee Table</span>
+<span class="inline-flex items-center px-2 py-0.5 rounded-full font-label-caps-sm text-[10px] bg-[#EBF5F0] text-[#1E5E3A] font-semibold tracking-wider uppercase">READY IN ENUGU</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Solid Hand-Turned Iroko Frame • Low-Iron Tempered Glass Top</span>
+<span class="font-data-mono text-data-mono text-outline mt-0.5">Spec: AST-CF-IRK-CLR</span>
+</div>
+</div>
+<div class="text-right sm:shrink-0 self-end sm:self-center">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">₦229,000</span>
+<span class="block font-data-mono text-data-mono text-outline">Paid in Full</span>
+</div>
+</div>
+<!-- Item 3: Executive Wall Credenza (Custom Bespoke) -->
+<div class="flex flex-col sm:flex-row items-start sm:items-center justify-between p-space-md bg-surface-container-high/40 hover:bg-surface-container-high/60 transition-colors rounded gap-space-md">
+<div class="flex items-center gap-space-md">
+<img class="w-20 h-20 object-cover rounded bg-surface-container-high shrink-0" data-alt="Handcrafted luxury floating executive wall credenza made of fluted Nigerian walnut with antique brushed brass handles, displaying master joinery craftsmanship in a warm contemporary Nigerian architectural apartment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDe3IRCUsKxzuJ5M7D2CkZxh7hhXU2LLHxvXTu93pLuJiAxGKi_wM1MOwTu-sQe7p8IwmrQttibh_8RT6zU5HDVYZXslyustPH3cto6sJO8vLY9TUn-9hGz14Zfrn61oHsWga12Y3P0GZrg-rBPgwlHvllYO1WBmcM4-QEGqs8Jp8ydAFDytPHY-4KuQ2zEEK23U5YpplZKwrk1ZYvoCy6oyfKQZOTb0T6ZWLvao-U"/>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs flex-wrap mb-1">
+<span class="font-title-md text-title-md text-on-surface">Executive Wall Credenza</span>
+<span class="inline-flex items-center px-2 py-0.5 rounded-full font-label-caps-sm text-[10px] bg-[#EEF4FC] text-[#1A4B8C] font-semibold tracking-wider uppercase">IN PRODUCTION</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Custom Specification #WL-C-0001 • Fluted Nigerian Walnut • Brass Accents</span>
+<span class="font-data-mono text-data-mono text-secondary mt-0.5">50% Deposit Paid (₦150,000 balance due prior to dispatch)</span>
+</div>
+</div>
+<div class="text-right sm:shrink-0 self-end sm:self-center">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">₦150,000</span>
+<span class="block font-data-mono text-data-mono text-outline">Deposit Allocation</span>
+</div>
+</div>
+</div>
+<!-- Settlement Summary Footnote -->
+<div class="mt-space-lg pt-space-md flex flex-col sm:flex-row justify-between items-start sm:items-center bg-surface-container-low p-space-md rounded gap-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-outline">lock</span>
+<span class="font-label-caps-sm text-label-caps-sm text-outline uppercase tracking-wider">Escrow Tokenized Deposit Guarantee</span>
+</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant text-right">
+              Total Contract Valuation: <span class="font-headline-sm text-headline-sm font-semibold text-on-surface">₦608,000</span>
+</div>
+</div>
+</div>
+<!-- Delivery & White-Glove Installation Schedule Card -->
+<div class="bg-surface-container-lowest shadow-[0_2px_12px_rgba(13,12,11,0.04)] p-space-lg md:p-space-xl rounded-lg">
+<div class="flex items-center justify-between pb-space-md mb-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center">
+<span class="material-symbols-outlined text-on-surface text-[20px]">local_shipping</span>
+</div>
+<div>
+<h3 class="font-title-md text-title-md text-on-surface">White-Glove Protocol &amp; Delivery Dossier</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Direct carriage via Wooden Lounge Fleet</span>
+</div>
+</div>
+<span class="inline-flex items-center px-3 py-1 bg-surface-container rounded-full font-label-caps-sm text-label-caps-sm text-on-surface uppercase tracking-wider">ENUGU METRO</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<div class="p-space-md bg-surface-container-low rounded">
+<span class="block font-label-caps-sm text-label-caps-sm text-outline uppercase tracking-wider mb-1">CLIENT RECIPIENT</span>
+<span class="font-title-md text-title-md text-on-surface block">Chidiebere Okonkwo</span>
+<span class="font-data-mono text-data-mono text-on-surface-variant mt-1 block">+234 803 000 0000</span>
+<span class="font-data-mono text-data-mono text-outline">Verified Identity</span>
+</div>
+<div class="p-space-md bg-surface-container-low rounded">
+<span class="block font-label-caps-sm text-label-caps-sm text-outline uppercase tracking-wider mb-1">DESTINATION SALON</span>
+<span class="font-title-md text-title-md text-on-surface block">14 Independence Layout</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1 block">Enugu State, Nigeria</span>
+<span class="font-data-mono text-data-mono text-outline">Ground Floor Access Checked</span>
+</div>
+<div class="p-space-md bg-surface-container-low rounded">
+<span class="block font-label-caps-sm text-label-caps-sm text-outline uppercase tracking-wider mb-1">HANDLING PROTOCOL</span>
+<span class="font-title-md text-title-md text-on-surface block">White-Glove Placement</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1 block">Crate unpacking, placement &amp; timber buffing</span>
+<span class="font-label-caps-sm text-label-caps-sm text-secondary font-bold uppercase mt-1 block">OCTOBER 26, 2024</span>
+</div>
+</div>
+</div>
+<!-- Immediate Utility Actions & Document Exports -->
+<div class="flex flex-col sm:flex-row items-center justify-between gap-space-md p-space-md bg-surface-container rounded-lg">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-outline">print</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Archival records available in certified PDF format</span>
+</div>
+<div class="flex items-center gap-space-sm flex-wrap w-full sm:w-auto">
+<button class="flex-1 sm:flex-initial inline-flex items-center justify-center gap-space-xs px-space-md py-space-xs bg-surface-container-lowest hover:bg-surface-container-highest transition-colors rounded text-on-surface font-label-caps-sm text-label-caps-sm uppercase tracking-wider shadow-sm">
+<span class="material-symbols-outlined text-[16px]">picture_as_pdf</span>
+<span>Download Official Order PDF</span>
+</button>
+<button class="flex-1 sm:flex-initial inline-flex items-center justify-center gap-space-xs px-space-md py-space-xs bg-surface-container-lowest hover:bg-surface-container-highest transition-colors rounded text-on-surface font-label-caps-sm text-label-caps-sm uppercase tracking-wider shadow-sm">
+<span class="material-symbols-outlined text-[16px]">calendar_today</span>
+<span>Add Delivery to Calendar</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Secondary Atelier Column: Production Milestones & Concierge (5 Cols on LG) -->
+<div class="lg:col-span-4 flex flex-col gap-space-lg">
+<!-- Interactive Production & Dispatch Timeline -->
+<div class="bg-surface-container-lowest shadow-[0_2px_12px_rgba(13,12,11,0.04)] p-space-lg md:p-space-xl rounded-lg">
+<div class="flex items-center justify-between mb-space-lg">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Curation &amp; Joinery Roadmap</h3>
+<span class="font-data-mono text-data-mono text-outline">LIVE MILESTONES</span>
+</div>
+<div class="relative pl-6 space-y-8 before:absolute before:left-[11px] before:top-2 before:bottom-2 before:w-[2px] before:bg-surface-container-high">
+<!-- Step 1: Confirmed (Active/Complete) -->
+<div class="relative group">
+<div class="absolute -left-6 top-1 w-6 h-6 rounded-full bg-secondary text-on-secondary flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[14px]">check</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md text-on-surface">Order Confirmed &amp; Logged</span>
+<span class="font-data-mono text-data-mono text-secondary font-semibold">Oct 22</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-relaxed">
+                  Timber stock verified at Asata Master Workshop; transaction cleared via Paystack.
+                </p>
+</div>
+</div>
+<!-- Step 2: Premade pieces dispatch -->
+<div class="relative group">
+<div class="absolute -left-6 top-1 w-6 h-6 rounded-full bg-primary text-on-primary flex items-center justify-center ring-4 ring-surface-container">
+<span class="material-symbols-outlined text-[14px]">inventory_2</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md text-on-surface">Premade Pieces Pre-Inspection</span>
+<span class="font-data-mono text-data-mono text-on-surface font-semibold">Oct 24</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-relaxed">
+                  Nsukka Sofa &amp; Dual-Tier Table undergoing protective muslin wrapping &amp; beeswax luster inspection.
+                </p>
+</div>
+</div>
+<!-- Step 3: Custom Credenza Timber Curing -->
+<div class="relative group">
+<div class="absolute -left-6 top-1 w-6 h-6 rounded-full bg-surface-container-high text-outline flex items-center justify-center">
+<span class="material-symbols-outlined text-[14px]">carpenter</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md text-on-surface">Credenza Curing &amp; Joinery</span>
+<span class="font-data-mono text-data-mono text-outline">Est. Nov 12</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-relaxed">
+                  Kiln-dried Nigerian walnut milling and precision mortise joint fabrication in Enugu bay 4.
+                </p>
+</div>
+</div>
+<!-- Step 4: Final White-Glove Delivery -->
+<div class="relative group">
+<div class="absolute -left-6 top-1 w-6 h-6 rounded-full bg-surface-container-high text-outline flex items-center justify-center">
+<span class="material-symbols-outlined text-[14px]">home</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md text-on-surface">Final Architectural Handover</span>
+<span class="font-data-mono text-data-mono text-outline">Est. Nov 15</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-relaxed">
+                  Consolidated arrival of completed custom pieces and signed craftsman provenance card.
+                </p>
+</div>
+</div>
+</div>
+<!-- Studio Live Progress Widget -->
+<div class="mt-space-xl p-space-md bg-surface-container rounded flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="relative flex h-3 w-3">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-3 w-3 bg-secondary"></span>
+</div>
+<span class="font-label-caps-sm text-label-caps-sm text-on-surface uppercase tracking-wider">WORKSHOP BENCH: ACTIVE</span>
+</div>
+<span class="font-data-mono text-data-mono text-on-surface-variant">Enugu • Bay 02</span>
+</div>
+</div>
+<!-- Primary Decision Pathways / Action Module -->
+<div class="bg-primary text-on-primary p-space-lg md:p-space-xl rounded-lg shadow-xl flex flex-col gap-space-md">
+<div class="flex flex-col">
+<span class="font-label-caps-sm text-label-caps-sm text-on-primary-container uppercase tracking-widest mb-1">CONCIERGE &amp; TELEMETRY</span>
+<h3 class="font-headline-sm text-headline-sm text-on-primary">Real-Time Client Dashboard</h3>
+<p class="font-body-sm text-body-sm text-on-primary-container mt-1 leading-relaxed">
+              Inspect photographic bench logs, joinery stress tests, and dispatch vehicle positioning in real-time.
+            </p>
+</div>
+<div class="flex flex-col gap-space-sm pt-space-xs">
+<button class="w-full bg-on-primary text-primary px-space-lg py-space-sm font-label-caps-md text-label-caps-md uppercase tracking-widest hover:bg-surface-container transition-colors flex items-center justify-center gap-space-xs rounded font-semibold">
+<span>Track Your Order</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+<button class="w-full bg-transparent border-0 text-on-primary hover:bg-primary-container px-space-lg py-space-sm font-label-caps-md text-label-caps-md uppercase tracking-widest transition-colors flex items-center justify-center gap-space-xs rounded">
+<span>Continue Shopping</span>
+</button>
+</div>
+<!-- WhatsApp Direct Lead Handshake -->
+<div class="pt-space-md border-t-0 bg-primary-container p-space-md rounded flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[24px]">forum</span>
+<div class="flex flex-col">
+<span class="font-label-caps-sm text-label-caps-sm text-on-primary uppercase tracking-wider">DIRECT ATELIER LINK</span>
+<span class="font-body-sm text-body-sm text-on-primary-container">+234 803 490 2811</span>
+</div>
+</div>
+<a class="px-space-md py-space-xs bg-secondary text-on-secondary font-label-caps-sm text-label-caps-sm uppercase tracking-wider hover:bg-secondary-container hover:text-on-secondary-container transition-colors rounded" href="https://wa.me/2348034902811" rel="noopener noreferrer" target="_blank">
+              WhatsApp
+            </a>
+</div>
+</div>
+<!-- Master Joinery Provenance Pledge -->
+<div class="p-space-lg bg-surface-container-low rounded-lg flex items-start gap-space-md">
+<span class="material-symbols-outlined text-secondary text-[28px] shrink-0">verified</span>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface">Lifetime Joinery Warranty</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-relaxed">
+              Every mortise, tenon joint, and Nigerian hardwood timber component is structurally safeguarded for lifetime residential utility under our Enugu Master Guild charter.
+            </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Related Collections Inspiration Strip (Quiet Editorial Breathing Space) -->
+<div class="mt-space-xl pt-space-xl">
+<div class="flex flex-col sm:flex-row sm:items-end justify-between mb-space-lg gap-space-sm">
+<div>
+<span class="font-label-caps-sm text-label-caps-sm text-secondary uppercase tracking-[0.2em] block mb-1">ARCHIVAL SELECTIONS</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Complementary Living Specs</h2>
+</div>
+<a class="font-label-caps-sm text-label-caps-sm text-on-surface underline underline-offset-4 tracking-wider uppercase hover:text-secondary transition-colors" href="/">
+          EXPLORE CATALOG ARCHIVE
+        </a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+<!-- Companion Item 1 -->
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm group">
+<div class="relative overflow-hidden rounded mb-space-md bg-surface-container-high aspect-4/3">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Minimalist architectural floor lamp crafted with dark stained Nigerian Iroko hardwood stand and sculptural textured linen shade in an open-concept living room." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAlC6jkHm5o06SM7_neVU_x1ji4i5Byr0r3UlLavAtkYSzU70siYpvj4huclm8LW4ghzzLMGZJu523UEvkI_SylwScMV60LBNTnlXkSgA6Wh2PR5TDhuQriWKU2zK7YMRhv_BMNKdcGO_Ki6uj24C50PDNSlLYBZ8vYGdmTIut3bqJ9fBSlneBRE5wtfChUrATRaCGRtcTuOOZ743A8dq0mCRb2tLB2fcM7uqKleUM"/>
+<span class="absolute top-3 left-3 bg-surface/90 backdrop-blur px-2 py-1 rounded font-label-caps-sm text-[10px] uppercase tracking-wider text-on-surface">ACCENT LIGHTING</span>
+</div>
+<span class="font-label-caps-sm text-label-caps-sm text-outline uppercase tracking-wider">OGUI ROAD COLLECTION</span>
+<h3 class="font-title-md text-title-md text-on-surface mt-1">Ogui Sculptural Timber Floor Lamp</h3>
+<div class="flex items-center justify-between mt-space-sm pt-space-sm">
+<span class="font-body-md text-body-md font-semibold text-on-surface">₦85,000</span>
+<button class="font-label-caps-sm text-label-caps-sm text-secondary uppercase tracking-wider hover:underline">Quick Spec →</button>
+</div>
+</div>
+<!-- Companion Item 2 -->
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm group">
+<div class="relative overflow-hidden rounded mb-space-md bg-surface-container-high aspect-4/3">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Pair of handcrafted Nigerian Obeche wood and hand-woven raffia accent dining chairs placed next to an expansive glass window in a luxury contemporary villa." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAnUu53fL0tA_Gobyz1A8mUU0gkaCcjrpBTUg-Lp7yhMJdE9n9tSkSH05Tha3hlWkgEMUZNpSnJn4zq_0g0y3L1rp_tZFqDZSiIiomNd6bbmmgelva5yiN_jGhTc5RjeOhQS615SzJVSqJOSx3rmI_tuVotAiMiyoynFcJqiX7sOnf5xnLT8fpnlVpAd74c7YPyHfIw6BEyavEdhmu8aIr3hOCyppt4-YyOiUp3ErI"/>
+<span class="absolute top-3 left-3 bg-surface/90 backdrop-blur px-2 py-1 rounded font-label-caps-sm text-[10px] uppercase tracking-wider text-on-surface">HANDWOVEN SEATING</span>
+</div>
+<span class="font-label-caps-sm text-label-caps-sm text-outline uppercase tracking-wider">RESIDENTIAL SERIES</span>
+<h3 class="font-title-md text-title-md text-on-surface mt-1">Enugu Atelier Raffia Armchair</h3>
+<div class="flex items-center justify-between mt-space-sm pt-space-sm">
+<span class="font-body-md text-body-md font-semibold text-on-surface">₦142,000</span>
+<button class="font-label-caps-sm text-label-caps-sm text-secondary uppercase tracking-wider hover:underline">Quick Spec →</button>
+</div>
+</div>
+<!-- Companion Item 3 -->
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm group">
+<div class="relative overflow-hidden rounded mb-space-md bg-surface-container-high aspect-4/3">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Natural organic beeswax and citrus timber maintenance balm in a minimalist amber glass jar with stamped bronze label sitting on a smoked walnut wooden surface." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBN3xRYiBwKpZlqREgMwoVWeDHxAHuXUtiqKa-bco2npiCAL_kw4_UFAk0QaM5c-QHUIuVxFRk9z4aHOcgN7juwD3hyaBMJ8iWebrIbQvS0aGQkERbC4GAXeRhd_3T5BxjjLw6dHHIHa1M9FXEiwg7aCtk4aNrja3KzvkvsMeSOxPQEdAP00N0n68TbcnNt8BUZbpT33pY7uX6FXSfBbI0B3UJBgiyTliI8J04I_rI"/>
+<span class="absolute top-3 left-3 bg-surface/90 backdrop-blur px-2 py-1 rounded font-label-caps-sm text-[10px] uppercase tracking-wider text-on-surface">TIMBER CARE</span>
+</div>
+<span class="font-label-caps-sm text-label-caps-sm text-outline uppercase tracking-wider">APOTHECARY</span>
+<h3 class="font-title-md text-title-md text-on-surface mt-1">Raw Beeswax &amp; Citrus Wood Elixir</h3>
+<div class="flex items-center justify-between mt-space-sm pt-space-sm">
+<span class="font-body-md text-body-md font-semibold text-on-surface">₦18,500</span>
+<button class="font-label-caps-sm text-label-caps-sm text-secondary uppercase tracking-wider hover:underline">Quick Spec →</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div></main><footer class="w-full bg-surface-container-low relative"><div class="max-w-[1280px] mx-auto px-margin-mobile md:px-margin pt-space-xl pb-space-lg"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-xl pb-space-xl border-b border-outline-variant/30"><div class="flex flex-col"><h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-sm">Enugu Showroom</h3><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-space-xs">160 Ogui Rd, Asata Chemist</p><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-space-sm">Enugu State, Nigeria</p><span class="font-label-caps-sm text-label-caps-sm text-on-tertiary-container tracking-wider uppercase">STUDIO &amp; MASTER WORKSHOP</span><p class="font-data-mono text-data-mono text-on-surface-variant mt-space-sm">Mon – Sat: 09:00 – 18:00 WAT</p></div><div class="flex flex-col"><h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-sm">Abuja Showroom</h3><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-space-xs">2 Lobito Crescent, Wuse 2</p><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-space-sm">Federal Capital Territory, Nigeria</p><span class="font-label-caps-sm text-label-caps-sm text-on-tertiary-container tracking-wider uppercase">RESIDENTIAL SPECIFICATION SALON</span><p class="font-data-mono text-data-mono text-on-surface-variant mt-space-sm">Tue – Sat: 10:00 – 19:00 WAT</p></div><div class="flex flex-col"><h3 class="font-label-caps-md text-label-caps-md text-on-surface tracking-widest uppercase mb-space-md">THE ATELIER</h3><nav class="flex flex-col gap-space-xs"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="bespoke-process" href="/">Bespoke Commission Process</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="timber-archives" href="/">Nigerian Timber Archives</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="joinery-philosophy" href="/">Joinery Philosophy</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="residential-portfolio" href="/">Residential Portfolio</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="diaspora-shipping" href="/">Diaspora Freight &amp; Crating</a></nav></div><div class="flex flex-col"><h3 class="font-label-caps-md text-label-caps-md text-on-surface tracking-widest uppercase mb-space-sm">PRIVATE CATALOG</h3><p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md leading-relaxed">Receive private showroom drops, architectural releases, and seasonal timber consignments.</p><form class="flex flex-col gap-space-xs"><div class="flex w-full"><input class="w-full bg-surface-container-lowest border border-outline-variant px-space-md py-space-sm font-label-caps-sm text-label-caps-sm text-on-surface placeholder:text-outline focus:outline-none focus:border-primary transition-colors" placeholder="ARCHITECT / CLIENT EMAIL" type="email"/><button class="bg-primary text-on-primary px-space-md py-space-sm font-label-caps-sm text-label-caps-sm uppercase tracking-wider hover:bg-on-surface-variant hover:text-on-primary transition-colors shrink-0" type="button">JOIN</button></div><span class="font-data-mono text-data-mono text-outline">Discreet seasonal dispatch only.</span></form></div></div><div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg flex-wrap"><span class="font-headline-lg text-headline-sm md:text-headline-md text-outline-variant/40 tracking-tight font-light select-none">WOODEN LOUNGE ATELIER</span></div><div class="flex items-center gap-space-md flex-wrap"><a class="font-label-caps-sm text-label-caps-sm text-on-surface-variant hover:text-on-surface transition-colors uppercase" data-path="legal-terms" href="/">TERMS OF COMMISSION</a><span class="text-outline-variant">•</span><a class="font-label-caps-sm text-label-caps-sm text-on-surface-variant hover:text-on-surface transition-colors uppercase" data-path="legal-privacy" href="/">PRIVACY ARCHIVE</a><span class="text-outline-variant">•</span><a class="font-label-caps-sm text-label-caps-sm text-on-surface-variant hover:text-on-surface transition-colors uppercase" data-path="legal-warranty" href="/">LIFETIME JOINERY WARRANTY</a></div><div class="font-data-mono text-data-mono text-outline">© 2025 WOODEN LOUNGE NIGERIA.</div></div></div></footer><a aria-label="Consult Showroom Concierge" class="fixed bottom-space-lg right-space-lg z-40 bg-primary text-on-primary shadow-[0_12px_32px_-4px_rgba(13,12,11,0.25)] px-space-md py-space-sm flex items-center gap-space-xs group hover:bg-secondary transition-all" data-path="concierge-message" href="/"><span class="material-symbols-outlined text-[18px] text-on-primary">chat</span><span class="font-label-caps-sm text-label-caps-sm text-on-primary uppercase tracking-widest">ENQUIRY DESK</span></a><script src="/assets/site.js"></script>
+</body></html>

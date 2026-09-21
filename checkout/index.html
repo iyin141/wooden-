@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "on-tertiary-container": "#997f61",
+          "surface": "#fff8f4",
+          "on-primary-container": "#868381",
+          "on-secondary-fixed-variant": "#743412",
+          "on-error-container": "#93000a",
+          "primary-fixed": "#e6e1df",
+          "error": "#ba1a1a",
+          "background": "#fff8f4",
+          "on-surface-variant": "#4b4640",
+          "primary-container": "#1d1b1a",
+          "surface-bright": "#fff8f4",
+          "on-background": "#1d1b19",
+          "tertiary-container": "#281803",
+          "surface-container-highest": "#e7e1de",
+          "inverse-surface": "#32302e",
+          "on-error": "#ffffff",
+          "outline-variant": "#cdc5bd",
+          "on-tertiary-fixed": "#281803",
+          "on-secondary-fixed": "#351000",
+          "outline": "#7c766f",
+          "surface-variant": "#e7e1de",
+          "surface-tint": "#605e5c",
+          "secondary-fixed": "#ffdbcc",
+          "inverse-on-surface": "#f6efec",
+          "on-primary-fixed": "#1d1b1a",
+          "on-secondary": "#ffffff",
+          "on-tertiary": "#ffffff",
+          "on-primary": "#ffffff",
+          "secondary": "#924b27",
+          "inverse-primary": "#cac6c3",
+          "surface-container": "#f3ede9",
+          "error-container": "#ffdad6",
+          "primary-fixed-dim": "#cac6c3",
+          "surface-container-high": "#ede7e3",
+          "surface-container-low": "#f9f2ee",
+          "on-tertiary-fixed-variant": "#584329",
+          "primary": "#000000",
+          "secondary-fixed-dim": "#ffb694",
+          "on-surface": "#1d1b19",
+          "on-primary-fixed-variant": "#484645",
+          "secondary-container": "#fea277",
+          "surface-dim": "#dfd9d5",
+          "tertiary-fixed-dim": "#e0c29f",
+          "tertiary": "#000000",
+          "tertiary-fixed": "#fdddb9",
+          "surface-container-lowest": "#ffffff",
+          "on-secondary-container": "#773614"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "gutter": "1.5rem",
+          "space-md": "1rem",
+          "space-xs": "0.25rem",
+          "margin": "3.5rem",
+          "space-lg": "1.5rem",
+          "space-xl": "2.5rem",
+          "margin-mobile": "1.25rem",
+          "space-sm": "0.5rem",
+          "gutter-mobile": "1rem"
+        },
+        "fontFamily": {
+          "body-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "label-caps-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-sm": [
+            "Playfair Display"
+          ],
+          "headline-lg": [
+            "Playfair Display"
+          ],
+          "body-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "display-lg": [
+            "Playfair Display"
+          ],
+          "display-lg-mobile": [
+            "Playfair Display"
+          ],
+          "headline-lg-mobile": [
+            "Playfair Display"
+          ],
+          "headline-md": [
+            "Playfair Display"
+          ],
+          "body-md": [
+            "Plus Jakarta Sans"
+          ],
+          "data-mono": [
+            "Plus Jakarta Sans"
+          ],
+          "title-md": [
+            "Plus Jakarta Sans"
+          ],
+          "label-caps-md": [
+            "Plus Jakarta Sans"
+          ]
+        },
+        "fontSize": {
+          "body-lg": [
+            "17px",
+            {
+              "lineHeight": "28px",
+              "fontWeight": "400"
+            }
+          ],
+          "label-caps-sm": [
+            "10px",
+            {
+              "lineHeight": "14px",
+              "letterSpacing": "0.16em",
+              "fontWeight": "700"
+            }
+          ],
+          "headline-sm": [
+            "20px",
+            {
+              "lineHeight": "28px",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-lg": [
+            "36px",
+            {
+              "lineHeight": "44px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "500"
+            }
+          ],
+          "body-sm": [
+            "13px",
+            {
+              "lineHeight": "20px",
+              "fontWeight": "400"
+            }
+          ],
+          "display-lg": [
+            "56px",
+            {
+              "lineHeight": "64px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "600"
+            }
+          ],
+          "display-lg-mobile": [
+            "38px",
+            {
+              "lineHeight": "44px",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-lg-mobile": [
+            "28px",
+            {
+              "lineHeight": "36px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "500"
+            }
+          ],
+          "headline-md": [
+            "24px",
+            {
+              "lineHeight": "32px",
+              "fontWeight": "500"
+            }
+          ],
+          "body-md": [
+            "15px",
+            {
+              "lineHeight": "24px",
+              "fontWeight": "400"
+            }
+          ],
+          "data-mono": [
+            "12px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.02em",
+              "fontWeight": "500"
+            }
+          ],
+          "title-md": [
+            "16px",
+            {
+              "lineHeight": "24px",
+              "letterSpacing": "0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "label-caps-md": [
+            "11px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.14em",
+              "fontWeight": "700"
+            }
+          ]
+        }
+      },
+    },
+  }</script></head><body class="bg-surface text-on-surface selection:bg-secondary-fixed selection:text-on-secondary-fixed" data-page="checkout">
+<!-- PAGE: Bespoke Acquisition Order --><header class="fixed top-0 w-full z-50 bg-primary shadow-[0_1px_8px_rgba(0,0,0,0.12)]"><div class="h-20 max-w-[1280px] mx-auto px-margin-mobile md:px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg shrink-0"><a class="flex flex-col group" data-path="home" href="/"><span class="font-headline-sm text-headline-sm text-on-primary tracking-tight font-semibold leading-none">WOODEN LOUNGE</span><span class="font-label-caps-sm text-label-caps-sm text-on-primary-container tracking-[0.2em] uppercase mt-space-xs">ENUGU • NIGERIA</span></a><button aria-label="Search Catalog" class="p-space-xs text-on-primary-container hover:text-on-primary transition-colors flex items-center justify-center" type="button"><span class="material-symbols-outlined text-[20px]">search</span></button></div><nav class="hidden xl:flex items-center gap-space-lg shrink-0" data-active-classes="text-on-primary font-bold underline underline-offset-8"><a class="font-label-caps-md text-label-caps-md text-on-primary-container hover:text-on-primary transition-colors tracking-widest" data-path="lounge" href="/shop/?room=lounge">LOUNGE</a><a class="font-label-caps-md text-label-caps-md text-on-primary-container hover:text-on-primary transition-colors tracking-widest" data-path="furniture" href="/shop/?room=furniture">FURNITURE</a><a class="font-label-caps-md text-label-caps-md text-on-primary-container hover:text-on-primary transition-colors tracking-widest" data-path="living" href="/shop/?room=living">LIVING</a><a class="font-label-caps-md text-label-caps-md text-on-primary-container hover:text-on-primary transition-colors tracking-widest" data-path="dining" href="/shop/?room=dining">DINING</a><a class="font-label-caps-md text-label-caps-md text-on-primary-container hover:text-on-primary transition-colors tracking-widest" data-path="bed" href="/shop/?room=bed">BED</a></nav><div class="flex items-center gap-space-md shrink-0"><a class="hidden md:inline-block font-label-caps-sm text-label-caps-sm text-on-primary underline underline-offset-4 tracking-wider uppercase hover:text-on-primary-container transition-colors" data-path="book-online-visit" href="/book-visit/?type=online">BOOK ONLINE VISIT</a><a class="hidden sm:inline-flex items-center px-space-md py-space-xs font-label-caps-sm text-label-caps-sm text-on-primary border border-on-primary/30 hover:border-on-primary hover:bg-on-primary hover:text-primary transition-all uppercase tracking-wider" data-path="book-custom-design" href="/custom-order/">BOOK CUSTOM DESIGN</a><div class="flex items-center gap-space-sm pl-space-xs"><a aria-label="Client Account" class="relative p-space-xs text-on-primary-container hover:text-on-primary transition-colors flex items-center justify-center" data-path="account" href="/sign-in/"><span class="material-symbols-outlined text-[22px]">person</span></a><a aria-label="Shopping Bag" class="relative p-space-xs text-on-primary-container hover:text-on-primary transition-colors flex items-center justify-center" data-path="bag" href="/cart/"><span class="material-symbols-outlined text-[22px]">shopping_bag</span><span class="absolute top-0 right-0 w-4 h-4 bg-secondary text-on-secondary rounded-full flex items-center justify-center font-data-mono text-[10px] leading-none font-bold">2</span></a><div class="w-8 h-8 rounded-full bg-primary-container flex items-center justify-center border border-outline-variant/30 ml-space-xs"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-80px)]"><div class="flex flex-col w-full">
+<div class="max-w-[1280px] w-full mx-auto px-margin-mobile md:px-margin py-space-xl">
+<!-- Top Hierarchy & Breadcrumb -->
+<div class="flex flex-col md:flex-row md:items-end justify-between pb-space-lg mb-space-xl">
+<div class="flex flex-col gap-space-xs">
+<nav aria-label="Breadcrumb" class="flex items-center gap-space-xs">
+<span class="font-label-caps-sm text-label-caps-sm text-outline hover:text-on-surface cursor-pointer">BAG</span>
+<span class="text-outline text-data-mono font-data-mono">/</span>
+<span class="font-label-caps-sm text-label-caps-sm text-on-surface font-bold">CHECKOUT</span>
+<span class="text-outline text-data-mono font-data-mono">/</span>
+<span class="font-label-caps-sm text-label-caps-sm text-outline">PAYMENT</span>
+</nav>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight mt-space-xs">Bespoke Acquisition Order</h1>
+</div>
+<div class="flex items-center gap-space-sm mt-space-md md:mt-0">
+<div class="flex items-center gap-space-xs px-space-md py-space-xs bg-surface-container rounded-full">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-data-mono text-data-mono text-on-surface-variant uppercase tracking-wider">RESERVATION LOCKED: 29:40</span>
+</div>
+<div class="hidden lg:flex items-center gap-space-xs px-space-md py-space-xs bg-surface-container-low rounded-full">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified_user</span>
+<span class="font-label-caps-sm text-label-caps-sm text-on-surface tracking-widest uppercase">ENUGU ATELIER ALLOCATION</span>
+</div>
+</div>
+</div>
+<!-- Main Checkout Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter lg:gap-space-xl items-start">
+<!-- Left Column: Checkout Stepper Accordions -->
+<div class="lg:col-span-7 flex flex-col gap-space-lg">
+<!-- Accordion 1: Contact Dossier -->
+<div class="bg-surface-container-lowest p-space-lg md:p-space-xl shadow-sm transition-all duration-300">
+<div class="flex items-center justify-between cursor-pointer" onclick="toggleAccordion('content-contact', 'icon-contact')">
+<div class="flex items-center gap-space-md">
+<span class="w-8 h-8 rounded-full bg-primary text-on-primary font-data-mono text-data-mono flex items-center justify-center font-bold">01</span>
+<div>
+<span class="font-label-caps-sm text-label-caps-sm text-on-tertiary-container uppercase tracking-widest block">CLIENT DOSSIER</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Primary Contact Information</h2>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="font-label-caps-sm text-label-caps-sm text-secondary uppercase tracking-wider hidden sm:inline-block font-semibold">VERIFIED</span>
+<span class="material-symbols-outlined text-[20px] text-on-surface transition-transform duration-300" id="icon-contact">expand_less</span>
+</div>
+</div>
+<div class="mt-space-lg pt-space-md flex flex-col gap-space-md" id="content-contact">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-caps-sm text-label-caps-sm text-outline tracking-wider uppercase">MOBILE PHONE (DIRECT)</label>
+<div class="relative flex items-center">
+<span class="absolute left-space-md font-data-mono text-data-mono text-on-surface-variant font-bold">🇳🇬 +234</span>
+<input class="w-full bg-surface-container-low pl-[88px] pr-space-md py-space-sm font-body-md text-body-md text-on-surface focus:outline-none focus:bg-surface-container transition-all" type="tel" value="803 000 0000"/>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-caps-sm text-label-caps-sm text-outline tracking-wider uppercase">COMMISSION SPECIFICATION EMAIL</label>
+<input class="w-full bg-surface-container-low px-space-md py-space-sm font-body-md text-body-md text-on-surface focus:outline-none focus:bg-surface-container transition-all" type="email" value="okonkwo@design.ng"/>
+</div>
+</div>
+<!-- WhatsApp Toggle Feature -->
+<div class="flex items-center justify-between p-space-md bg-surface-container-low mt-space-xs">
+<div class="flex items-center gap-space-md">
+<span class="material-symbols-outlined text-[24px] text-secondary">chat_bubble</span>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface">Order Updates via WhatsApp</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Live joinery progress photos, dispatch tracking, and gate pass clearances.</span>
+</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" id="whatsapp-toggle" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-surface-container-lowest after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-surface-container-lowest after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-secondary"></div>
+</label>
+</div>
+</div>
+</div>
+<!-- Accordion 2: Architectural Delivery & White-Glove Installation -->
+<div class="bg-surface-container-lowest p-space-lg md:p-space-xl shadow-sm transition-all duration-300">
+<div class="flex items-center justify-between cursor-pointer" onclick="toggleAccordion('content-delivery', 'icon-delivery')">
+<div class="flex items-center gap-space-md">
+<span class="w-8 h-8 rounded-full bg-primary text-on-primary font-data-mono text-data-mono flex items-center justify-center font-bold">02</span>
+<div>
+<span class="font-label-caps-sm text-label-caps-sm text-on-tertiary-container uppercase tracking-widest block">LOGISTICS DISPATCH</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">White-Glove Delivery Destination</h2>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="font-label-caps-sm text-label-caps-sm text-on-surface-variant uppercase tracking-wider hidden sm:inline-block">ENUGU METRO COMPLIMENTARY</span>
+<span class="material-symbols-outlined text-[20px] text-on-surface transition-transform duration-300" id="icon-delivery">expand_less</span>
+</div>
+</div>
+<div class="mt-space-lg pt-space-md flex flex-col gap-space-md" id="content-delivery">
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-caps-sm text-label-caps-sm text-outline tracking-wider uppercase">CLIENT LEGAL NAME</label>
+<input class="w-full bg-surface-container-low px-space-md py-space-sm font-body-md text-body-md text-on-surface focus:outline-none focus:bg-surface-container transition-all" type="text" value="Chidiebere Okonkwo"/>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-caps-sm text-label-caps-sm text-outline tracking-wider uppercase">STREET ADDRESS &amp; ESTATE NAME</label>
+<input class="w-full bg-surface-container-low px-space-md py-space-sm font-body-md text-body-md text-on-surface focus:outline-none focus:bg-surface-container transition-all" type="text" value="14 Independence Layout"/>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-caps-sm text-label-caps-sm text-outline tracking-wider uppercase">CITY / METRO AREA</label>
+<input class="w-full bg-surface-container-low px-space-md py-space-sm font-body-md text-body-md text-on-surface focus:outline-none focus:bg-surface-container transition-all" type="text" value="Enugu"/>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-caps-sm text-label-caps-sm text-outline tracking-wider uppercase">STATE / REGION</label>
+<div class="relative">
+<select class="w-full bg-surface-container-low px-space-md py-space-sm font-body-md text-body-md text-on-surface focus:outline-none focus:bg-surface-container appearance-none transition-all">
+<option selected="">Enugu State</option>
+<option>Abuja (FCT)</option>
+<option>Lagos State</option>
+<option>Anambra State</option>
+<option>Rivers State (Port Harcourt)</option>
+</select>
+<span class="material-symbols-outlined absolute right-space-md top-1/2 -translate-y-1/2 text-outline pointer-events-none">expand_more</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-caps-sm text-label-caps-sm text-outline tracking-wider uppercase">ESTATE CLEARANCE &amp; INSTALLATION NOTES</label>
+<textarea class="w-full bg-surface-container-low p-space-md font-body-md text-body-md text-on-surface focus:outline-none focus:bg-surface-container transition-all resize-none" rows="2">Call on arrival, gated estate. Ground floor formal salon with double-door entry.</textarea>
+</div>
+</div>
+</div>
+<!-- Accordion 3: Secure Settlement Engine (Paystack) -->
+<div class="bg-surface-container-lowest p-space-lg md:p-space-xl shadow-sm transition-all duration-300">
+<div class="flex items-center justify-between cursor-pointer" onclick="toggleAccordion('content-payment', 'icon-payment')">
+<div class="flex items-center gap-space-md">
+<span class="w-8 h-8 rounded-full bg-secondary text-on-secondary font-data-mono text-data-mono flex items-center justify-center font-bold">03</span>
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="font-label-caps-sm text-label-caps-sm text-on-tertiary-container uppercase tracking-widest">SETTLEMENT ENGINE</span>
+<span class="bg-surface-container px-space-xs py-[2px] font-label-caps-sm text-[9px] text-secondary font-bold">PAYSTACK VERIFIED</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Pay Securely with Paystack</h2>
+</div>
+</div>
+<span class="material-symbols-outlined text-[20px] text-on-surface transition-transform duration-300" id="icon-payment">expand_less</span>
+</div>
+<div class="mt-space-lg pt-space-md flex flex-col gap-space-lg" id="content-payment">
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Your transaction is protected by Nigerian banking regulations and Tier-1 PCI-DSS compliant protocols. Choose your preferred automated settlement rail:
+            </p>
+<!-- Interactive Method Tabs Selector -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-sm" id="method-selector">
+<!-- Method 1 -->
+<div class="payment-tab cursor-pointer p-space-md bg-surface-container-low transition-all duration-200 flex flex-col justify-between h-32" id="tab-card" onclick="selectMethod('card')">
+<div class="flex items-center justify-between">
+<span class="material-symbols-outlined text-[24px] text-primary">credit_card</span>
+<span class="method-check w-4 h-4 rounded-full bg-primary text-on-primary flex items-center justify-center text-[10px]">✓</span>
+</div>
+<div>
+<span class="font-title-md text-title-md text-on-surface block font-bold">Card</span>
+<span class="font-data-mono text-data-mono text-on-surface-variant block mt-space-xs">Mastercard, Visa, Verve</span>
+</div>
+</div>
+<!-- Method 2 -->
+<div class="payment-tab cursor-pointer p-space-md bg-surface-container-low transition-all duration-200 flex flex-col justify-between h-32" id="tab-transfer" onclick="selectMethod('transfer')">
+<div class="flex items-center justify-between">
+<span class="material-symbols-outlined text-[24px] text-primary">account_balance</span>
+<span class="method-check hidden w-4 h-4 rounded-full bg-primary text-on-primary flex items-center justify-center text-[10px]">✓</span>
+</div>
+<div>
+<span class="font-title-md text-title-md text-on-surface block font-bold">Bank Transfer</span>
+<span class="font-data-mono text-data-mono text-on-surface-variant block mt-space-xs">Instant Virtual Account</span>
+</div>
+</div>
+<!-- Method 3 -->
+<div class="payment-tab cursor-pointer p-space-md bg-surface-container-low transition-all duration-200 flex flex-col justify-between h-32" id="tab-ussd" onclick="selectMethod('ussd')">
+<div class="flex items-center justify-between">
+<span class="material-symbols-outlined text-[24px] text-primary">dialpad</span>
+<span class="method-check hidden w-4 h-4 rounded-full bg-primary text-on-primary flex items-center justify-center text-[10px]">✓</span>
+</div>
+<div>
+<span class="font-title-md text-title-md text-on-surface block font-bold">USSD Banking</span>
+<span class="font-data-mono text-data-mono text-on-surface-variant block mt-space-xs">*737#, *894#, *966#</span>
+</div>
+</div>
+</div>
+<!-- Dynamic Micro Channel Info -->
+<div class="p-space-md bg-surface-container-low flex flex-col gap-space-xs" id="method-details">
+<div class="flex items-center justify-between">
+<span class="font-label-caps-sm text-label-caps-sm text-outline tracking-wider uppercase">AUTHENTICATION RAIL</span>
+<span class="font-data-mono text-data-mono text-on-surface font-semibold" id="channel-desc">Direct Tokenized Card Settlement (3D Secure)</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">
+                When you proceed, the encrypted Paystack modal dialog will authorize directly with your Nigerian bank. Funds are held in escrow till dispatch confirmation.
+              </p>
+</div>
+<!-- Security Assurance Notice -->
+<div class="flex items-center gap-space-md p-space-md bg-surface-container">
+<span class="material-symbols-outlined text-[22px] text-on-surface-variant">lock</span>
+<div class="flex flex-col">
+<span class="font-label-caps-sm text-label-caps-sm text-on-surface tracking-wider uppercase font-bold">256-BIT ENCRYPTED CHECKOUT POWERED BY PAYSTACK</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Central Bank of Nigeria (CBN) licensed Payment Solution Service Provider (PSSP).</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Sticky Atelier Order Summary -->
+<div class="lg:col-span-5 sticky top-24">
+<div class="bg-surface-container-lowest p-space-lg md:p-space-xl shadow-md flex flex-col gap-space-lg">
+<div class="flex items-center justify-between pb-space-sm">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Order Manifest</h3>
+<span class="font-data-mono text-data-mono text-on-tertiary-container uppercase tracking-wider font-semibold">3 ACQUISITIONS</span>
+</div>
+<!-- Manifest Line Items -->
+<div class="flex flex-col gap-space-md">
+<!-- Item 1 -->
+<div class="flex gap-space-md items-start p-space-sm bg-surface-container-low">
+<img class="w-16 h-16 object-cover shrink-0" data-alt="Sculptural 3-seater curved modern sofa upholstered in textured oatmeal bouclé fabric, solid Nigerian teak base, shot in a minimalist concrete and warm sunlight architectural lounge interior." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7hF_QgnTjZpGTa2DIyimZmBsIucXtmnkvk3Zh0dBgdRBFPeZsG3O_M_QasDppc_6FceyYDbTnFoUZCASHVOBEf4oLvJuLJ5H2bNaUrw_pmbn9PQ9ehxoEkE2MVgBPUcgVq4LV3mn28BgU8yUrDBEKYkpzoj7PE2CsqyWWEM1mUNuqDmjHYsKc1GKC84TDCS8ZKFQPpt-SmpZkZXLYVM3Q62cu8WHhTB78b-e4Qe6W-9bxmv-Aqf-u"/>
+<div class="flex flex-col flex-grow min-w-0">
+<div class="flex items-start justify-between gap-space-xs">
+<h4 class="font-title-md text-title-md text-on-surface truncate font-semibold">Nsukka Curved Sofa</h4>
+<span class="font-headline-sm text-title-md text-on-surface font-semibold shrink-0">₦229,000</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">3-Seater • Nigerian Teak • Oatmeal Sand Bouclé</span>
+<div class="flex items-center gap-space-xs mt-space-xs">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="font-label-caps-sm text-[9px] text-secondary font-bold uppercase tracking-widest">READY IN ENUGU WORKSHOP</span>
+</div>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="flex gap-space-md items-start p-space-sm bg-surface-container-low">
+<img class="w-16 h-16 object-cover shrink-0" data-alt="Architectural dual-tier low coffee table crafted from solid dark-stained Nigerian Iroko wood with thick fluted glass top panel, photographed with warm raking gallery spotlighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRzX-Du9M4d4HUXxPBuKo3fCKkywIxvXBnV0I9XKXuyvjk6dBd3avz3aEAk_xseg1r5sfgvFYpXHUblxh_1UYqjhVVDRAQ4Ir42RQZVqtqVeySp6dkc60Fwbjg6HiwqFZ9fn4Wg3Cv69Xy9NTsTEld4pawRKa_9MUd6dMKboz3kMtcMXa6RP8vpOsCBdI_XCMEic2B10iBT6R80vbuD_e9JdjpD1w3PYjlicX-Iq980oiIOnOYn9k7"/>
+<div class="flex flex-col flex-grow min-w-0">
+<div class="flex items-start justify-between gap-space-xs">
+<h4 class="font-title-md text-title-md text-on-surface truncate font-semibold">Asata Dual-Tier Coffee Table</h4>
+<span class="font-headline-sm text-title-md text-on-surface font-semibold shrink-0">₦229,000</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Solid Iroko Frame • 12mm Low-Iron Tempered Glass</span>
+<div class="flex items-center gap-space-xs mt-space-xs">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="font-label-caps-sm text-[9px] text-secondary font-bold uppercase tracking-widest">READY IN ENUGU WORKSHOP</span>
+</div>
+</div>
+</div>
+<!-- Item 3: Custom Piece -->
+<div class="flex gap-space-md items-start p-space-sm bg-surface-container-low">
+<img class="w-16 h-16 object-cover shrink-0" data-alt="Architectural bespoke wall credenza in smoked Nigerian walnut with brushed solid brass shadow line reveals and continuous grain doors, fine craft woodworking studio setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVd90hM5l4a-swT9UB98UYSj-Q7ZZBvPUe3opKe7mT_fdod9tj1DrizR4IA8gWskE1xrgmmJy8PsPO1DFttxr2CBnXmsiHo04CJXD1msopEvGUj8cAIJWw8UpHPFylqUHe0FlF-BDQOJ-QRcRgymPqc2j4T0QN27vEhZy3xPYYdrpp8uONgHL5K3R0hMclPxC6AUrQC2voopeQ_5SKi64E0fvZLxoOTQsB1dr6iF5KqdKIdwcDI2wF"/>
+<div class="flex flex-col flex-grow min-w-0">
+<div class="flex items-start justify-between gap-space-xs">
+<h4 class="font-title-md text-title-md text-on-surface truncate font-semibold">Executive Wall Credenza</h4>
+<span class="font-headline-sm text-title-md text-on-surface font-semibold shrink-0" id="credenza-cost-display">₦300,000</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Custom Order #WL-C-0001 • Smoked Walnut &amp; Brass</span>
+<div class="flex items-center gap-space-xs mt-space-xs">
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span>
+<span class="font-label-caps-sm text-[9px] text-on-surface-variant font-bold uppercase tracking-widest">BESPOKE FABRICATION (3 WEEKS)</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Custom Deposit Policy Toggle Box -->
+<div class="p-space-md bg-secondary/10 flex flex-col gap-space-xs">
+<div class="flex items-start gap-space-sm">
+<input checked="" class="mt-1 accent-secondary w-4 h-4 cursor-pointer" id="deposit-toggle" onchange="handleDepositToggle(this)" type="checkbox"/>
+<div class="flex flex-col">
+<label class="font-title-md text-title-md text-on-surface font-bold cursor-pointer" for="deposit-toggle">
+                  Pay deposit only (₦150,000) for the custom piece
+                </label>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs leading-relaxed">
+                  Checked/Active: Balance of ₦150,000 due upon workshop completion prior to white-glove delivery.
+                </p>
+</div>
+</div>
+</div>
+<!-- Price Calculations -->
+<div class="flex flex-col gap-space-xs pt-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-body-md text-body-md text-on-surface-variant">Subtotal Original</span>
+<span class="font-data-mono text-body-md text-on-surface-variant" id="subtotal-raw">₦758,000</span>
+</div>
+<div class="flex items-center justify-between" id="deposit-row">
+<span class="font-body-md text-body-md text-secondary font-medium">Deposit Adjustment (Custom Credenza)</span>
+<span class="font-data-mono text-body-md text-secondary font-bold">-₦150,000</span>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="font-body-md text-body-md text-on-surface-variant">White-Glove Delivery</span>
+<span class="material-symbols-outlined text-[14px] text-outline" title="Enugu Metro Complimentary Logistics">info</span>
+</div>
+<span class="font-label-caps-sm text-label-caps-sm text-secondary uppercase font-bold tracking-wider">COMPLIMENTARY</span>
+</div>
+<div class="flex items-center justify-between pt-space-md mt-space-sm">
+<div class="flex flex-col">
+<span class="font-label-caps-sm text-label-caps-sm text-outline uppercase tracking-widest">TOTAL PAYABLE NOW</span>
+<span class="font-headline-lg text-headline-lg text-on-surface font-bold" id="total-payable-display">₦458,000</span>
+</div>
+<span class="font-data-mono text-data-mono text-outline uppercase">NGN (NAIRA)</span>
+</div>
+</div>
+<!-- Paystack Primary Action CTA -->
+<button class="w-full bg-primary text-on-primary py-space-md px-space-lg flex items-center justify-center gap-space-sm hover:bg-secondary transition-all shadow-md active:scale-[0.99] group" onclick="openPaystackModal()" type="button">
+<span class="font-label-caps-md text-label-caps-md uppercase tracking-widest font-bold" id="cta-button-text">PAY ₦458,000 WITH PAYSTACK</span>
+<span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+<!-- Assurance Guarantee Strip -->
+<div class="grid grid-cols-2 gap-space-sm pt-space-xs text-center">
+<div class="p-space-xs bg-surface-container-low flex flex-col items-center">
+<span class="material-symbols-outlined text-[16px] text-outline mb-1">handyman</span>
+<span class="font-label-caps-sm text-[9px] text-on-surface tracking-wider uppercase">Lifetime Joinery Warranty</span>
+</div>
+<div class="p-space-xs bg-surface-container-low flex flex-col items-center">
+<span class="material-symbols-outlined text-[16px] text-outline mb-1">local_shipping</span>
+<span class="font-label-caps-sm text-[9px] text-on-surface tracking-wider uppercase">Enugu Assembly Included</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Visual Polish: Timber Heritage Provenance Panel -->
+<div class="mt-space-xl p-space-lg md:p-space-xl bg-surface-container-low grid grid-cols-1 md:grid-cols-3 gap-space-lg items-center">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-full bg-primary text-on-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">forest</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface font-bold">100% Sustainable Nigerian Timber</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Aged Iroko &amp; Teak ethically harvested in Southeastern Nigeria.</span>
+</div>
+</div>
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-full bg-primary text-on-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">workspace_premium</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface font-bold">Traditional Mortise-and-Tenon</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Built without cheap fast-furniture dowels or structural staples.</span>
+</div>
+</div>
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-full bg-primary text-on-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">security</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface font-bold">Paystack Buyer Protection</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Immediate automatic invoice receipt and secure SMS notifications.</span>
+</div>
+</div>
+</div>
+</div>
+<!-- HIGH-FIDELITY PAYSTACK POPUP MODAL OVERLAY -->
+<div class="fixed inset-0 z-50 bg-inverse-surface/60 backdrop-blur-sm hidden flex items-center justify-center p-space-md" id="paystack-modal">
+<div class="bg-surface-container-lowest w-full max-w-[480px] shadow-2xl relative overflow-hidden transform transition-all duration-300">
+<!-- Paystack Modal Top Bar -->
+<div class="bg-primary text-on-primary p-space-md md:p-space-lg flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-secondary flex items-center justify-center text-on-secondary font-bold font-headline-sm text-[16px]">W</div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-primary leading-tight font-semibold">Wooden Lounge Furniture</span>
+<span class="font-data-mono text-data-mono text-on-primary-container leading-none mt-0.5">paystack checkout portal</span>
+</div>
+</div>
+<button aria-label="Close dialog" class="text-on-primary-container hover:text-on-primary transition-colors p-1" onclick="closePaystackModal()" type="button">
+<span class="material-symbols-outlined text-[22px]">close</span>
+</button>
+</div>
+<!-- Amount Header Display -->
+<div class="bg-surface-container px-space-lg py-space-md flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-caps-sm text-label-caps-sm text-outline uppercase tracking-wider">AMOUNT DUE</span>
+<span class="font-headline-lg text-headline-sm md:text-headline-md text-on-surface font-bold" id="modal-amount-header">₦458,000</span>
+</div>
+<div class="text-right">
+<span class="font-data-mono text-data-mono text-on-surface-variant block font-medium">okonkwo@design.ng</span>
+<span class="font-label-caps-sm text-[9px] text-secondary font-bold uppercase tracking-widest">ORDER #WL-8921-EN</span>
+</div>
+</div>
+<!-- Paystack Channel Nav Tabs -->
+<div class="flex bg-surface-container-low">
+<button class="flex-1 py-space-sm px-space-xs text-center font-label-caps-sm text-label-caps-sm uppercase tracking-wider transition-all font-bold bg-surface-container-lowest text-primary" id="btn-m-card" onclick="switchModalTab('m-card')" type="button">
+          Card
+        </button>
+<button class="flex-1 py-space-sm px-space-xs text-center font-label-caps-sm text-label-caps-sm uppercase tracking-wider transition-all text-outline hover:text-on-surface" id="btn-m-transfer" onclick="switchModalTab('m-transfer')" type="button">
+          Bank Transfer
+        </button>
+<button class="flex-1 py-space-sm px-space-xs text-center font-label-caps-sm text-label-caps-sm uppercase tracking-wider transition-all text-outline hover:text-on-surface" id="btn-m-ussd" onclick="switchModalTab('m-ussd')" type="button">
+          USSD
+        </button>
+</div>
+<!-- Tab Content: Card -->
+<div class="p-space-lg flex flex-col gap-space-md" id="pane-m-card">
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-caps-sm text-label-caps-sm text-outline uppercase tracking-wider">CARD NUMBER</label>
+<div class="relative flex items-center">
+<input class="w-full bg-surface-container-low px-space-md py-space-sm font-data-mono text-body-md text-on-surface focus:outline-none" placeholder="5399 4100 0000 0000" type="text"/>
+<div class="absolute right-space-md flex items-center gap-1">
+<span class="font-data-mono text-[10px] font-bold px-1 py-0.5 bg-surface-container text-on-surface-variant">MASTERCARD</span>
+<span class="font-data-mono text-[10px] font-bold px-1 py-0.5 bg-surface-container text-on-surface-variant">VERVE</span>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-caps-sm text-label-caps-sm text-outline uppercase tracking-wider">CARD EXPIRY</label>
+<input class="w-full bg-surface-container-low px-space-md py-space-sm font-data-mono text-body-md text-on-surface focus:outline-none" placeholder="MM / YY" type="text"/>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-caps-sm text-label-caps-sm text-outline uppercase tracking-wider">CVV</label>
+<input class="w-full bg-surface-container-low px-space-md py-space-sm font-data-mono text-body-md text-on-surface focus:outline-none" maxlength="3" placeholder="123" type="password"/>
+</div>
+</div>
+<button class="w-full bg-secondary text-on-secondary py-space-md font-label-caps-md text-label-caps-md uppercase tracking-widest font-bold hover:bg-secondary/90 transition-all mt-space-xs" onclick="simulatePaymentSuccess()" type="button">
+          Pay <span id="btn-card-amt">₦458,000</span>
+</button>
+</div>
+<!-- Tab Content: Bank Transfer (Titan / Wema dynamic virtual account) -->
+<div class="p-space-lg hidden flex flex-col gap-space-md" id="pane-m-transfer">
+<div class="p-space-md bg-surface-container-low text-center flex flex-col items-center">
+<span class="font-label-caps-sm text-label-caps-sm text-outline uppercase tracking-widest">SEND EXACT AMOUNT VIA MOBILE APP</span>
+<div class="my-space-sm flex flex-col items-center">
+<span class="font-headline-lg text-headline-sm text-on-surface font-bold tracking-widest font-data-mono">8102 9384 11</span>
+<div class="flex items-center gap-space-xs mt-1">
+<span class="font-title-md text-body-sm text-on-surface-variant font-bold">Wema Bank / Titan Paystack</span>
+<button class="text-secondary text-label-caps-sm font-bold ml-1 uppercase hover:underline" onclick="copyAccount()" type="button">Copy</button>
+</div>
+<span class="font-body-sm text-body-sm text-outline mt-1">Beneficiary: Wooden Lounge Paystack</span>
+</div>
+<div class="w-full bg-surface-container p-space-xs rounded-full flex items-center justify-center gap-space-xs mt-space-xs">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-data-mono text-data-mono text-on-surface-variant font-semibold">ACCOUNT EXPIRES IN 29:40</span>
+</div>
+</div>
+<button class="w-full bg-primary text-on-primary py-space-md font-label-caps-md text-label-caps-md uppercase tracking-widest font-bold hover:bg-secondary transition-all" onclick="simulatePaymentSuccess()" type="button">
+          I Have Sent The Funds
+        </button>
+</div>
+<!-- Tab Content: USSD -->
+<div class="p-space-lg hidden flex flex-col gap-space-md" id="pane-m-ussd">
+<span class="font-body-sm text-body-sm text-on-surface-variant text-center">Select your financial institution to generate the USSD prompt string:</span>
+<div class="grid grid-cols-2 gap-space-xs">
+<button class="p-space-sm bg-surface-container-low hover:bg-surface-container text-left flex flex-col" type="button">
+<span class="font-title-md text-body-md text-on-surface font-bold">GTBank</span>
+<span class="font-data-mono text-[11px] text-secondary">*737*000*458000#</span>
+</button>
+<button class="p-space-sm bg-surface-container-low hover:bg-surface-container text-left flex flex-col" type="button">
+<span class="font-title-md text-body-md text-on-surface font-bold">First Bank</span>
+<span class="font-data-mono text-[11px] text-secondary">*894*000*458000#</span>
+</button>
+<button class="p-space-sm bg-surface-container-low hover:bg-surface-container text-left flex flex-col" type="button">
+<span class="font-title-md text-body-md text-on-surface font-bold">Zenith Bank</span>
+<span class="font-data-mono text-[11px] text-secondary">*966*000*458000#</span>
+</button>
+<button class="p-space-sm bg-surface-container-low hover:bg-surface-container text-left flex flex-col" type="button">
+<span class="font-title-md text-body-md text-on-surface font-bold">Access Bank</span>
+<span class="font-data-mono text-[11px] text-secondary">*901*000*458000#</span>
+</button>
+</div>
+<button class="w-full bg-primary text-on-primary py-space-md font-label-caps-md text-label-caps-md uppercase tracking-widest font-bold hover:bg-secondary transition-all mt-space-xs" onclick="simulatePaymentSuccess()" type="button">
+          Authorize From Mobile Device
+        </button>
+</div>
+<!-- Modal Footer Credentials -->
+<div class="p-space-md bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-outline">verified</span>
+<span class="font-data-mono text-[11px] text-outline">Secured by Paystack Payments Limited</span>
+</div>
+<span class="font-data-mono text-[11px] text-outline">Ref: WL-7829-01</span>
+</div>
+</div>
+</div>
+<!-- Notification Toast Simulation -->
+<div class="fixed bottom-space-xl left-1/2 -translate-x-1/2 bg-primary text-on-primary px-space-lg py-space-sm shadow-xl font-label-caps-sm text-label-caps-sm tracking-widest uppercase hidden z-50" id="copy-toast">
+    VIRTUAL ACCOUNT COPIED TO CLIPBOARD
+  </div>
+</div>
+<script>
+  let isDepositActive = true;
+
+  function toggleAccordion(contentId, iconId) {
+    const content = document.getElementById(contentId);
+    const icon = document.getElementById(iconId);
+    if (!content) return;
+
+    if (content.classList.contains('hidden')) {
+      content.classList.remove('hidden');
+      icon.textContent = 'expand_less';
+    } else {
+      content.classList.add('hidden');
+      icon.textContent = 'expand_more';
+    }
+  }
+
+  function handleDepositToggle(checkbox) {
+    isDepositActive = checkbox.checked;
+    const credenzaDisplay = document.getElementById('credenza-cost-display');
+    const depositRow = document.getElementById('deposit-row');
+    const totalDisplay = document.getElementById('total-payable-display');
+    const ctaText = document.getElementById('cta-button-text');
+    const modalHeader = document.getElementById('modal-amount-header');
+    const modalBtnAmt = document.getElementById('btn-card-amt');
+
+    if (isDepositActive) {
+      credenzaDisplay.textContent = '₦300,000';
+      depositRow.classList.remove('hidden');
+      totalDisplay.textContent = '₦458,000';
+      ctaText.textContent = 'PAY ₦458,000 WITH PAYSTACK';
+      if (modalHeader) modalHeader.textContent = '₦458,000';
+      if (modalBtnAmt) modalBtnAmt.textContent = '₦458,000';
+    } else {
+      credenzaDisplay.textContent = '₦300,000';
+      depositRow.classList.add('hidden');
+      totalDisplay.textContent = '₦608,000';
+      ctaText.textContent = 'PAY ₦608,000 WITH PAYSTACK';
+      if (modalHeader) modalHeader.textContent = '₦608,000';
+      if (modalBtnAmt) modalBtnAmt.textContent = '₦608,000';
+    }
+  }
+
+  function selectMethod(method) {
+    const tabs = ['card', 'transfer', 'ussd'];
+    const desc = document.getElementById('channel-desc');
+
+    tabs.forEach(tabKey => {
+      const el = document.getElementById('tab-' + tabKey);
+      const check = el.querySelector('.method-check');
+      if (tabKey === method) {
+        el.classList.add('bg-surface-container');
+        el.classList.remove('bg-surface-container-low');
+        check.classList.remove('hidden');
+      } else {
+        el.classList.remove('bg-surface-container');
+        el.classList.add('bg-surface-container-low');
+        check.classList.add('hidden');
+      }
+    });
+
+    if (method === 'card') {
+      desc.textContent = 'Direct Tokenized Card Settlement (3D Secure)';
+    } else if (method === 'transfer') {
+      desc.textContent = 'Automated Dedicated Virtual Reserve (Instant Confirmation)';
+    } else {
+      desc.textContent = 'Telco Quick Dial Settlement Rail (*737#, *894#, *966#)';
+    }
+  }
+
+  function openPaystackModal() {
+    const modal = document.getElementById('paystack-modal');
+    modal.classList.remove('hidden');
+  }
+
+  function closePaystackModal() {
+    const modal = document.getElementById('paystack-modal');
+    modal.classList.add('hidden');
+  }
+
+  function switchModalTab(tabId) {
+    const tabs = ['m-card', 'm-transfer', 'm-ussd'];
+    tabs.forEach(t => {
+      const btn = document.getElementById('btn-' + t);
+      const pane = document.getElementById('pane-' + t);
+      if (t === tabId) {
+        btn.classList.add('bg-surface-container-lowest', 'text-primary');
+        btn.classList.remove('text-outline');
+        pane.classList.remove('hidden');
+      } else {
+        btn.classList.remove('bg-surface-container-lowest', 'text-primary');
+        btn.classList.add('text-outline');
+        pane.classList.add('hidden');
+      }
+    });
+  }
+
+  function copyAccount() {
+    navigator.clipboard?.writeText('8102938411');
+    const toast = document.getElementById('copy-toast');
+    toast.classList.remove('hidden');
+    setTimeout(() => {
+      toast.classList.add('hidden');
+    }, 2500);
+  }
+
+  function simulatePaymentSuccess() {
+    const modal = document.getElementById('paystack-modal');
+    modal.innerHTML = `
+      <div class="bg-surface-container-lowest w-full max-w-[480px] p-space-xl shadow-2xl flex flex-col items-center text-center">
+        <div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center text-on-secondary mb-space-md">
+          <span class="material-symbols-outlined text-[36px]">check</span>
+        </div>
+        <span class="font-label-caps-sm text-label-caps-sm text-secondary uppercase tracking-widest">TRANSACTION CONFIRMED</span>
+        <h3 class="font-headline-sm text-headline-sm text-on-surface mt-space-xs font-bold">Commission Booked</h3>
+        <p class="font-body-md text-body-md text-on-surface-variant mt-space-sm leading-relaxed">
+          Paystack has authorized transfer of <strong class="text-on-surface">${document.getElementById('modal-amount-header')?.textContent || '₦458,000'}</strong>. Your bespoke invoice #WL-8921-EN and WhatsApp invitation have been dispatched to <strong>okonkwo@design.ng</strong>.
+        </p>
+        <button type="button" onclick="location.reload()" class="w-full bg-primary text-on-primary py-space-md mt-space-lg font-label-caps-md text-label-caps-md uppercase tracking-widest font-bold hover:bg-secondary transition-all">
+          Return to Atelier Catalogue
+        </button>
+      </div>
+    `;
+  }
+</script></main><footer class="w-full bg-surface-container-low relative"><div class="max-w-[1280px] mx-auto px-margin-mobile md:px-margin pt-space-xl pb-space-lg"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-xl pb-space-xl border-b border-outline-variant/30"><div class="flex flex-col"><h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-sm">Enugu Showroom</h3><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-space-xs">160 Ogui Rd, Asata Chemist</p><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-space-sm">Enugu State, Nigeria</p><span class="font-label-caps-sm text-label-caps-sm text-on-tertiary-container tracking-wider uppercase">STUDIO &amp; MASTER WORKSHOP</span><p class="font-data-mono text-data-mono text-on-surface-variant mt-space-sm">Mon – Sat: 09:00 – 18:00 WAT</p></div><div class="flex flex-col"><h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-sm">Abuja Showroom</h3><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-space-xs">2 Lobito Crescent, Wuse 2</p><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-space-sm">Federal Capital Territory, Nigeria</p><span class="font-label-caps-sm text-label-caps-sm text-on-tertiary-container tracking-wider uppercase">RESIDENTIAL SPECIFICATION SALON</span><p class="font-data-mono text-data-mono text-on-surface-variant mt-space-sm">Tue – Sat: 10:00 – 19:00 WAT</p></div><div class="flex flex-col"><h3 class="font-label-caps-md text-label-caps-md text-on-surface tracking-widest uppercase mb-space-md">THE ATELIER</h3><nav class="flex flex-col gap-space-xs"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="bespoke-process" href="/">Bespoke Commission Process</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="timber-archives" href="/">Nigerian Timber Archives</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="joinery-philosophy" href="/">Joinery Philosophy</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="residential-portfolio" href="/">Residential Portfolio</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="diaspora-shipping" href="/">Diaspora Freight &amp; Crating</a></nav></div><div class="flex flex-col"><h3 class="font-label-caps-md text-label-caps-md text-on-surface tracking-widest uppercase mb-space-sm">PRIVATE CATALOG</h3><p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md leading-relaxed">Receive private showroom drops, architectural releases, and seasonal timber consignments.</p><form class="flex flex-col gap-space-xs"><div class="flex w-full"><input class="w-full bg-surface-container-lowest border border-outline-variant px-space-md py-space-sm font-label-caps-sm text-label-caps-sm text-on-surface placeholder:text-outline focus:outline-none focus:border-primary transition-colors" placeholder="ARCHITECT / CLIENT EMAIL" type="email"/><button class="bg-primary text-on-primary px-space-md py-space-sm font-label-caps-sm text-label-caps-sm uppercase tracking-wider hover:bg-on-surface-variant hover:text-on-primary transition-colors shrink-0" type="button">JOIN</button></div><span class="font-data-mono text-data-mono text-outline">Discreet seasonal dispatch only.</span></form></div></div><div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg flex-wrap"><span class="font-headline-lg text-headline-sm md:text-headline-md text-outline-variant/40 tracking-tight font-light select-none">WOODEN LOUNGE ATELIER</span></div><div class="flex items-center gap-space-md flex-wrap"><a class="font-label-caps-sm text-label-caps-sm text-on-surface-variant hover:text-on-surface transition-colors uppercase" data-path="legal-terms" href="/">TERMS OF COMMISSION</a><span class="text-outline-variant">•</span><a class="font-label-caps-sm text-label-caps-sm text-on-surface-variant hover:text-on-surface transition-colors uppercase" data-path="legal-privacy" href="/">PRIVACY ARCHIVE</a><span class="text-outline-variant">•</span><a class="font-label-caps-sm text-label-caps-sm text-on-surface-variant hover:text-on-surface transition-colors uppercase" data-path="legal-warranty" href="/">LIFETIME JOINERY WARRANTY</a></div><div class="font-data-mono text-data-mono text-outline">© 2025 WOODEN LOUNGE NIGERIA.</div></div></div></footer><a aria-label="Consult Showroom Concierge" class="fixed bottom-space-lg right-space-lg z-40 bg-primary text-on-primary shadow-[0_12px_32px_-4px_rgba(13,12,11,0.25)] px-space-md py-space-sm flex items-center gap-space-xs group hover:bg-secondary transition-all" data-path="concierge-message" href="/"><span class="material-symbols-outlined text-[18px] text-on-primary">chat</span><span class="font-label-caps-sm text-label-caps-sm text-on-primary uppercase tracking-widest">ENQUIRY DESK</span></a><script src="/assets/site.js"></script>
+</body></html>
